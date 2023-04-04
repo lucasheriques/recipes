@@ -7,18 +7,23 @@ description:
 date: 2023-04-04
 ---
 
+Baseado na receita da
+[Chocolate Covered Katie](https://chocolatecoveredkatie.com/keto-cookies-recipe/).
+
 # Ingredientes
 
 ## Cookie tradicional
 
 - 120g ou 1 xícara de chá de farinha de amêndoas.
-- 30g ou 2 colheres de sopa de adoçante. Eu uso o Sweet Natural da Linea.
+- 30g ou 2 colheres de sopa de adoçante. Eu uso o
+  [Sweet Natural da Linea](https://www.lineaalimentos.com.br/linea-adocante-sweet-natural-culinario-300g/p).
 - 1/4 colher de chá de sal.
 - 1/8 colher de chá de bicarbonato de sódio.
 - 30g de manteiga sem sal, derretida.
 - 15ml ou 1 colher de sopa de leite.
 - 40g de gotas de chocolate. Uso o
-  [Callebaut Malcholc ao leite](https://www.callebaut.com/pt-BR/chocolate-cacau-castanhas/MALCHOC-M-123/chocolate-ao-leite-malchoc-callebaut-35).
+  <a href="https://www.callebaut.com/pt-BR/chocolate-cacau-castanhas/MALCHOC-M-123/chocolate-ao-leite-malchoc-callebaut-35" target="_blank">Callebaut
+  Malcholc ao leite</a>
 
 ## Cookie de chocolate
 
