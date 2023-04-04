@@ -22,8 +22,7 @@ Baseado na receita da
 - 30g de manteiga sem sal, derretida.
 - 15ml ou 1 colher de sopa de leite.
 - 40g de gotas de chocolate. Uso o
-  <a href="https://www.callebaut.com/pt-BR/chocolate-cacau-castanhas/MALCHOC-M-123/chocolate-ao-leite-malchoc-callebaut-35" target="_blank">Callebaut
-  Malcholc ao leite</a>
+  [Callebaut Malcholc ao leite](https://www.callebaut.com/pt-BR/chocolate-cacau-castanhas/MALCHOC-M-123/chocolate-ao-leite-malchoc-callebaut-35").
 
 ## Cookie de chocolate
 
