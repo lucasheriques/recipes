@@ -1,4 +1,19 @@
 ---
+import { readFirstTenRecipes } from "src/lib/markdoc/read";
+import { blog } from "../lib/markdoc/frontmatter.schema";
+
+const posts = await readFirstTenRecipes({
+  directory: "blog",
+  frontmatterSchema: blog,
+});
+
+const sortedPosts = posts
+  .filter((p) => p.frontmatter.draft !== true)
+  .sort(
+    (a, b) =>
+      new Date(b.frontmatter.date).valueOf() -
+      new Date(a.frontmatter.date).valueOf()
+  );
 ---
 
 <section class="mb-8">
@@ -18,12 +33,71 @@
     <p class="mb-5">
       Oi! Este site vai ser para arquivar todas as receitas low carb que eu fiz
       e gostei. Como alguns amigos já me pediram algumas receitas, achei que
-      seria uma boa ideia colocar tudo aqui. Espero que gostem!
-      <p class="text-center whitespace-nowrap overflow-auto">
-        <code class="py-1 px-2"
-          >npx create-blogster@latest --theme bubblegum</code
-        >
-      </p>
+      seria uma boa ideia colocar tudo aqui. Espero que gostem! 🤩
     </p>
   </div>
+  <section slot="main">
+    <h2 class="font-bold text-xl md:text-2xl pt-4 pb-2 overflow-hidden">
+      Últimas receitas
+    </h2>
+    <ul>
+      {
+        sortedPosts.map((post) => {
+          const formattedDate = new Date(
+            post.frontmatter.date
+          ).toLocaleDateString("en-us", {
+            year: "numeric",
+            month: "short",
+            day: "numeric",
+          });
+          return (
+            <li class="grid grid-cols-[1fr] md:grid-cols-[1fr_auto] mb-3 md:gap-2 items-start">
+              <div class="title">
+                {post.frontmatter.external ? (
+                  <a
+                    href={post.frontmatter.url}
+                    target="_blank"
+                    class="unset
+                        transition-[background-size] duration-300 
+                        bg-gradient-to-r bg-left-bottom bg-no-repeat
+                        bg-[length:0%_55%] hover:bg-[length:100%_55%] dark:bg-[length:0%_2px] hover:dark:bg-[length:100%_2px]
+                        from-primary-blue to-primary-blue dark:from-primary-blue dark:to-primary-blue
+                      "
+                  >
+                    <span>{post.frontmatter.title}</span>
+                    <span>
+                      <i class="ml-1 mr-1 text-[12px] pb-2 fa-solid fa-up-right-from-square" />
+                    </span>
+                  </a>
+                ) : (
+                  <a
+                    href={`/blog/${post.slug}`}
+                    class="unset
+                        transition-[background-size] duration-300 
+                        bg-gradient-to-r bg-left-bottom bg-no-repeat
+                        bg-[length:0%_55%] hover:bg-[length:100%_55%] dark:bg-[length:0%_2px] hover:dark:bg-[length:100%_2px]
+                        from-primary-blue to-primary-blue dark:from-primary-blue dark:to-primary-blue
+                      "
+                  >
+                    {post.frontmatter.title}
+                  </a>
+                )}
+              </div>
+              <div class="text-text-muted text-sm italic pt-1">
+                <time datetime={post.frontmatter.date.toISOString()}>
+                  {formattedDate}
+                </time>
+              </div>
+            </li>
+          );
+        })
+      }
+    </ul>
+    <p class="mt-5">
+      Para quem não tem o contexto: minha parceira é diabética tipo 1, e por
+      isso não pode ingerir muito açúcar. Eu sempre gostei de fazer doces 🍪, e
+      tenho essa ambição de fazer vários tipos de doces onde as pessoas não
+      consigam perceber a diferença se está ou não com açúcar.
+    </p>
+  </section>
 </section>

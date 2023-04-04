@@ -88,6 +88,21 @@ export async function readOne<T extends z.ZodTypeAny>({
   });
 }
 
+export async function readFirstTenRecipes<T extends z.ZodTypeAny>({
+  directory,
+  frontmatterSchema: schema,
+}: {
+  directory: string;
+  frontmatterSchema: T;
+}) {
+  const pathToDir = path.posix.join(contentDirectory, directory);
+  const paths = await globby(`${pathToDir}/*.md`);
+
+  return Promise.all(
+    paths.map((path) => read({ filepath: path, schema })).slice(0, 10)
+  );
+}
+
 export async function readAll<T extends z.ZodTypeAny>({
   directory,
   frontmatterSchema: schema,
