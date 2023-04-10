@@ -47,7 +47,7 @@ Baseado na receita da
    Deixe esfriar por uns 10 minutinhos, que eles vão ficar mais durinhos, e
    pronto! 😋
 
-## Images
+## Imagens
 
-![Cookies prontos](/images/cookies.jpeg)
-![Vários doces sendo feitos, com destaque para os cookies](/images/varios-doces.jpeg)
+![Cookies prontos](/images/cookie-low-carb/cookies.jpeg)
+![Vários doces sendo feitos, com destaque para os cookies](/images/cookie-low-carb/varios-doces.jpeg)
