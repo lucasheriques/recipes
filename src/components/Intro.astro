@@ -3,7 +3,7 @@ import { readFirstTenRecipes } from "src/lib/markdoc/read";
 import { blog } from "../lib/markdoc/frontmatter.schema";
 
 const posts = await readFirstTenRecipes({
-  directory: "blog",
+  directory: "receitas",
   frontmatterSchema: blog,
 });
 
@@ -71,7 +71,7 @@ const sortedPosts = posts
                   </a>
                 ) : (
                   <a
-                    href={`/blog/${post.slug}`}
+                    href={`/receitas/${post.slug}`}
                     class="unset
                         transition-[background-size] duration-300 
                         bg-gradient-to-r bg-left-bottom bg-no-repeat
