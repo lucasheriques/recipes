@@ -11,6 +11,9 @@ Parece uma mousse. Muito fácil de fazer, fica com uma textura ótima e sabor ne
 um pouco enjoativo. Foi a primeira receita que eu fiz com o leite condensado
 caseiro!
 
+Receita adaptada da
+[Isamara Amâncio](https://www.youtube.com/watch?v=AestRS2GnfA).
+
 # Ingredientes
 
 ## Base
