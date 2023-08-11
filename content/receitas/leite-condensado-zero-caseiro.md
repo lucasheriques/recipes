@@ -1,6 +1,6 @@
 ---
 external: false
-title: "Leite Condensado Zero Caseiro"
+title: "Leite Condensado Zero Açúcar Caseiro"
 description:
   "Perfeito pra substituir os leite condensados diet, que são caros e as vezes
   indigestos."
