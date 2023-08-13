@@ -54,4 +54,8 @@ Receita adaptada da
 2. Coloque a ganache ainda quente por cima da base, aí você pode só balançar um
    pouco a travessa para espalhar a ganache.
 3. Depois, só colocar no freezer por mais 1h e deve estar pronto! Decore com o
-   que quiser (morangos, nozes, o que tu gostar).
+   que quiser: morangos, nozes, paçoca (amo), ou o que tu gostar.
+
+# Imagens
+
+![Sobremesa pronta](/images/sobremesa-leite/sobremesa-pronta.jpeg)
