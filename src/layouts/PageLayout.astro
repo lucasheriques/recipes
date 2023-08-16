@@ -6,6 +6,7 @@
   - pages/projects.astro
 */
 
+import { ViewTransitions } from "astro:transitions";
 // Import the global.css file here so that it is included on
 import "../styles/global.css";
 
@@ -24,6 +25,7 @@ import Footer from "../components/Footer.astro";
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <meta name="generator" content="Blogster" />
+    <ViewTransitions />
     <Favicon />
     <slot name="meta" />
     <GoogleFont />
@@ -31,9 +33,7 @@ import Footer from "../components/Footer.astro";
     <FontAwesome />
   </head>
 
-  <body
-    class="max-w-3xl mx-auto min-h-screen px-6 sm:px-8"
-  >
+  <body class="max-w-3xl mx-auto min-h-screen px-6 sm:px-8">
     <Header />
     <main id="main">
       <slot name="main" />
