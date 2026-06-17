@@ -1,0 +1,29 @@
+---
+// Linka um trecho da receita pro produto na página de ingredientes.
+// Uso no markdown: {% ing id="chocolate-70" %}chocolate 70%{% /ing %}
+// O link vem da const central (src/data/ingredientes.ts), fonte única.
+import { getIngrediente } from "../data/ingredientes";
+
+interface Props {
+  id: string;
+  children?: any;
+}
+
+const { id, children } = Astro.props;
+const item = getIngrediente(id);
+
+if (!item) {
+  // aparece no log do build/dev pra pegar referência errada cedo
+  console.warn(`[ing] id de ingrediente não encontrado: "${id}"`);
+}
+---
+
+{
+  item ? (
+    <a href={item.link} target="_blank" rel="noopener noreferrer">
+      {children}
+    </a>
+  ) : (
+    <Fragment>{children}</Fragment>
+  )
+}

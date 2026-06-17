@@ -68,6 +68,43 @@ export const config: Config = {
       render: "mark",
       children: nodes.strong.children,
     },
+    term: {
+      render: "Term",
+      attributes: {
+        def: { type: String, required: true },
+      },
+      children: nodes.strong.children,
+    },
+    note: {
+      render: "Note",
+      attributes: {
+        title: { type: String },
+      },
+      children: nodes.document.children,
+    },
+    nutrition: {
+      render: "Nutrition",
+      attributes: {
+        note: { type: String },
+      },
+      children: nodes.document.children,
+    },
+    nutrient: {
+      render: "Nutrient",
+      selfClosing: true,
+      attributes: {
+        label: { type: String, required: true },
+        value: { type: String, required: true },
+        highlight: { type: Boolean },
+      },
+    },
+    ing: {
+      render: "IngredienteLink",
+      attributes: {
+        id: { type: String, required: true },
+      },
+      children: nodes.strong.children,
+    },
     youtube: {
       render: "YouTubeEmbed",
       attributes: {

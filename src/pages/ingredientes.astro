@@ -1,0 +1,56 @@
+---
+import PageLayout from "../layouts/PageLayout.astro";
+import PageMeta from "../components/PageMeta.astro";
+import { SITE_TITLE } from "../config";
+import { INGREDIENTES, ORDEM_CATEGORIAS } from "../data/ingredientes";
+
+const grupos = ORDEM_CATEGORIAS.map((categoria) => ({
+  categoria,
+  itens: INGREDIENTES.filter((i) => i.categoria === categoria),
+})).filter((g) => g.itens.length > 0);
+---
+
+<PageLayout>
+  <PageMeta title={`Ingredientes | ${SITE_TITLE}`} slot="meta" />
+  <section slot="main" class="ingredientes">
+    <h1 class="ing-title">
+      <span>Ingredientes</span>
+    </h1>
+    <p class="ing-intro">
+      Os principais que sempre tenho em casa. Tudo aqui é diet, ou seja, zero (ou
+      sem adição de) açúcar. Os links são de onde costumo comprar cada um.
+    </p>
+
+    {
+      grupos.map((grupo) => (
+        <section class="ing-group">
+          <h2 class="ing-group__title">{grupo.categoria}</h2>
+          <ul class="ing-grid unset">
+            {grupo.itens.map((item) => (
+              <li>
+                <a
+                  class="unset ing-card"
+                  href={item.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <div class="ing-card__head">
+                    <span class="ing-card__name">{item.nome}</span>
+                    {item.marca && (
+                      <span class="ing-card__brand">{item.marca}</span>
+                    )}
+                    <i
+                      class="fa-solid fa-up-right-from-square ing-card__icon"
+                      aria-hidden="true"
+                    />
+                  </div>
+                  <p class="ing-card__desc">{item.descricao}</p>
+                </a>
+              </li>
+            ))}
+          </ul>
+        </section>
+      ))
+    }
+  </section>
+</PageLayout>

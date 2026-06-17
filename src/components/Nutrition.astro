@@ -1,0 +1,18 @@
+---
+// Cartão de informação nutricional: uma grade de "tiles" com os números.
+// Uso no markdown:
+// {% nutrition note="por fatia · rende 10 fatias" %}
+//   {% nutrient label="Carbo líquido" value="14,6 g" highlight=true /%}
+//   {% nutrient label="Calorias" value="228 kcal" /%}
+// {% /nutrition %}
+interface Props {
+  note?: string;
+}
+
+const { note } = Astro.props;
+---
+
+<div class="nutri">
+  <div class="nutri__grid"><slot /></div>
+  {note && <p class="nutri__note">{note}</p>}
+</div>

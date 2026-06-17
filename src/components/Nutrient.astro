@@ -1,0 +1,15 @@
+---
+// Uma "tile" dentro do cartão de nutrição (ver Nutrition.astro).
+interface Props {
+  label: string;
+  value: string;
+  highlight?: boolean;
+}
+
+const { label, value, highlight } = Astro.props;
+---
+
+<div class:list={["nutri__tile", highlight && "nutri__tile--hl"]}>
+  <span class="nutri__value">{value}</span>
+  <span class="nutri__label">{label}</span>
+</div>

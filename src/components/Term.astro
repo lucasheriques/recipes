@@ -1,0 +1,29 @@
+---
+// Glossário inline: mostra um termo sublinhado que, ao passar o mouse ou clicar,
+// abre um popover nativo (Popover API) com a explicação. Sem JavaScript.
+interface Props {
+  def: string;
+  children?: any;
+}
+
+const { def, children } = Astro.props;
+
+// id único por instância pra ligar o gatilho ao popover e ancorar a posição
+const uid = Math.random().toString(36).slice(2, 9);
+const id = `term-${uid}`;
+const anchor = `--anchor-${uid}`;
+---
+
+<span class="term">
+  <button
+    type="button"
+    class="term__trigger"
+    popovertarget={id}
+    style={`anchor-name:${anchor}`}
+  >
+    {children}
+  </button>
+  <span id={id} popover class="term__pop" style={`position-anchor:${anchor}`}>
+    {def}
+  </span>
+</span>

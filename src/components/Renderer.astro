@@ -7,6 +7,11 @@ import CodePenEmbed from "./CodePenEmbed.astro";
 import GitHubGistEmbed from "./GitHubGistEmbed.astro";
 import CodeBlock from "./CodeBlock.astro";
 import Heading from "./Heading.astro";
+import Term from "./Term.astro";
+import Note from "./Note.astro";
+import Nutrition from "./Nutrition.astro";
+import Nutrient from "./Nutrient.astro";
+import IngredienteLink from "./IngredienteLink.astro";
 
 type Props = {
   content: Content;
@@ -37,6 +42,26 @@ const components = {
   },
   GitHubGistEmbed: {
     Component: GitHubGistEmbed,
+    props: {},
+  },
+  Term: {
+    Component: Term,
+    props: {},
+  },
+  Note: {
+    Component: Note,
+    props: {},
+  },
+  Nutrition: {
+    Component: Nutrition,
+    props: {},
+  },
+  Nutrient: {
+    Component: Nutrient,
+    props: {},
+  },
+  IngredienteLink: {
+    Component: IngredienteLink,
     props: {},
   },
 };

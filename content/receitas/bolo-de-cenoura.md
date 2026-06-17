@@ -31,10 +31,10 @@ A receita fica excelente (e melhor estruturada) usando farinha de trigo integral
 
 ## Brigadeiro (Recheio e Cobertura)
 *Nota: A quantidade abaixo é ideal para usar apenas como cobertura. Se você for fazer o bolo com recheio E cobertura, dobre esta receita.*
-1. 1 lata de leite condensado (uso da São Lourenço, 335g).
+1. 1 lata de {% ing id="leite-condensado-diet" %}leite condensado{% /ing %} (uso da São Lourenço, 335g).
 2. 15g de manteiga sem sal.
 3. 8g de cacau em pó.
-4. 10g de achocolatado (uso o Gold).
+4. 10g de {% ing id="achocolatado" %}achocolatado{% /ing %} (uso o Gold).
 5. Um pouco de creme de leite ou leite (apenas se for rechear e precisar afinar a cobertura no final).
 
 # Modo de Preparo
@@ -75,11 +75,19 @@ Esse passo é necessário **apenas** se você for rechear o bolo. Se for fazer a
 
 Fiz os cálculos para a **Meia Receita (feita com farinha integral)**, rendendo **10 fatias**. Essa conta é ótima para quem faz contagem de carboidratos para o bolus de insulina:
 
-* **Calorias:** 228 kcal
-* **Carboidratos Totais:** 19,5g
-* **Fibras:** 2,2g
-* **Polióis (Sorbitol do Leite Condensado):** 5,4g
-* **Proteínas:** 6,1g
-* **Gorduras:** 14,8g
+{% nutrition note="Valores por fatia · meia receita com farinha integral, rendendo 10 fatias." %}
+{% nutrient label="Carbo líquido" value="14,6 g" highlight=true /%}
+{% nutrient label="Calorias" value="228 kcal" /%}
+{% nutrient label="Proteínas" value="6,1 g" /%}
+{% nutrient label="Carbo total" value="19,5 g" /%}
+{% nutrient label="Gorduras" value="14,8 g" /%}
+{% nutrient label="Fibras" value="2,2 g" /%}
+{% nutrient label="Polióis" value="5,4 g" /%}
+{% /nutrition %}
 
-**Para contagem de carboidratos:** Descontando as fibras e metade dos polióis, a carga de carboidrato líquido fica em torno de **14,6g por fatia**. Por ser rico em fibras e gorduras boas, a absorção tende a ser mais lenta, ajudando a evitar picos glicêmicos.
+**Para contagem de carboidratos:** Descontando as fibras e metade dos polióis, a carga de carboidrato líquido fica em torno de **14,6g por fatia** (o número destacado acima). Por ser rico em fibras e gorduras boas, a absorção tende a ser mais lenta, ajudando a evitar picos glicêmicos.
+
+# Imagens
+
+![Bolo de cenoura com cobertura de brigadeiro](/images/bolo-de-cenoura/bolo-cenoura.jpg)
+![Fatia do bolo de cenoura](/images/bolo-de-cenoura/bolo-cenoura2.jpg)
