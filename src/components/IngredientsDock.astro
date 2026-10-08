@@ -1,0 +1,95 @@
+---
+// Painel fixo no rodapé com a lista de ingredientes, pra consultar as
+// quantidades sem sair do modo de preparo. O conteúdo vem da própria
+// seção "Ingredientes" da receita (copiada no cliente).
+---
+
+<aside class="dock" hidden data-ingredients-dock>
+  <button
+    type="button"
+    class="dock__toggle"
+    aria-expanded="false"
+    aria-controls="dock-panel"
+  >
+    <span>Ingredientes</span>
+    <span class="dock__chevron" aria-hidden="true">▲</span>
+  </button>
+  <div class="dock__panel" id="dock-panel" hidden></div>
+</aside>
+
+<script>
+  const KEPT_TAGS = ["H2", "H3", "UL", "OL"];
+
+  function ingredientsSection(): Element[] {
+    const heading = document.querySelector('h1[id^="ingredientes"]');
+    const section: Element[] = [];
+    let el = heading?.nextElementSibling;
+    while (el && el.tagName !== "H1") {
+      if (KEPT_TAGS.includes(el.tagName)) section.push(el);
+      el = el.nextElementSibling;
+    }
+    return section;
+  }
+
+  function buildPanel(section: Element[]): DocumentFragment {
+    const fragment = document.createDocumentFragment();
+    for (const el of section) {
+      const copy = el.cloneNode(true) as HTMLElement;
+      copy.removeAttribute("id");
+      if (el.tagName === "UL" || el.tagName === "OL") {
+        copy.classList.add("dock__list");
+        copy.querySelectorAll("li").forEach((li) => {
+          li.setAttribute("role", "checkbox");
+          li.setAttribute("aria-checked", "false");
+          li.tabIndex = 0;
+        });
+      }
+      fragment.append(copy);
+    }
+    return fragment;
+  }
+
+  function toggleItem(li: HTMLElement) {
+    const done = li.getAttribute("aria-checked") !== "true";
+    li.setAttribute("aria-checked", String(done));
+  }
+
+  function init() {
+    const dock = document.querySelector<HTMLElement>("[data-ingredients-dock]");
+    const section = ingredientsSection();
+    if (!dock || section.length === 0 || !dock.hidden) return;
+
+    const toggle = dock.querySelector<HTMLButtonElement>(".dock__toggle")!;
+    const panel = dock.querySelector<HTMLElement>(".dock__panel")!;
+    panel.append(buildPanel(section));
+    dock.hidden = false;
+
+    const reserveSpace = () => {
+      document.body.style.paddingBottom = `${dock.offsetHeight}px`;
+    };
+
+    toggle.addEventListener("click", () => {
+      const open = toggle.getAttribute("aria-expanded") !== "true";
+      toggle.setAttribute("aria-expanded", String(open));
+      panel.hidden = !open;
+      reserveSpace();
+    });
+
+    panel.addEventListener("click", (e) => {
+      const li = (e.target as Element).closest<HTMLElement>("li[role=checkbox]");
+      if (li) toggleItem(li);
+    });
+    panel.addEventListener("keydown", (e) => {
+      const li = (e.target as Element).closest<HTMLElement>("li[role=checkbox]");
+      if (li && (e.key === " " || e.key === "Enter")) {
+        e.preventDefault();
+        toggleItem(li);
+      }
+    });
+
+    reserveSpace();
+  }
+
+  init();
+  document.addEventListener("astro:page-load", init);
+</script>

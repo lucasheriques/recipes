@@ -452,3 +452,110 @@
 
     /* ------ REUSABLE UTILS - END ------ */
 }
+@layer components {
+    /* painel fixo de ingredientes (componente IngredientsDock) */
+    .dock {
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 40;
+        max-width: 48rem;
+        margin: 0 auto;
+        background-color: rgb(var(--color-bg-body));
+        border: 1px solid rgb(var(--color-primary-green));
+        border-bottom: 0;
+        border-radius: 0.9rem 0.9rem 0 0;
+        box-shadow: 0 -6px 24px rgb(0 0 0 / 0.15);
+    }
+
+    .dock[hidden],
+    .dock__panel[hidden] {
+        display: none;
+    }
+
+    .dock__toggle {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 0.7rem 1.25rem;
+        font-family: theme('fontFamily.heading');
+        font-weight: 700;
+        color: rgb(var(--color-text-heading));
+        background: none;
+        border: 0;
+        cursor: pointer;
+    }
+
+    .dock__chevron {
+        font-size: 0.75rem;
+        transition: transform 0.15s ease;
+    }
+
+    .dock__toggle[aria-expanded="true"] .dock__chevron {
+        transform: rotate(180deg);
+    }
+
+    .dock__panel {
+        max-height: 35vh;
+        overflow-y: auto;
+        padding: 0 1.25rem 0.75rem;
+        font-size: 0.8rem;
+        line-height: 1.4;
+        overscroll-behavior: contain;
+    }
+
+    .dock__panel h2,
+    .dock__panel h3 {
+        margin: 0.5rem 0 0.25rem;
+        font-size: 0.75rem;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        color: rgb(var(--color-text-muted));
+    }
+
+    .dock__panel h2 span,
+    .dock__panel h3 span {
+        padding-left: 0;
+    }
+
+    .dock__panel h2 span::before,
+    .dock__panel h3 span::before {
+        display: none;
+    }
+
+    .dock .dock__list {
+        margin: 0;
+        padding-left: 0;
+        list-style: none;
+    }
+
+    .dock .dock__list > li {
+        display: block;
+        position: relative;
+        margin: 0;
+        padding: 0.35rem 0 0.35rem 1.75rem;
+        cursor: pointer;
+    }
+
+    .dock .dock__list > li::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0.55rem;
+        width: 1rem;
+        height: 1rem;
+        border: 2px solid rgb(var(--color-primary-green));
+        border-radius: 0.25rem;
+    }
+
+    .dock .dock__list > li[aria-checked="true"] {
+        color: rgb(var(--color-text-muted));
+        text-decoration: line-through;
+    }
+
+    .dock .dock__list > li[aria-checked="true"]::before {
+        background-color: rgb(var(--color-primary-green));
+    }
+}

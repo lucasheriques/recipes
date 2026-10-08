@@ -71,17 +71,17 @@ em pasta dura que não cai, é aí que entra o leite, sempre em colheradas.
 # Modo de preparo
 
 1. Pré-aqueça o forno a 180 °C e unte uma forma de uns 20 cm.
-2. Amasse bem a banana com um garfo. Não precisa virar purê perfeito, uns
+2. Amasse bem a banana (370 g) com um garfo. Não precisa virar purê perfeito, uns
    pedacinhos são bons.
-3. Junte os ovos, o óleo, o adoçante e a baunilha e misture.
-4. Acrescente o farelo de aveia, a farinha integral, a farinha de amêndoas, a
-   canela e o sal.
+3. Junte os 2 ovos, o óleo (60 g), o adoçante (⅓ de xícara) e a baunilha (1 colher de chá) e misture.
+4. Acrescente o farelo de aveia (65 g), a farinha integral (60 g), a farinha de
+   amêndoas (25 g), a canela (1 colher de chá) e o sal (1 pitada generosa).
 5. Misture **à mão**, com fouet, garfo ou colher, só até sumir a farinha. Aqui
    vale a mesma regra do bolo de cenoura: mexer demais desenvolve o
    {% term def="A rede de proteína que se forma quando a farinha de trigo é trabalhada com líquido. Ótima pra pão, ruim pra bolo: quanto mais glúten, mais borrachudo e pesado fica o miolo." %}glúten{% /term %}
    e o bolo fica pesado.
 6. Se a massa estiver muito seca, adicione leite de pouquinho em pouquinho.
-7. **Por último**, coloque o fermento e misture delicadamente, poucas voltas.
+7. **Por último**, coloque o fermento (1 colher de sopa) e misture delicadamente, poucas voltas.
 8. Leve ao forno **imediatamente**. O fermento químico começa a agir assim que
    encosta na umidade, então cada minuto na bancada é bolha de ar perdida.
 
