@@ -1,0 +1,34 @@
+---
+// Cabeçalho padrão das receitas, preenchido pelo frontmatter
+// (rendimento, tempo, tags). Campos ausentes não aparecem.
+interface Props {
+  rendimento?: string;
+  tempo?: string;
+  tags: string[];
+}
+
+const { rendimento, tempo, tags } = Astro.props;
+const facts = [
+  { label: "Rende", value: rendimento },
+  { label: "Tempo", value: tempo },
+].filter((fact) => fact.value);
+---
+
+{
+  (facts.length > 0 || tags.length > 0) && (
+    <div class="recipe-meta">
+      {facts.map(({ label, value }) => (
+        <p class="recipe-meta__fact">
+          <span class="recipe-meta__label">{label}</span> {value}
+        </p>
+      ))}
+      {tags.length > 0 && (
+        <ul class="recipe-meta__tags unset">
+          {tags.map((tag) => (
+            <li>{tag}</li>
+          ))}
+        </ul>
+      )}
+    </div>
+  )
+}

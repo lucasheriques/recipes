@@ -5,6 +5,8 @@ description:
   "Chocolate quente com textura de cafeteria, cremoso e com espuminha, mas
   mantendo o açúcar sob controle. Tem variação low carb."
 date: 2026-06-17
+rendimento: "1 porção"
+tags: ["bebida", "diet"]
 ---
 
 Essa é uma versão mais leve do chocolate quente, com menos gordura que o belga,
@@ -29,17 +31,17 @@ com uma espuminha por cima.
 # Modo de preparo
 
 1. Antes de tudo, faça o {% term def="Termo de cozinha pra amido (maizena, no caso) dissolvido num pouco de líquido frio antes de ir pra panela. Serve pra ele não empelotar quando encontra o líquido quente." %}slurry{% /term %}: separe umas 2 ou 3 colheres de sopa (30 a 40 ml) do leite
-   ainda frio e dissolva a maizena ali até virar um líquido liso, sem nenhum
+   ainda frio e dissolva a maizena (1 colher de chá) ali até virar um líquido liso, sem nenhum
    grumo. Reserve. Esse passo é o que evita empelotar lá na frente.
-2. Aqueça o resto do leite em fogo médio-baixo, sem deixar ferver, por uns 2 a 4
+2. Aqueça o resto do leite (~215 ml) em fogo médio-baixo, sem deixar ferver, por uns 2 a 4
    minutos.
-3. Coloque o achocolatado, o cacau, o sal e o chocolate picado no leite quente e
-   mexa até derreter tudo e ficar homogêneo.
+3. Coloque o achocolatado (1 colher de sopa), o cacau (1 colher de chá), o sal
+   (1 pitada) e o chocolate picado (15 g) no leite quente e mexa até derreter tudo e ficar homogêneo.
 4. Agora junte a maizena que você reservou e mexa sem parar até engrossar um
    pouco. Ela só encorpa de verdade quando o leite chega perto de ferver (uns 85
    a 90°C), então deixa dar uma fervurinha bem leve por alguns segundos. Sem
    ferver forte, senão talha. Se quiser a versão mais indulgente, é aqui que
-   entra o creme de leite (mexe mais uns 90 segundos).
+   entra o creme de leite, 1 colher de sopa (mexe mais uns 90 segundos).
 5. Tire do fogo, passe pra uma caneca alta e estreita e bata com mixer ou
    frother por uns 20 a 30 segundos. Começa devagar e vai acelerando, mantendo a
    ponta no fundo pra {% term def="Misturar a gordura (do chocolate e do creme) com a parte líquida de um jeito que elas não se separem, formando uma textura uniforme e sedosa. Bater incorpora ar e ajuda nisso." %}emulsionar{% /term %} e subindo perto da superfície pra fazer espuma.

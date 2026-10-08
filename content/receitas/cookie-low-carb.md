@@ -5,6 +5,8 @@ description:
   "Uma receita fácil de cookies low carb. Pode ser tradicional de baunilha, ou
   de chocolate."
 date: 2023-04-04
+tempo: "10 min no forno"
+tags: ["low carb", "sem açúcar"]
 ---
 
 Baseado na receita da
@@ -37,10 +39,14 @@ Baseado na receita da
 
 # Modo de preparo
 
-1. Misture todos os ingredientes secos (menos o chocolate).
-2. Adicione a manteiga derretida e o leite e misture bem, vai formar uma
+1. Misture os ingredientes secos (menos o chocolate): farinha de amêndoas (120 g),
+   adoçante (30 g), sal (1/4 colher de chá) e bicarbonato (1/8 colher de chá).
+   Na versão de chocolate, troque o adoçante por achocolatado (24 g) e cacau
+   (10 g).
+2. Adicione a manteiga derretida (30 g) e o leite (15 ml) e misture bem, vai formar uma
    massinha que não gruda nas mãos.
-3. Adicione as gotas de chocolate e misture bem na massa.
+3. Adicione as gotas de chocolate (40 g; na versão de chocolate, 20 g de meio
+   amargo e 20 g de branco) e misture bem na massa.
 4. Faça bolinhas e coloque em uma assadeira forrada com papel manteiga.
 5. Leve ao forno pré-aquecido a 180ºC por 10 minutos.
 6. Quando os cookies ficarem prontos, eles vão ficar meio moles. Isso é normal!

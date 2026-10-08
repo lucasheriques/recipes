@@ -4,6 +4,8 @@ title: "Mingau de Aveia"
 description:
   "Mingau de Aveia. Bom para fazer pro @ quando ela tiver meio xoxa capenga."
 date: 2023-06-22
+tempo: "3 a 5 min no fogo"
+tags: ["sem açúcar"]
 ---
 
 Bom para fazer pro @ quando ela tiver meio xoxa capenga. Minha noiva diz que
@@ -18,7 +20,8 @@ aquece o coração.
 
 # Modo de preparo
 
-1. Só colocar tudo na panela e ficar mexendo até engrossar. Fica uma
+1. Só colocar tudo (250 ml de leite, 3 colheres de sopa de farelo de aveia e o
+   adoçante) na panela e ficar mexendo até engrossar. Fica uma
    consistência de mingau mesmo. Esqueci de contar o tempo, mas acho que foi uns
    3-5 minutos, em fogo médio. Olha a foto pra referência.
 

@@ -4,6 +4,7 @@ title: "Chocolate Quente Belga"
 description:
   "Chocolate quente super cremoso, bom para aquecer o coração (também)."
 date: 2023-07-16
+tags: ["bebida"]
 ---
 
 O importante aqui é usar uma marca de chocolate de qualidade. Eu gosto da linha
@@ -19,10 +20,10 @@ Malchoc da Callebaut, que são sem áçúcar.
 
 # Modo de preparo
 
-1. Aqueça 1/3 do leite com os chocolates e o sal, mexendo até derreter o
-   chocolate.
-2. Adicione o restante do leite, misture bem e aqueça até ficar bem quente.
-3. Adicione a canela em pó.
+1. Aqueça 1/3 do leite (~170 ml) com os chocolates (115 g de amargo e 60 g ao
+   leite) e o sal (1 pitada), mexendo até derreter o chocolate.
+2. Adicione o restante do leite (~330 ml), misture bem e aqueça até ficar bem quente.
+3. Adicione a canela em pó (1/4 colher de chá).
 4. Mexa o chocolate quente até ficar bem homogêneo.
 5. Sirva quentinho.
 

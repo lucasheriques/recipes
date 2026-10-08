@@ -6,6 +6,8 @@ description:
   Ancho de um lado, shiitake e tomate cereja do outro. Tem também uma tabela de
   cortes mais magros pra trocar a carne durante a semana."
 date: 2026-06-17
+tempo: "10 a 11 min na airfryer"
+tags: ["low carb", "alta proteína", "airfryer"]
 ---
 
 Lanche prático que faço na airfryer com tudo junto: ancho de um lado, shiitake
@@ -73,9 +75,9 @@ airfryer a 200°C, o calor já dá conta de higienizar. Então:
 
 # Modo de preparo
 
-1. Tira o ancho da geladeira 20 a 30 min antes. Carne em temperatura ambiente
+1. Tira o ancho (200 g) da geladeira 20 a 30 min antes. Carne em temperatura ambiente
    pega o ponto mais uniforme.
-2. **Tempera os vegetais:** numa tigela, junta o shiitake e o tomate cereja com
+2. **Tempera os vegetais:** numa tigela, junta o shiitake (80 a 100 g) e o tomate cereja (100 g) com
    uma pitada de sal, pimenta, alho em pó, ervas finas e bem pouca páprica
    defumada. Sem azeite, ou no máximo ½ colher de chá. Mistura com a mão pra
    distribuir bem e reserva.

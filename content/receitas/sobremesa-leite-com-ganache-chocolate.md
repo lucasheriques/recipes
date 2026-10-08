@@ -5,6 +5,8 @@ description:
   "Parece uma mousse. Muito fácil de fazer, fica com uma textura ótima e sabor
   nem um pouco enjoativo."
 date: 2023-08-11
+tempo: "~2 h no freezer"
+tags: ["sem açúcar", "sobremesa"]
 ---
 
 Parece uma mousse. Muito fácil de fazer, fica com uma textura ótima e sabor nem
@@ -37,9 +39,10 @@ Receita adaptada da
 
 ## Base
 
-1. Misturar a gelatina em pó sem sabor com meia xícara de água (120ml) e
+1. Misturar a gelatina em pó sem sabor (12 g) com meia xícara de água (120ml) e
    reserve. Ela deve ficar pelo menos 5min hidratando.
-2. Misturar o leite condensado, o creme de leite e o leite em pó numa vasilha
+2. Misturar o leite condensado (350 g), o creme de leite (600 g) e o leite em pó
+   (1 xícara e meia) numa vasilha
    grande com um fouet.
 3. Quando a gelatina estiver hidratada, coloca no microondas por 30s ou esquenta
    ela na panela para derreter, e misture a gelatina na vasilha grande.
@@ -49,7 +52,7 @@ Receita adaptada da
 
 ## Ganache
 
-1. Derreta o chocolate e o creme de leite juntos da maneira que preferir. Eu
+1. Derreta o chocolate (200 g) e o creme de leite (200 g) juntos da maneira que preferir. Eu
    faço na panela mesmo.
 2. Coloque a ganache ainda quente por cima da base, aí você pode só balançar um
    pouco a travessa para espalhar a ganache.

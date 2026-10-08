@@ -4,6 +4,7 @@ title: "Mousse de Oreo Falso"
 description:
   "Mousse de biscoito do tipo oreo, só que alguma variação sem açúcar."
 date: 2023-07-16
+tags: ["sem açúcar", "sobremesa"]
 ---
 
 # Ingredientes
@@ -17,7 +18,7 @@ date: 2023-07-16
 # Modo de preparo
 
 1. Pega o liquidificador
-2. Coloca nele: o recheio dos 10 biscoitos, o creme de leite, leite condensado
+2. Coloca nele: o recheio dos 10 biscoitos, 2 cremes de leite e 1 leite condensado
 3. Hidrata a gelatina (2 colheres de sopa e meia para meio pacote de gelatina)
 4. Bate o liquidificador até ficar bem misturado
 5. Derrete a gelatian no microondas 15s
