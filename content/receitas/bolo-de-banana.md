@@ -6,6 +6,9 @@ description:
   farinha de amêndoas. Tem a versão exata que fiz, o ajuste conforme o peso da
   banana e a contagem de carboidratos."
 date: 2026-08-11
+rendimento: "1 bolo de 20 cm (~10 fatias)"
+tempo: "30 a 40 min no forno"
+tags: ["bolo", "sem açúcar"]
 ---
 
 Esse bolo nasceu de uma pergunta simples: dá pra fazer bolo de banana sem açúcar

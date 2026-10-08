@@ -30,6 +30,9 @@ export const blog = z.discriminatedUnion("external", [
     description: z.optional(z.string()),
     ogImagePath: z.optional(z.string()),
     canonicalUrl: z.optional(z.string()),
+    rendimento: z.optional(z.string()),
+    tempo: z.optional(z.string()),
+    tags: z.array(z.string()).default([]),
   }),
   // external link
   baseSchema.extend({

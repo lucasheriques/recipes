@@ -3,6 +3,8 @@ external: false
 title: "Palha Italiana"
 description: "Palha italiana zero açúcar. Essa aqui não é necessariamente low carb."
 date: 2023-04-09
+tempo: "30 min na geladeira"
+tags: ["sem açúcar", "sobremesa"]
 ---
 
 Essa palha é o típico brigadeiro da culinária brasileira, mas feita com
@@ -24,11 +26,12 @@ ingredientes zero açúcar.
 
 # Modo de preparo
 
-1. Coloque todos os ingredientes em uma panela e leve ao fogo baixo, mexendo
+1. Coloque o leite condensado (350 g), o creme de leite (20 g), a manteiga (20 g),
+   o achocolatado (15 g) e o cacau (10 g) em uma panela e leve ao fogo baixo, mexendo
    sempre até que a mistura comece a desgrudar do fundo da panela. É aquele
    ponto de brigadeiro.
 2. Quando estiver pronto (desgrudando da panela), desligue o fogo. Depois, pegue
-   os biscoitos maizena e quebre-os bem grosseiramente. Depois, só jogar no
+   os biscoitos maizena (100 g) e quebre-os bem grosseiramente. Depois, só jogar no
    brigadeiro e misturar.
 3. Despeje a mistura em uma forma e espalhe bem. Aqui em casa, eu coloco numa
    travessa de vidro, e não gruda nada. Mas, já coloquei em uma travessa de

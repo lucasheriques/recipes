@@ -3,6 +3,7 @@ import { readOne, readAll } from "../../lib/markdoc/read";
 import { blog } from "../../lib/markdoc/frontmatter.schema";
 import Renderer from "../../components/Renderer.astro";
 import BlogPostMeta from "../../components/BlogPostMeta.astro";
+import RecipeMeta from "../../components/RecipeMeta.astro";
 import IngredientsDock from "../../components/IngredientsDock.astro";
 import ContentLayout from "../../layouts/ContentLayout.astro";
 import { SITE_URL } from "../../config";
@@ -49,6 +50,16 @@ const ogImageAbsoluteUrl =
     ogImageAbsoluteUrl={ogImageAbsoluteUrl}
     slot="meta"
   />
+  {
+    !frontmatter.external && (
+      <RecipeMeta
+        rendimento={frontmatter.rendimento}
+        tempo={frontmatter.tempo}
+        tags={frontmatter.tags}
+        slot="content"
+      />
+    )
+  }
   <Renderer content={content} slot="content" />
   <IngredientsDock slot="content" />
 </ContentLayout>

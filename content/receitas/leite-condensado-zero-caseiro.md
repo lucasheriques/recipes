@@ -5,6 +5,9 @@ description:
   "Perfeito pra substituir os leite condensados diet, que são caros e as vezes
   indigestos."
 date: 2023-08-10
+rendimento: "~350 g (1 lata)"
+tempo: "2 min de liquidificador + 2 h na geladeira"
+tags: ["sem açúcar", "base"]
 ---
 
 Eu costumava comprar leite condensado diet para fazer receitas que precisam
@@ -29,7 +32,8 @@ ficar com mais proteína, que é sempre bom.
 
 # Modo de preparo
 
-1. Misturar tudo no liquidificador e bater por 2 minutos. Deixar na geladeira
+1. Misturar tudo (200 ml de água quente, 150 g de leite em pó, 20 g de manteiga e
+   15 g de adoçante) no liquidificador e bater por 2 minutos. Deixar na geladeira
    por duas horas pra pegar consistência.
 
 [Aqui um vídeo](https://youtube.com/shorts/YhfCi9kutTM?feature=share) mostrando

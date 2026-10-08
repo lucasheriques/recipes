@@ -3,6 +3,9 @@ external: false
 title: "Bolo de Cenoura com Brigadeiro"
 description: "Um bolo de cenoura cremoso e fofinho. Inclui o passo a passo completo, versão reduzida e técnicas para cortar e rechear sem quebrar."
 date: 2026-05-01
+rendimento: "10 fatias (meia receita)"
+tempo: "35 a 45 min no forno"
+tags: ["bolo", "sem açúcar"]
 ---
 
 O clássico bolo de cenoura. O grande segredo para o bolo não ficar "solado" é não exagerar na quantidade de cenoura e misturar a farinha sempre à mão, nunca no liquidificador.
@@ -41,8 +44,8 @@ A receita fica excelente (e melhor estruturada) usando farinha de trigo integral
 
 ## A Massa
 1. Pré-aqueça o forno a 180°C. Unte a forma com óleo/manteiga e enfarinhe.
-2. No liquidificador, coloque as cenouras, os ovos, o óleo e o adoçante. Bata muito bem por uns 3 a 5 minutos, até ficar totalmente líquido e liso, sem pedaços de cenoura.
-3. Coloque a farinha de trigo, o fermento e o sal em uma tigela grande.
+2. No liquidificador, coloque as cenouras (270 g), os ovos (3), o óleo (200 g) e o adoçante (2 xícaras; na meia receita: 135 g, 2 ovos, 100 g e 1 xícara). Bata muito bem por uns 3 a 5 minutos, até ficar totalmente líquido e liso, sem pedaços de cenoura.
+3. Coloque a farinha de trigo (240 g; meia receita: 120 g), o fermento (15 g; meia receita: 7 a 8 g) e o sal (1 pitada) em uma tigela grande.
 4. Despeje o líquido do liquidificador sobre os secos e misture delicadamente com um fouet ou colher. Mexa **apenas** até a farinha sumir. Não bata a farinha no liquidificador para não desenvolver o glúten e pesar o bolo.
 5. Despeje na forma e leve ao forno.
     * Para a **receita padrão**: 35 a 45 minutos.
@@ -58,7 +61,7 @@ Esse passo é necessário **apenas** se você for rechear o bolo. Se for fazer a
 5. **Nunca** levante a parte de cima com as mãos. Deslize um prato raso ou um papelão entre as metades cortadas e levante o topo apoiado nele.
 
 ## Recheio e Cobertura
-1. Misture o leite condensado, manteiga, cacau e achocolatado numa panela e leve ao fogo baixo.
+1. Misture o leite condensado (1 lata, 335 g), a manteiga (15 g), o cacau (8 g) e o achocolatado (10 g) numa panela e leve ao fogo baixo.
 
 2. **Se for fazer APENAS a cobertura (como costumo fazer na meia receita):**
     * Mexa até chegar num ponto de quase brigadeiro (ainda meio mole). Desligue o fogo e despeje tudo direto sobre o bolo. Simples assim, sem precisar de montinhos!

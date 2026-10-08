@@ -559,3 +559,50 @@
         background-color: rgb(var(--color-primary-green));
     }
 }
+
+@layer components {
+    /* cabeçalho da receita (componente RecipeMeta) */
+    .recipe-meta {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 0.4rem 1.25rem;
+        margin: 0 0 1.75rem;
+        font-size: 0.85rem;
+    }
+
+    .recipe-meta .recipe-meta__fact {
+        margin: 0;
+    }
+
+    .recipe-meta__label {
+        margin-right: 0.25rem;
+        font-size: 0.7rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        color: rgb(var(--color-text-muted));
+    }
+
+    .recipe-meta .recipe-meta__tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.4rem;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    .recipe-meta .recipe-meta__tags > li {
+        margin: 0;
+        padding: 0.05rem 0.6rem;
+        border-radius: 999px;
+        font-size: 0.75rem;
+        background-color: rgb(var(--color-primary-green) / 0.25);
+        color: rgb(var(--color-text-bold));
+    }
+
+    .recipe-meta .recipe-meta__tags > li::before {
+        display: none;
+    }
+}

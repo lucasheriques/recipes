@@ -4,6 +4,9 @@ title: "Pão de Frango ou Massa de Pizza"
 description:
   "Uma massa de três ingredientes que pode virar pão ou massa de pizza."
 date: 2023-07-16
+rendimento: "7 fatias (pão) ou 4 (pizza)"
+tempo: "35 min (pão) ou 15 + 15 a 20 min (pizza)"
+tags: ["low carb", "alta proteína"]
 ---
 
 Essa é uma receita interessante que eu aprendi no site
@@ -27,8 +30,9 @@ testei.
 
 # Modo de preparo
 
-Colocar tudo no processador com exceção do fermento, misturar. Depois, colocar o
-fermento e pulsar algumas vezes.
+Colocar o frango (400 g; 200 g para pizza), os ovos (4; 3 para pizza) e a
+mussarela (50 g) no processador, misturar. Depois, colocar o fermento (1 colher
+de sopa; 1 colher de chá para pizza) e pulsar algumas vezes.
 
 Após isso, colocar na forma e assar a 200 graus (pré aquecido). Para a pizza,
 assar por 15 minutos, retirar e rechear e assar por mais 15-20min. Para o pão,
