@@ -36,8 +36,8 @@ A receita fica excelente (e melhor estruturada) usando farinha de trigo integral
 *Nota: A quantidade abaixo é ideal para usar apenas como cobertura. Se você for fazer o bolo com recheio E cobertura, dobre esta receita.*
 1. 1 lata de {% ing id="leite-condensado-diet" %}leite condensado{% /ing %} (uso da São Lourenço, 335g).
 2. 15g de manteiga sem sal.
-3. 8g de cacau em pó.
-4. 10g de {% ing id="achocolatado" %}achocolatado{% /ing %} (uso o Gold).
+3. 9,5g de cacau em pó (1 colher de sopa cheia).
+4. 12g de {% ing id="achocolatado" %}achocolatado{% /ing %} (2 colheres de sopa; uso o Gold).
 5. Um pouco de creme de leite ou leite (apenas se for rechear e precisar afinar a cobertura no final).
 
 # Modo de Preparo
@@ -61,7 +61,7 @@ Esse passo é necessário **apenas** se você for rechear o bolo. Se for fazer a
 5. **Nunca** levante a parte de cima com as mãos. Deslize um prato raso ou um papelão entre as metades cortadas e levante o topo apoiado nele.
 
 ## Recheio e Cobertura
-1. Misture o leite condensado (1 lata, 335 g), a manteiga (15 g), o cacau (8 g) e o achocolatado (10 g) numa panela e leve ao fogo baixo.
+1. Misture o leite condensado (1 lata, 335 g), a manteiga (15 g), o cacau (9,5 g, 1 colher de sopa) e o achocolatado (12 g, 2 colheres de sopa) numa panela e leve ao fogo baixo.
 
 2. **Se for fazer APENAS a cobertura (como costumo fazer na meia receita):**
     * Mexa até chegar num ponto de quase brigadeiro (ainda meio mole). Desligue o fogo e despeje tudo direto sobre o bolo. Simples assim, sem precisar de montinhos!
