@@ -164,7 +164,7 @@ input { font: inherit; }
 
 /* ---------- revelação ---------- */
 .flash { position: fixed; inset: 0; display: grid; place-items: center; z-index: 30; pointer-events: none; }
-.flash b { font-family: var(--font-stamp); font-size: clamp(1.6rem, 8vw, 3rem); color: var(--tinta); background: var(--manga); padding: 14px 22px; border-radius: 12px; transform: rotate(-3deg); animation: flash 1.2s ease-in-out both; text-align: center; box-shadow: 0 10px 40px #000a; }
+.flash b { font-family: var(--font-stamp); font-size: clamp(1.6rem, 8vw, 3rem); color: var(--tinta); background: var(--manga); padding: 14px 22px; border-radius: 12px; transform: rotate(-3deg); animation: flash 1s ease-in-out both; text-align: center; box-shadow: 0 10px 40px #000a; }
 
 .reveal-card { background: var(--papel); color: var(--tinta); border-radius: var(--r); padding: 14px 16px; animation: slideup .5s cubic-bezier(.2,1.2,.4,1) both; }
 .reveal-card .where { font-weight: 800; font-size: 1.5rem; letter-spacing: -.02em; line-height: 1.05; }
@@ -460,7 +460,7 @@ function pollingRoom(url) {
       }
     } catch { setOk(false); dirty = true; }
     inFlight = false;
-    timer = setTimeout(poll, document.hidden ? 2500 : 450);
+    timer = setTimeout(poll, document.hidden ? 2500 : 250);
   }
   document.addEventListener("visibilitychange", () => { if (!document.hidden) poll(); });
   setTimeout(poll, 0);
@@ -956,16 +956,16 @@ function mountReveal() {
     const banner = h("div", { class: "flash" }, h("b", {}, g.why === "all" ? "Todo mundo chutou!" : "Acabou o tempo!"));
     document.body.append(banner);
     sound.drum();
-    setTimeout(() => banner.remove(), 1250);
-    setTimeout(showAnswers, 1150);
+    setTimeout(() => banner.remove(), 1050);
+    setTimeout(showAnswers, 850);
     setTimeout(() => {
       showRight(); showStamp();
       if (mineRes) {
         if (mineRes[1] > 0) { sound.good(); buzz([30, 40, 30]); burstFrom(opts[g.c]); }
         else { sound.bad(); buzz(200); const w = $(".photo-wrap"); w?.classList.add("shake"); }
       }
-    }, 1900);
-    setTimeout(showRest, 2600);
+    }, 1450);
+    setTimeout(showRest, 2100);
     // mudou o líder?
     const before = [...ranking].sort((a, b) => (b.score - (b.delta || 0)) - (a.score - (a.delta || 0)))[0];
     const after = ranking[0];
