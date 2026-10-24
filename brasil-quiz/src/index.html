@@ -68,6 +68,10 @@ input { font: inherit; }
 .postcards div:nth-child(3) { transform: rotate(-1deg); }
 
 .field { display: grid; gap: 8px; margin-top: 18px; }
+.how { list-style: none; counter-reset: how; padding: 0; margin: 18px 0 4px; display: grid; gap: 10px; }
+.how li { counter-increment: how; display: grid; grid-template-columns: 32px 1fr; gap: 10px; align-items: start; line-height: 1.4; color: #d9e7e4; font-size: .95rem; }
+.how li::before { content: counter(how); font-family: var(--font-stamp); font-size: .85rem; width: 32px; height: 32px; border-radius: 50%; background: var(--papel); color: var(--tinta); display: grid; place-items: center; transform: rotate(-8deg); }
+.how b { color: var(--papel); }
 .field label { font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.12em; color: var(--muted); font-weight: 600; }
 .field input { width: 100%; padding: 16px; border-radius: var(--r); border: 2px solid #ffffff22; background: #00000033; color: var(--papel); font-size: 1.25rem; font-weight: 600; }
 .swatches { display: flex; gap: 10px; flex-wrap: wrap; }
@@ -105,6 +109,13 @@ input { font: inherit; }
 .diff { color: var(--manga); font-size: .9rem; letter-spacing: 2px; }
 .x2 { font-family: var(--font-stamp); font-size: .75rem; background: var(--hibisco); color: var(--tinta); padding: 5px 8px; border-radius: 6px; animation: wiggle 1s infinite; }
 .hud .grow { flex: 1; }
+.streak { font-family: var(--font-stamp); font-size: .8rem; color: var(--manga); animation: pulse .6s infinite alternate; }
+.board-btn { width: 36px; height: 36px; font-size: 1rem; }
+.sheet-bg { position: fixed; inset: 0; z-index: 55; background: #0009; display: flex; align-items: flex-end; justify-content: center; animation: fade .2s; }
+.sheet { width: 100%; max-width: 560px; max-height: 80dvh; overflow-y: auto; background: var(--mata); border-radius: 20px 20px 0 0; padding: 18px max(16px, env(safe-area-inset-right, 0px)) calc(20px + env(safe-area-inset-bottom, 0px)) max(16px, env(safe-area-inset-left, 0px)); box-shadow: 0 -10px 40px #000a; animation: sheetup .3s cubic-bezier(.2,1.2,.4,1); }
+.shake { animation: shake .45s; }
+.burst { position: fixed; z-index: 45; pointer-events: none; width: 10px; height: 10px; border-radius: 2px; animation: burst .9s ease-out forwards; }
+.leader { position: fixed; left: 50%; top: 18%; z-index: 35; transform: translateX(-50%); background: var(--manga); color: var(--tinta); font-weight: 800; padding: 12px 18px; border-radius: 999px; box-shadow: 0 10px 30px #000a; animation: leader 2.6s ease-in-out forwards; white-space: nowrap; pointer-events: none; }
 .timer { font-family: var(--font-stamp); font-size: 1.1rem; min-width: 2.4ch; text-align: right; font-variant-numeric: tabular-nums; }
 .timer.low { color: var(--hibisco); animation: pulse .5s infinite alternate; }
 .bar { height: 6px; border-radius: 3px; background: #ffffff1a; overflow: hidden; }
@@ -221,6 +232,11 @@ canvas#confetti { position: fixed; inset: 0; width: 100%; height: 100%; pointer-
 @keyframes floatup { 0% { transform: translateY(0) scale(.6); opacity: 0; } 15% { opacity: 1; transform: translateY(-20px) scale(1.1); } 100% { transform: translateY(-46vh) scale(1); opacity: 0; } }
 @keyframes wiggle { 0%, 100% { transform: rotate(-4deg); } 50% { transform: rotate(4deg); } }
 @keyframes pulse { to { transform: scale(1.15); } }
+@keyframes fade { from { opacity: 0; } }
+@keyframes sheetup { from { transform: translateY(100%); } }
+@keyframes shake { 0%, 100% { transform: rotate(-0.6deg); } 20% { transform: translateX(-8px) rotate(-1.5deg); } 40% { transform: translateX(7px) rotate(.5deg); } 60% { transform: translateX(-5px); } 80% { transform: translateX(3px); } }
+@keyframes burst { to { transform: translate(var(--dx), var(--dy)) rotate(540deg); opacity: 0; } }
+@keyframes leader { 0% { transform: translateX(-50%) translateY(-30px) scale(.6); opacity: 0; } 15%, 80% { transform: translateX(-50%) translateY(0) scale(1); opacity: 1; } 100% { transform: translateX(-50%) translateY(-20px); opacity: 0; } }
 @keyframes rise { from { transform: translateY(60px); opacity: 0; } }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
@@ -255,9 +271,9 @@ const MODES = {
   misto:     { label: "Misto", hint: "começa fácil e esquenta", mix: [0.30, 0.40, 0.30], near: 1.4, noise: 2 },
   raiz:      { label: "Raiz", hint: "pra quem já rodou o Brasil", mix: [0.10, 0.35, 0.55], near: 2.2, noise: 1.5 },
 };
-const ROUNDS = [8, 12, 16];
+const ROUNDS = [10, 20, 30];
 const SECONDS = [15, 20, 30];
-const REVEAL_MS = 15000;
+const REVEAL_MS = 12000;
 const LEAD_FIRST = 3200, LEAD = 1800;
 const DIFF_MULT = { 1: 1, 2: 1.2, 3: 1.5 };
 
@@ -382,7 +398,7 @@ const S = {
   screen: "home",           // home | lobby | game | mesa
   room: null, roomState: "connecting", // connecting | on | off
   peers: [],
-  settings: store.get("oei:settings") || { rounds: 12, seconds: 20, mode: "misto" },
+  settings: store.get("oei:settings2") || { rounds: 30, seconds: 20, mode: "misto" },
   host: null,               // motor do jogo quando EU comando
   g: null,                  // jogo atual (vindo de quem comanda)
   gFrom: null,              // peer de quem comanda
@@ -390,6 +406,9 @@ const S = {
   seenRx: new Map(),
   myRx: 0,
   usedPlaces: new Set(store.get("oei:used") || []),
+  lastG: store.get("oei:lastg"),   // última foto do jogo (pra alguém assumir se quem comanda sair)
+  lastSeen: 0,
+  board: false,
 };
 const saveMe = () => store.set("oei:me", S.me);
 
@@ -449,6 +468,7 @@ function receiveGame(g, peer) {
   const prev = S.g;
   S.g = g; S.gFrom = peer;
   if (g) {
+    if (Array.isArray(g.L)) { S.lastG = g; S.lastSeen = performance.now(); if (g.v % 3 === 0 || g.ph !== "q") store.set("oei:lastg", { ...g, saved: Date.now() }); }
     const key = g.id + ":" + g.i + ":" + g.ph;
     if (!S.local[key]) {
       const now = performance.now();
@@ -456,8 +476,8 @@ function receiveGame(g, peer) {
     }
     if (S.joined && S.screen !== "mesa") S.screen = "game";
   } else if (prev && S.screen === "game") {
-    S.screen = "lobby";
-    toast(prev.ph === "f" ? "" : "Quem comandava a partida saiu. Comecem outra!");
+    if (prev.ph === "f") S.screen = "lobby";
+    else S.lastSeen = performance.now();
   }
   render();
 }
@@ -480,6 +500,30 @@ function stopHosting() {
   S.host = null;
   setPresence({ g: null });
 }
+// Retoma uma partida a partir do último estado visto (quem comandava saiu ou travou).
+function resumeHosting(g) {
+  if (!g || !Array.isArray(g.L) || g.ph === "f") return;
+  clearTimeout(S.host?.timer);
+  const i = g.ph === "q" ? g.i - 1 : g.i;   // pergunta interrompida recomeça; revelação segue pra próxima
+  S.host = { id: rid(6), t: Date.now(), set: { mode: g.mode, seconds: g.dur, rounds: g.n }, list: g.L, i, ph: "r", sc: g.sc || {}, streaks: g.k || {}, answers: {}, part: [], q: null, startAt: 0, deadline: 0, advAt: 0, res: null, reason: "", timer: null, v: 0 };
+  toast("Você assumiu o comando da partida 🎮");
+  hostNext();
+}
+function firstOnline() { return onlinePlayers().map(p => p.pid).sort()[0]; }
+// Vigia: se a partida sumir ou travar, o primeiro da lista assume.
+setInterval(() => {
+  if (!S.joined || S.host || S.screen === "mesa" || S.roomState !== "on") return;
+  const now = performance.now();
+  const g = S.g;
+  let stalled = false;
+  if (g) {
+    const loc = S.local[`${g.id}:${g.i}:${g.ph}`];
+    if (loc && g.ph === "q" && now > loc.deadline + 6000) stalled = true;
+    if (loc && g.ph === "r" && now > loc.advAt + 8000) stalled = true;
+  } else if (S.lastG && S.lastG.ph !== "f" && now - S.lastSeen < 60000 && now - S.lastSeen > 3500) stalled = true;
+  if (stalled && firstOnline() === S.me.pid) resumeHosting(g || S.lastG);
+}, 1000);
+
 function ensureScores() {
   for (const p of onlinePlayers()) {
     const s = S.host.sc[p.pid];
@@ -547,7 +591,7 @@ function hostReveal(reason) {
 }
 function hostPublish() {
   const H = S.host, now = Date.now();
-  const g = { id: H.id, t: H.t, v: ++H.v, ph: H.ph, n: H.list.length, i: H.i, dur: H.set.seconds, mode: H.set.mode, sc: H.sc };
+  const g = { id: H.id, t: H.t, v: ++H.v, ph: H.ph, n: H.list.length, i: H.i, dur: H.set.seconds, mode: H.set.mode, sc: H.sc, L: H.list, k: H.streaks };
   if (H.ph !== "f") Object.assign(g, { p: H.q.pi, o: H.q.o, x2: H.q.x2 });
   if (H.ph === "q") Object.assign(g, { st: Math.max(0, H.startAt - now), rem: H.deadline - now, ans: Object.keys(H.answers) });
   if (H.ph === "r") Object.assign(g, { c: H.q.c, res: H.res, why: H.reason, adv: H.advAt - now, nx: H.list[H.i + 1] ?? null });
@@ -605,6 +649,7 @@ function sceneKey() {
   if (S.screen === "mesa") return "mesa:" + MESA.step + ":" + MESA.i;
   if (!S.joined) return "home:" + S.roomState;
   if (S.screen === "game" && S.g) return `game:${S.g.id}:${S.g.i}:${S.g.ph}`;
+  if (S.screen === "game") return "wait";
   return "lobby:" + S.roomState;
 }
 function mount() {
@@ -612,6 +657,7 @@ function mount() {
   app.replaceChildren();
   if (S.screen === "mesa") return mountMesa();
   if (!S.joined) return mountHome();
+  if (S.screen === "game" && !S.g) return mountWait();
   if (S.screen === "game" && S.g) {
     keepAwake();
     if (S.g.ph === "q") return mountQuestion();
@@ -657,8 +703,12 @@ function mountHome() {
     h("div", { class: "scroll" },
       h("div", { class: "hero" },
         h("h1", {}, "Onde é ", h("em", {}, "isso"), "?"),
-        h("p", {}, `Aparece uma foto do Brasil, cada um chuta a cidade no próprio celular. Quem acerta mais rápido leva mais ponto. ${PLACES.length} fotos de praia, igreja, mata, skyline e cidade histórica.`)),
+        h("p", {}, `${PLACES.length} fotos do Brasil: praia, igreja, mata, skyline, cidade histórica. Você sabe onde fica cada uma?`)),
       h("div", { class: "postcards", "aria-hidden": "true" }, sample.map(p => h("div", { style: `background-image:url(${imgUrl(p)})` }))),
+      h("ol", { class: "how" },
+        h("li", {}, h("span", {}, h("b", {}, "Todo mundo abre este link"), " no próprio celular e coloca o nome.")),
+        h("li", {}, h("span", {}, h("b", {}, "Alguém aperta Começar."), " Aparece uma foto: toque na cidade que você acha que é.")),
+        h("li", {}, h("span", {}, h("b", {}, "Rápido vale mais."), " Quando todos votam, a resposta aparece pra todo mundo junto com o placar."))),
       h("form", { onsubmit: e => { e.preventDefault(); join(); } },
         h("div", { class: "field" }, h("label", { for: "name" }, "Como a galera te chama?"), nameIn),
         h("div", { class: "field" }, h("label", {}, "Sua cor"),
@@ -674,7 +724,7 @@ function mountLobby() {
   const players = onlinePlayers();
   const g = S.g;
   const set = S.settings;
-  const saveSet = patch => { Object.assign(S.settings, patch); store.set("oei:settings", S.settings); mountKeep(); };
+  const saveSet = patch => { Object.assign(S.settings, patch); store.set("oei:settings2", S.settings); mountKeep(); };
   const seg = (opts, cur, fmt, onPick) => h("div", { class: "seg", role: "group" }, opts.map(o => h("button", { type: "button", "aria-pressed": String(o === cur), onclick: () => onPick(o) }, fmt(o))));
   app.append(
     topBar(h("button", { class: "icon-btn", "aria-label": "Trocar nome", onclick: () => { S.joined = false; setPresence({ name: null }); render(); } }, "✏️")),
@@ -683,6 +733,10 @@ function mountLobby() {
       h("div", { class: "players" }, players.map(p => h("span", { class: "chip" }, av(p.name, p.color), p.name, p.pid === S.me.pid ? h("span", { class: "you" }, "você") : null))),
       players.length < 2 ? h("p", { class: "note" }, "Mande o link deste artifact pros amigos. Assim que eles abrirem e escolherem um nome, aparecem aqui.") : null,
       g && g.ph === "f" ? h("div", { class: "banner" }, "A última partida acabou. Qualquer um pode começar outra.") : null,
+      !g && S.lastG && S.lastG.ph !== "f" && Date.now() - (S.lastG.saved || 0) < 30 * 60000
+        ? h("div", { class: "banner" }, `Tem uma partida parada na rodada ${S.lastG.i + 1}/${S.lastG.n}. `,
+            h("button", { class: "btn", style: "margin-top:10px;padding:10px 16px;font-size:1rem", disabled: S.roomState !== "on", onclick: () => resumeHosting(S.lastG) }, "Continuar de onde parou"))
+        : null,
 
       h("div", { class: "section-title" }, "Partida"),
       h("div", { class: "setting" }, h("span", {}, "Dificuldade ", h("small", {}, "· " + MODES[set.mode].hint)),
@@ -694,15 +748,41 @@ function mountLobby() {
       h("button", { class: "btn block", disabled: S.roomState !== "on", onclick: () => { sound.ensure(); startHosting(); } }, "Começar partida ▶")));
 }
 
+// ---------- quem comandava caiu ----------
+function mountWait() {
+  app.append(topBar(), h("div", { class: "scroll", style: "display:grid;place-items:center;text-align:center" },
+    h("div", { class: "stack" },
+      h("div", { class: "countdown", style: "position:static;background:none" }, h("b", { style: "font-size:4rem" }, "📡")),
+      h("strong", { style: "font-size:1.4rem" }, "Reconectando a partida…"),
+      h("p", { class: "note" }, "Quem comandava saiu ou perdeu a conexão. Em alguns segundos alguém assume e o jogo continua do mesmo placar."),
+      h("button", { class: "btn ghost", onclick: () => { S.screen = "lobby"; render(); } }, "Voltar pro lobby"))));
+}
+
 // ---------- pergunta ----------
 function gameHud(g) {
   const p = PLACES[g.p];
+  const mine = g.sc?.[S.me.pid];
   return h("div", { class: "hud" },
     h("span", { class: "round-tag" }, `${g.i + 1}/${g.n}`),
     h("span", { class: "diff", title: "dificuldade" }, "★".repeat(p.d) + "☆".repeat(3 - p.d)),
     g.x2 ? h("span", { class: "x2" }, "×2 FINAL") : null,
+    mine && mine[3] >= 2 && g.ph === "q" ? h("span", { class: "streak" }, "🔥" + mine[3]) : null,
     h("span", { class: "grow" }),
-    h("span", { class: "timer", id: "timer" }, ""));
+    h("span", { class: "timer", id: "timer" }, ""),
+    g.sc ? h("button", { class: "icon-btn board-btn", "aria-label": "Ver placar", onclick: () => openBoard() }, "🏆") : null);
+}
+function openBoard() {
+  const g = S.g; if (!g?.sc) return;
+  const rank = Object.entries(g.sc).map(([pid, s]) => ({ pid, name: s[0], color: s[1], score: s[2], streak: s[3], correct: s[4] })).sort((a, b) => b.score - a.score);
+  const close = () => sheet.remove();
+  const sheet = h("div", { class: "sheet-bg", onclick: e => { if (e.target === sheet) close(); } },
+    h("div", { class: "sheet", role: "dialog", "aria-label": "Placar" },
+      h("div", { class: "brand" }, h("strong", { style: "font-size:1.3rem" }, `Placar · rodada ${g.i + 1}/${g.n}`), h("button", { class: "icon-btn", "aria-label": "Fechar", onclick: close }, "✕")),
+      h("div", { class: "board" }, rank.map((r, i) => h("div", { class: "line" + (r.pid === S.me.pid ? " me" : "") },
+        h("span", { class: "pos" }, i === 0 && r.score > 0 ? "👑" : i + 1 + "º"), av(r.name, r.color),
+        h("span", { class: "name" }, r.name, h("small", {}, `${r.correct} acerto${r.correct === 1 ? "" : "s"}${r.streak >= 2 ? ` · 🔥${r.streak} seguidas` : ""}`)),
+        h("span"), h("span", { class: "score" }, r.score))))));
+  document.body.append(sheet);
 }
 function photo(g, extra) {
   const p = PLACES[g.p];
@@ -831,9 +911,18 @@ function mountReveal() {
     setTimeout(showAnswers, 1150);
     setTimeout(() => {
       showRight(); showStamp();
-      if (mineRes) { if (mineRes[1] > 0) { sound.good(); buzz([30, 40, 30]); } else { sound.bad(); buzz(200); } }
+      if (mineRes) {
+        if (mineRes[1] > 0) { sound.good(); buzz([30, 40, 30]); burstFrom(opts[g.c]); }
+        else { sound.bad(); buzz(200); const w = $(".photo-wrap"); w?.classList.add("shake"); }
+      }
     }, 1900);
     setTimeout(showRest, 2600);
+    // mudou o líder?
+    const before = [...ranking].sort((a, b) => (b.score - (b.delta || 0)) - (a.score - (a.delta || 0)))[0];
+    const after = ranking[0];
+    if (ranking.length >= 2 && after && before && after.pid !== before.pid && after.score > (ranking[1]?.score ?? 0)) {
+      setTimeout(() => { const el = h("div", { class: "leader" }, `👑 ${after.name} assumiu a liderança!`); document.body.append(el); sound.fanfare(); setTimeout(() => el.remove(), 2700); }, 3300);
+    }
   } else { showAnswers(); showRight(); showStamp(); showRest(); }
 
   const tick = () => {
@@ -841,6 +930,16 @@ function mountReveal() {
     const el = $("#auto"); if (el) el.textContent = left > 0 ? `${g.nx == null ? "Resultado" : "Próxima foto"} em ${left}s` : "";
   };
   tick(); tickHandle = setInterval(tick, 250);
+}
+function burstFrom(el) {
+  if (!el || matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+  const r = el.getBoundingClientRect(), cx = r.left + r.width / 2, cy = r.top + r.height / 2;
+  const cols = ["#ffb627", "#2ec4b6", "#ff5d73", "#4d8dff", "#36d27a", "#fff3dd"];
+  for (let i = 0; i < 28; i++) {
+    const a = Math.random() * Math.PI * 2, d = 60 + Math.random() * 140;
+    const b = h("i", { class: "burst", style: `left:${cx}px;top:${cy}px;background:${cols[i % cols.length]};--dx:${Math.cos(a) * d}px;--dy:${Math.sin(a) * d - 40}px` });
+    document.body.append(b); setTimeout(() => b.remove(), 950);
+  }
 }
 function updateReveal() { /* nada muda até a próxima rodada */ }
 function countUpScores() {
