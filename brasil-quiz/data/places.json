@@ -1,0 +1,2301 @@
+[
+  {
+    "id": "827d5caee46a",
+    "where": "Rio de Janeiro",
+    "uf": "RJ",
+    "name": "Cristo Redentor",
+    "state": "RJ",
+    "type": "u",
+    "diff": 1,
+    "fact": "Inaugurado em 1931 no alto do Corcovado, tem 30 metros de altura (38 com o pedestal).",
+    "file": "Christ_the_Redeemer_-_Cristo_Redentor.jpg",
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4f/Christ_the_Redeemer_-_Cristo_Redentor.jpg/1920px-Christ_the_Redeemer_-_Cristo_Redentor.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1600,
+      "height": 2399,
+      "page": "https://commons.wikimedia.org/wiki/File:Christ_the_Redeemer_-_Cristo_Redentor.jpg",
+      "author": "Arne Müseler",
+      "license": "CC BY-SA 3.0 de"
+    }
+  },
+  {
+    "id": "b955b543bc03",
+    "where": "Rio de Janeiro",
+    "uf": "RJ",
+    "name": "Pão de Açúcar",
+    "state": "RJ",
+    "type": "n",
+    "diff": 1,
+    "fact": "O bondinho que sobe da Praia Vermelha até o topo funciona desde 1912.",
+    "file": "Sugarloaf Cable Car viewed from Rio de Janeiro, Brazil.jpg",
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ed/Sugarloaf_Cable_Car_viewed_from_Rio_de_Janeiro%2C_Brazil.jpg/1920px-Sugarloaf_Cable_Car_viewed_from_Rio_de_Janeiro%2C_Brazil.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1600,
+      "height": 1067,
+      "page": "https://commons.wikimedia.org/wiki/File:Sugarloaf_Cable_Car_viewed_from_Rio_de_Janeiro,_Brazil.jpg",
+      "author": "Wilfredor",
+      "license": "CC0"
+    }
+  },
+  {
+    "id": "24e3f4237154",
+    "where": "Foz do Iguaçu",
+    "uf": "PR",
+    "name": "Cataratas do Iguaçu",
+    "state": "PR",
+    "type": "n",
+    "diff": 1,
+    "fact": "São cerca de 275 quedas d'água na fronteira entre Brasil e Argentina.",
+    "file": "Aerial_Foz_de_Iguaçu_26_Nov_2005.jpg",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/91/Aerial_Foz_de_Igua%C3%A7u_26_Nov_2005.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "width": 1600,
+      "height": 987,
+      "page": "https://commons.wikimedia.org/wiki/File:Aerial_Foz_de_Igua%C3%A7u_26_Nov_2005.jpg",
+      "author": "Mariordo (Mario Roberto Durán Ortiz)",
+      "license": "CC BY-SA 4.0"
+    }
+  },
+  {
+    "id": "d6661ee999a6",
+    "where": "Lençóis Maranhenses",
+    "uf": "MA",
+    "name": "Lençóis Maranhenses",
+    "state": "MA",
+    "type": "n",
+    "diff": 1,
+    "fact": "As lagoas entre as dunas se enchem com a chuva e ficam no auge entre junho e setembro.",
+    "file": "Lençóis_Maranhenses_2018.jpg",
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/Len%C3%A7%C3%B3is_Maranhenses_2018.jpg/1920px-Len%C3%A7%C3%B3is_Maranhenses_2018.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1600,
+      "height": 2124,
+      "page": "https://commons.wikimedia.org/wiki/File:Len%C3%A7%C3%B3is_Maranhenses_2018.jpg",
+      "author": "Julius Dadalti",
+      "license": "CC BY-SA 4.0"
+    }
+  },
+  {
+    "id": "8a8bf5f1c3c5",
+    "where": "Brasília",
+    "uf": "DF",
+    "name": "Congresso Nacional",
+    "state": "DF",
+    "type": "u",
+    "diff": 1,
+    "fact": "A cúpula virada pra baixo é do Senado; a virada pra cima, da Câmara. Projeto de Oscar Niemeyer.",
+    "file": "Congresso_do_Brasil.jpg",
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e4/Congresso_do_Brasil.jpg/1920px-Congresso_do_Brasil.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1600,
+      "height": 1025,
+      "page": "https://commons.wikimedia.org/wiki/File:Congresso_do_Brasil.jpg",
+      "author": "P - A - S",
+      "license": "CC BY-SA 2.0"
+    }
+  },
+  {
+    "id": "30cd2d197684",
+    "where": "Manaus",
+    "uf": "AM",
+    "name": "Teatro Amazonas",
+    "state": "AM",
+    "type": "u",
+    "diff": 1,
+    "fact": "Inaugurado em 1896 em Manaus, no auge do ciclo da borracha.",
+    "file": "Noite_no_Teatro_Amazonas_(cropped).jpg",
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/Noite_no_Teatro_Amazonas_%28cropped%29.jpg/1920px-Noite_no_Teatro_Amazonas_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1600,
+      "height": 1512,
+      "page": "https://commons.wikimedia.org/wiki/File:Noite_no_Teatro_Amazonas_(cropped).jpg",
+      "author": "Susan Valentim",
+      "license": "CC BY-SA 4.0"
+    }
+  },
+  {
+    "id": "481a15a36540",
+    "where": "Salvador",
+    "uf": "BA",
+    "name": "Pelourinho",
+    "state": "BA",
+    "type": "u",
+    "diff": 1,
+    "fact": "O centro histórico de Salvador é Patrimônio Mundial da UNESCO desde 1985.",
+    "file": "Salvadorpelourinho.jpg",
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ca/Salvadorpelourinho.jpg/1920px-Salvadorpelourinho.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1600,
+      "height": 2133,
+      "page": "https://commons.wikimedia.org/wiki/File:Salvadorpelourinho.jpg",
+      "author": "Andrevruas",
+      "license": "CC BY-SA 3.0"
+    }
+  },
+  {
+    "id": "bce9f65665cf",
+    "where": "Rio de Janeiro",
+    "uf": "RJ",
+    "name": "Escadaria Selarón",
+    "state": "RJ",
+    "type": "u",
+    "diff": 1,
+    "fact": "O artista chileno Jorge Selarón cobriu os degraus com mais de 2 mil azulejos do mundo todo.",
+    "file": "Escadaria_Selarón_-_Rio_de_Janeiro_-_20240417062601.jpg",
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/Escadaria_Selar%C3%B3n_-_Rio_de_Janeiro_-_20240417062601.jpg/1920px-Escadaria_Selar%C3%B3n_-_Rio_de_Janeiro_-_20240417062601.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1600,
+      "height": 1067,
+      "page": "https://commons.wikimedia.org/wiki/File:Escadaria_Selar%C3%B3n_-_Rio_de_Janeiro_-_20240417062601.jpg",
+      "author": "Donatas Dabravolskas",
+      "license": "CC BY-SA 4.0"
+    }
+  },
+  {
+    "id": "059b5e70547c",
+    "where": "Brasília",
+    "uf": "DF",
+    "name": "Catedral de Brasília",
+    "state": "DF",
+    "type": "u",
+    "diff": 1,
+    "fact": "As 16 colunas curvas de Niemeyer lembram mãos erguidas para o céu.",
+    "file": "Catedral_Metropolitana_de_Brasilia.jpg",
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f4/Catedral_Metropolitana_de_Brasilia.jpg/1920px-Catedral_Metropolitana_de_Brasilia.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1600,
+      "height": 1493,
+      "page": "https://commons.wikimedia.org/wiki/File:Catedral_Metropolitana_de_Brasilia.jpg",
+      "author": "Tissiana de A. de Souza",
+      "license": "CC BY-SA 4.0"
+    }
+  },
+  {
+    "id": "f994395669ed",
+    "where": "Rio de Janeiro",
+    "uf": "RJ",
+    "name": "Maracanã",
+    "state": "RJ",
+    "type": "u",
+    "diff": 1,
+    "fact": "Construído para a Copa de 1950, chegou a receber perto de 200 mil pessoas.",
+    "file": "Aerial view of the Maracanã Stadium.jpg",
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Aerial_view_of_the_Maracan%C3%A3_Stadium.jpg/1920px-Aerial_view_of_the_Maracan%C3%A3_Stadium.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1600,
+      "height": 1067,
+      "page": "https://commons.wikimedia.org/wiki/File:Aerial_view_of_the_Maracan%C3%A3_Stadium.jpg",
+      "author": "Pedro Lopez from Ottawa, Canada",
+      "license": "CC BY 2.0"
+    }
+  },
+  {
+    "id": "52b945b5fb41",
+    "where": "Salvador",
+    "uf": "BA",
+    "name": "Elevador Lacerda",
+    "state": "BA",
+    "type": "u",
+    "diff": 1,
+    "fact": "Liga a Cidade Baixa à Cidade Alta de Salvador desde 1873.",
+    "file": "Elevador_Lacerda_7610.jpg",
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f5/Elevador_Lacerda_7610.jpg/1920px-Elevador_Lacerda_7610.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1600,
+      "height": 2400,
+      "page": "https://commons.wikimedia.org/wiki/File:Elevador_Lacerda_7610.jpg",
+      "author": "Paul R. Burley",
+      "license": "CC BY-SA 4.0"
+    }
+  },
+  {
+    "id": "89adc222de73",
+    "where": "São Paulo",
+    "uf": "SP",
+    "name": "MASP",
+    "state": "SP",
+    "type": "u",
+    "diff": 1,
+    "fact": "O vão livre de 74 metros na Avenida Paulista foi projetado por Lina Bo Bardi.",
+    "file": "Masp.jpg",
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/65/Masp.jpg/1920px-Masp.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1600,
+      "height": 1067,
+      "page": "https://commons.wikimedia.org/wiki/File:Masp.jpg",
+      "author": "Andredeak",
+      "license": "CC BY-SA 3.0"
+    }
+  },
+  {
+    "id": "6300dabf57b1",
+    "where": "Rio de Janeiro",
+    "uf": "RJ",
+    "name": "Arcos da Lapa",
+    "state": "RJ",
+    "type": "u",
+    "diff": 1,
+    "fact": "Era um aqueduto do século XVIII; hoje o bondinho de Santa Teresa passa por cima.",
+    "file": "2018_Rio_de_Janeiro_-_Aqueduto_da_Carioca.jpg",
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/2018_Rio_de_Janeiro_-_Aqueduto_da_Carioca.jpg/1920px-2018_Rio_de_Janeiro_-_Aqueduto_da_Carioca.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1600,
+      "height": 1200,
+      "page": "https://commons.wikimedia.org/wiki/File:2018_Rio_de_Janeiro_-_Aqueduto_da_Carioca.jpg",
+      "author": "Felipe Restrepo Acosta",
+      "license": "CC BY-SA 4.0"
+    }
+  },
+  {
+    "id": "e81e613d6027",
+    "where": "Rio de Janeiro",
+    "uf": "RJ",
+    "name": "Praia de Copacabana",
+    "state": "RJ",
+    "type": "n",
+    "diff": 1,
+    "fact": "O calçadão de ondas em pedra portuguesa é um dos mais fotografados do mundo.",
+    "file": "Aerial_view_of_Copacabana_beach.jpg",
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e6/Aerial_view_of_Copacabana_beach.jpg/1920px-Aerial_view_of_Copacabana_beach.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1600,
+      "height": 2390,
+      "page": "https://commons.wikimedia.org/wiki/File:Aerial_view_of_Copacabana_beach.jpg",
+      "author": "Gustavo Facci from Argentina",
+      "license": "CC BY-SA 2.0"
+    }
+  },
+  {
+    "id": "e4204865694d",
+    "where": "São Paulo",
+    "uf": "SP",
+    "name": "Catedral da Sé",
+    "state": "SP",
+    "type": "u",
+    "diff": 2,
+    "fact": "Fica no marco zero de São Paulo e é uma das maiores igrejas neogóticas do mundo.",
+    "file": "Catedral da Sé, São Paulo, Brasil.jpg",
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/Catedral_da_S%C3%A9%2C_S%C3%A3o_Paulo%2C_Brasil.jpg/1920px-Catedral_da_S%C3%A9%2C_S%C3%A3o_Paulo%2C_Brasil.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1600,
+      "height": 1378,
+      "page": "https://commons.wikimedia.org/wiki/File:Catedral_da_S%C3%A9,_S%C3%A3o_Paulo,_Brasil.jpg",
+      "author": "Wilfredor",
+      "license": "CC0"
+    }
+  },
+  {
+    "id": "4fd0b90f057d",
+    "where": "Fernando de Noronha",
+    "uf": "PE",
+    "name": "Fernando de Noronha",
+    "state": "PE",
+    "type": "n",
+    "diff": 1,
+    "fact": "O arquipélago fica a uns 350 km da costa e pertence a Pernambuco.",
+    "file": "NORONHA - MORRO DOIS IRMÃOS.jpg",
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e5/NORONHA_-_MORRO_DOIS_IRM%C3%83OS.jpg/1920px-NORONHA_-_MORRO_DOIS_IRM%C3%83OS.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1600,
+      "height": 1067,
+      "page": "https://commons.wikimedia.org/wiki/File:NORONHA_-_MORRO_DOIS_IRM%C3%83OS.jpg",
+      "author": "Cassinha Magalhães",
+      "license": "CC BY-SA 4.0"
+    }
+  },
+  {
+    "id": "e7284e7e4395",
+    "where": "Manaus",
+    "uf": "AM",
+    "name": "Encontro das Águas",
+    "state": "AM",
+    "type": "n",
+    "diff": 2,
+    "fact": "Os rios Negro e Solimões correm lado a lado por quilômetros sem se misturar.",
+    "file": "Encontro_das_Águas_-_Manaus.jpg",
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/84/Encontro_das_%C3%81guas_-_Manaus.jpg/1920px-Encontro_das_%C3%81guas_-_Manaus.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1600,
+      "height": 1067,
+      "page": "https://commons.wikimedia.org/wiki/File:Encontro_das_%C3%81guas_-_Manaus.jpg",
+      "author": "Portal da Copa",
+      "license": "CC BY 3.0 br"
+    }
+  },
+  {
+    "id": "94f8f4a4488b",
+    "where": "São Paulo",
+    "uf": "SP",
+    "name": "Ponte Estaiada",
+    "state": "SP",
+    "type": "u",
+    "diff": 2,
+    "fact": "O mastro em forma de X tem 138 metros de altura.",
+    "file": "Ponte_estaiada_Octavio_Frias_-_Sao_Paulo.jpg",
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0e/Ponte_estaiada_Octavio_Frias_-_Sao_Paulo.jpg/1920px-Ponte_estaiada_Octavio_Frias_-_Sao_Paulo.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1600,
+      "height": 1054,
+      "page": "https://commons.wikimedia.org/wiki/File:Ponte_estaiada_Octavio_Frias_-_Sao_Paulo.jpg",
+      "author": "Marcosleal",
+      "license": "CC BY-SA 3.0"
+    }
+  },
+  {
+    "id": "0730b554586c",
+    "where": "Chapada Diamantina",
+    "uf": "BA",
+    "name": "Morro do Pai Inácio",
+    "state": "BA",
+    "type": "n",
+    "diff": 2,
+    "fact": "Um dos cartões-postais da Chapada Diamantina, com vista pras mesetas sem fim.",
+    "file": "Morro_do_Pai_Inácio_2015.jpg",
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/Morro_do_Pai_In%C3%A1cio_2015.jpg/1920px-Morro_do_Pai_In%C3%A1cio_2015.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1600,
+      "height": 1200,
+      "page": "https://commons.wikimedia.org/wiki/File:Morro_do_Pai_In%C3%A1cio_2015.jpg",
+      "author": "Anne Moraes",
+      "license": "CC BY-SA 3.0"
+    }
+  },
+  {
+    "id": "89a08e3c534f",
+    "where": "Jalapão",
+    "uf": "TO",
+    "name": "Jalapão",
+    "state": "TO",
+    "type": "n",
+    "diff": 2,
+    "fact": "Famoso pelos fervedouros, onde a pressão da água faz você boiar sem afundar.",
+    "file": "Dunas - Jalapão - Tocantins - Brasil.jpg",
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a9/Dunas_-_Jalap%C3%A3o_-_Tocantins_-_Brasil.jpg/1920px-Dunas_-_Jalap%C3%A3o_-_Tocantins_-_Brasil.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1600,
+      "height": 1067,
+      "page": "https://commons.wikimedia.org/wiki/File:Dunas_-_Jalap%C3%A3o_-_Tocantins_-_Brasil.jpg",
+      "author": "Marcelo85photo",
+      "license": "CC BY-SA 3.0"
+    }
+  },
+  {
+    "id": "0650846e43d8",
+    "where": "Bonito",
+    "uf": "MS",
+    "name": "Gruta do Lago Azul",
+    "state": "MS",
+    "type": "n",
+    "diff": 2,
+    "fact": "Em Bonito, a luz do sol entra na gruta e deixa o lago azul-turquesa.",
+    "file": "Gruta_do_Lago_Azul_em_Bonito.jpg",
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e3/Gruta_do_Lago_Azul_em_Bonito.jpg/1920px-Gruta_do_Lago_Azul_em_Bonito.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1600,
+      "height": 1067,
+      "page": "https://commons.wikimedia.org/wiki/File:Gruta_do_Lago_Azul_em_Bonito.jpg",
+      "author": "Marcel Favery",
+      "license": "CC BY-SA 3.0"
+    }
+  },
+  {
+    "id": "9ce54468aab9",
+    "where": "Chapada dos Veadeiros",
+    "uf": "GO",
+    "name": "Chapada dos Veadeiros",
+    "state": "GO",
+    "type": "n",
+    "diff": 2,
+    "fact": "É Patrimônio Mundial da UNESCO, junto com o Parque das Emas, desde 2001.",
+    "file": "Chapada_Veadeiros,_Alto_Paraiso_GO_-_40252529604.jpg",
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e2/Chapada_Veadeiros%2C_Alto_Paraiso_GO_-_40252529604.jpg/1920px-Chapada_Veadeiros%2C_Alto_Paraiso_GO_-_40252529604.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1600,
+      "height": 1068,
+      "page": "https://commons.wikimedia.org/wiki/File:Chapada_Veadeiros,_Alto_Paraiso_GO_-_40252529604.jpg",
+      "author": "MTur Destinos",
+      "license": "Public domain"
+    }
+  },
+  {
+    "id": "7a5952c0e250",
+    "where": "Pantanal",
+    "uf": "MS",
+    "name": "Pantanal",
+    "state": "MT/MS",
+    "type": "n",
+    "diff": 2,
+    "fact": "É a maior planície alagável do planeta.",
+    "file": "Tuiuiús no Pantanal Mato Grosso do Sul PATRICIA LARAIA.jpg",
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/96/Tuiui%C3%BAs_no_Pantanal_Mato_Grosso_do_Sul_PATRICIA_LARAIA.jpg/1920px-Tuiui%C3%BAs_no_Pantanal_Mato_Grosso_do_Sul_PATRICIA_LARAIA.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1600,
+      "height": 1190,
+      "page": "https://commons.wikimedia.org/wiki/File:Tuiui%C3%BAs_no_Pantanal_Mato_Grosso_do_Sul_PATRICIA_LARAIA.jpg",
+      "author": "Patricialaraia",
+      "license": "CC BY-SA 4.0"
+    }
+  },
+  {
+    "id": "6b1d29c71acc",
+    "where": "Jericoacoara",
+    "uf": "CE",
+    "name": "Jericoacoara",
+    "state": "CE",
+    "type": "n",
+    "diff": 2,
+    "fact": "Vila de areia famosa pelo pôr do sol nas dunas e pelo kitesurf.",
+    "file": "Pedra Furada de Jericoacoara - Ceará.jpg",
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ae/Pedra_Furada_de_Jericoacoara_-_Cear%C3%A1.jpg/1920px-Pedra_Furada_de_Jericoacoara_-_Cear%C3%A1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1600,
+      "height": 1068,
+      "page": "https://commons.wikimedia.org/wiki/File:Pedra_Furada_de_Jericoacoara_-_Cear%C3%A1.jpg",
+      "author": "Rosanetur from Rio de Janeiro, Brazil",
+      "license": "CC BY 2.0"
+    }
+  },
+  {
+    "id": "b9006d67775e",
+    "where": "Paraty",
+    "uf": "RJ",
+    "name": "Paraty",
+    "state": "RJ",
+    "type": "u",
+    "diff": 2,
+    "fact": "Em algumas ruas do centro histórico a maré cheia invade o calçamento de pedra.",
+    "file": "Museu_de_Arte_Sacra_de_Paraty_01.jpg",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/c/c5/Museu_de_Arte_Sacra_de_Paraty_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "width": 1600,
+      "height": 1068,
+      "page": "https://commons.wikimedia.org/wiki/File:Museu_de_Arte_Sacra_de_Paraty_01.jpg",
+      "author": "Ministério da Cultura",
+      "license": "CC BY 2.0"
+    }
+  },
+  {
+    "id": "bbe9609b3afe",
+    "where": "Rio de Janeiro",
+    "uf": "RJ",
+    "name": "Museu do Amanhã",
+    "state": "RJ",
+    "type": "u",
+    "diff": 2,
+    "fact": "Projetado pelo espanhol Santiago Calatrava, foi inaugurado em 2015 na Praça Mauá.",
+    "file": "Museu_do_Amanhã_rio.jpg",
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/63/Museu_do_Amanh%C3%A3_rio.jpg/1920px-Museu_do_Amanh%C3%A3_rio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1600,
+      "height": 1067,
+      "page": "https://commons.wikimedia.org/wiki/File:Museu_do_Amanh%C3%A3_rio.jpg",
+      "author": "Arne Müseler",
+      "license": "CC BY-SA 3.0 de"
+    }
+  },
+  {
+    "id": "945c6dd85a83",
+    "where": "Florianópolis",
+    "uf": "SC",
+    "name": "Ponte Hercílio Luz",
+    "state": "SC",
+    "type": "u",
+    "diff": 2,
+    "fact": "Inaugurada em 1926 em Florianópolis, é a maior ponte pênsil do Brasil.",
+    "file": "Ponte_Hercílio_Luz_FREITASFOTOS_002.jpg",
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/84/Ponte_Herc%C3%ADlio_Luz_FREITASFOTOS_002.jpg/1920px-Ponte_Herc%C3%ADlio_Luz_FREITASFOTOS_002.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1600,
+      "height": 1067,
+      "page": "https://commons.wikimedia.org/wiki/File:Ponte_Herc%C3%ADlio_Luz_FREITASFOTOS_002.jpg",
+      "author": "FREITASFOTOS",
+      "license": "CC BY-SA 4.0"
+    }
+  },
+  {
+    "id": "890387bc7eca",
+    "where": "Arraial do Cabo",
+    "uf": "RJ",
+    "name": "Arraial do Cabo",
+    "state": "RJ",
+    "type": "n",
+    "diff": 2,
+    "fact": "Chamado de 'Caribe brasileiro' pelas águas transparentes.",
+    "file": "Cidade_de_Arraial_do_Cabo.jpg",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Cidade_de_Arraial_do_Cabo.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "width": 1600,
+      "height": 1200,
+      "page": "https://commons.wikimedia.org/wiki/File:Cidade_de_Arraial_do_Cabo.jpg",
+      "author": "marcusrg",
+      "license": "CC BY 2.0"
+    }
+  },
+  {
+    "id": "8a3d70383a10",
+    "where": "Brumadinho",
+    "uf": "MG",
+    "name": "Inhotim",
+    "state": "MG",
+    "type": "u",
+    "diff": 3,
+    "fact": "Em Brumadinho, mistura arte contemporânea com um enorme jardim botânico.",
+    "file": "Inhotim_-_panoramio_(cropped).jpg",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/a3/Inhotim_-_panoramio_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "width": 1600,
+      "height": 1483,
+      "page": "https://commons.wikimedia.org/wiki/File:Inhotim_-_panoramio_(cropped).jpg",
+      "author": "Oswalney Costa Galvã…",
+      "license": "CC BY-SA 3.0"
+    }
+  },
+  {
+    "id": "61412ebce213",
+    "where": "Curitiba",
+    "uf": "PR",
+    "name": "Museu Oscar Niemeyer",
+    "state": "PR",
+    "type": "u",
+    "diff": 2,
+    "fact": "Em Curitiba, é chamado de Museu do Olho por causa do formato do anexo.",
+    "file": "Museu_do_Olho_-_Oscar_Niemeyer_-_Curitiba_Brasil_(10146136615).jpg",
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/Museu_do_Olho_-_Oscar_Niemeyer_-_Curitiba_Brasil_%2810146136615%29.jpg/1920px-Museu_do_Olho_-_Oscar_Niemeyer_-_Curitiba_Brasil_%2810146136615%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1600,
+      "height": 1067,
+      "page": "https://commons.wikimedia.org/wiki/File:Museu_do_Olho_-_Oscar_Niemeyer_-_Curitiba_Brasil_(10146136615).jpg",
+      "author": "Marinelson Almeida - Traveling through Brazil from Niteroi, Brasil",
+      "license": "CC BY 2.0"
+    }
+  },
+  {
+    "id": "226d664eef05",
+    "where": "Curitiba",
+    "uf": "PR",
+    "name": "Jardim Botânico de Curitiba",
+    "state": "PR",
+    "type": "u",
+    "diff": 2,
+    "fact": "A estufa de ferro e vidro foi inspirada no Palácio de Cristal de Londres.",
+    "file": "Jardim_Botânico_Centro_Curitiba.jpg",
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/19/Jardim_Bot%C3%A2nico_Centro_Curitiba.jpg/1920px-Jardim_Bot%C3%A2nico_Centro_Curitiba.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1600,
+      "height": 994,
+      "page": "https://commons.wikimedia.org/wiki/File:Jardim_Bot%C3%A2nico_Centro_Curitiba.jpg",
+      "author": "Hicham El Banine",
+      "license": "CC BY-SA 4.0"
+    }
+  },
+  {
+    "id": "634a57431cff",
+    "where": "Morro de São Paulo",
+    "uf": "BA",
+    "name": "Morro de São Paulo",
+    "state": "BA",
+    "type": "n",
+    "diff": 2,
+    "fact": "Fica na Ilha de Tinharé, e lá não circulam carros.",
+    "file": "Morro_de_São_Paulo_Mirante.JPG",
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/Morro_de_S%C3%A3o_Paulo_Mirante.JPG/1920px-Morro_de_S%C3%A3o_Paulo_Mirante.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1600,
+      "height": 1200,
+      "page": "https://commons.wikimedia.org/wiki/File:Morro_de_S%C3%A3o_Paulo_Mirante.JPG",
+      "author": "André Urel",
+      "license": "CC BY-SA 4.0"
+    }
+  },
+  {
+    "id": "d64f43fe6aab",
+    "where": "Niterói",
+    "uf": "RJ",
+    "name": "MAC Niterói",
+    "state": "RJ",
+    "type": "u",
+    "diff": 2,
+    "fact": "Obra de Niemeyer de 1996, parece um disco voador sobre a Baía de Guanabara.",
+    "file": "Contemporary_Art_Museum_in_Niteroi_City_4.jpg",
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/69/Contemporary_Art_Museum_in_Niteroi_City_4.jpg/1920px-Contemporary_Art_Museum_in_Niteroi_City_4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1600,
+      "height": 1068,
+      "page": "https://commons.wikimedia.org/wiki/File:Contemporary_Art_Museum_in_Niteroi_City_4.jpg",
+      "author": "Donatas Dabravolskas",
+      "license": "CC BY-SA 4.0"
+    }
+  },
+  {
+    "id": "bfac34cfd03a",
+    "where": "Belo Horizonte",
+    "uf": "MG",
+    "name": "Igreja da Pampulha",
+    "state": "MG",
+    "type": "u",
+    "diff": 2,
+    "fact": "Projeto de Niemeyer com painéis de Portinari; o estilo ousado atrasou sua consagração por mais de 15 anos.",
+    "file": "Igrejinha_de_São_Francisco_de_Assis_6.jpeg",
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ce/Igrejinha_de_S%C3%A3o_Francisco_de_Assis_6.jpeg/1920px-Igrejinha_de_S%C3%A3o_Francisco_de_Assis_6.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1600,
+      "height": 2416,
+      "page": "https://commons.wikimedia.org/wiki/File:Igrejinha_de_S%C3%A3o_Francisco_de_Assis_6.jpeg",
+      "author": "Prandrade",
+      "license": "CC BY-SA 4.0"
+    }
+  },
+  {
+    "id": "299cf6239d0d",
+    "where": "Belém",
+    "uf": "PA",
+    "name": "Ver-o-Peso",
+    "state": "PA",
+    "type": "u",
+    "diff": 2,
+    "fact": "Em Belém, é uma das feiras mais antigas do Brasil, com origem em 1627.",
+    "file": "Ver-oPeso-Belem.jpg",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/47/Ver-oPeso-Belem.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "width": 1600,
+      "height": 1066,
+      "page": "https://commons.wikimedia.org/wiki/File:Ver-oPeso-Belem.jpg",
+      "author": "Mauricio Mercer [2]",
+      "license": "CC BY-SA 2.0"
+    }
+  },
+  {
+    "id": "281d9151d0c4",
+    "where": "Serra do Rio do Rastro",
+    "uf": "SC",
+    "name": "Serra do Rio do Rastro",
+    "state": "SC",
+    "type": "n",
+    "diff": 2,
+    "fact": "Sua estrada cheia de curvas é considerada uma das mais bonitas do mundo.",
+    "file": "Serra_do_Rio_do_Rastro_(SC-390).jpg",
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/aa/Serra_do_Rio_do_Rastro_%28SC-390%29.jpg/1920px-Serra_do_Rio_do_Rastro_%28SC-390%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1600,
+      "height": 1067,
+      "page": "https://commons.wikimedia.org/wiki/File:Serra_do_Rio_do_Rastro_(SC-390).jpg",
+      "author": "Raphael Ribeiro Silva",
+      "license": "CC BY-SA 3.0"
+    }
+  },
+  {
+    "id": "338d78c4f31f",
+    "where": "Rio de Janeiro",
+    "uf": "RJ",
+    "name": "Theatro Municipal do Rio",
+    "state": "RJ",
+    "type": "u",
+    "diff": 2,
+    "fact": "Inaugurado em 1909, foi inspirado na Ópera de Paris.",
+    "file": "Teatro_Municipal_-_panoramio_(4).jpg",
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3f/Teatro_Municipal_-_panoramio_%284%29.jpg/1920px-Teatro_Municipal_-_panoramio_%284%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1600,
+      "height": 1070,
+      "page": "https://commons.wikimedia.org/wiki/File:Teatro_Municipal_-_panoramio_(4).jpg",
+      "author": "Elvis Boaventura",
+      "license": "CC BY 3.0"
+    }
+  },
+  {
+    "id": "57ad0b2f987e",
+    "where": "São Paulo",
+    "uf": "SP",
+    "name": "Estação da Luz",
+    "state": "SP",
+    "type": "u",
+    "diff": 2,
+    "fact": "Inaugurada em 1901 com estrutura trazida da Inglaterra; abriga o Museu da Língua Portuguesa.",
+    "file": "Luzbx.jpg",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/95/Luzbx.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "width": 1600,
+      "height": 1200,
+      "page": "https://commons.wikimedia.org/wiki/File:Luzbx.jpg",
+      "author": "Priscila Zambotto",
+      "license": "CC BY-SA 4.0"
+    }
+  },
+  {
+    "id": "836861566e83",
+    "where": "Capitólio",
+    "uf": "MG",
+    "name": "Cânions de Furnas",
+    "state": "MG",
+    "type": "n",
+    "diff": 2,
+    "fact": "Os paredões do Lago de Furnas, em Capitólio, viraram um dos destinos mais procurados de Minas.",
+    "file": "Escarpas_do_Lago_-_panoramio.jpg",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/c/cc/Escarpas_do_Lago_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "width": 1600,
+      "height": 1200,
+      "page": "https://commons.wikimedia.org/wiki/File:Escarpas_do_Lago_-_panoramio.jpg",
+      "author": "Mateus Tomé",
+      "license": "CC BY-SA 3.0"
+    }
+  },
+  {
+    "id": "3a025c025c2c",
+    "where": "Natal",
+    "uf": "RN",
+    "name": "Genipabu",
+    "state": "RN",
+    "type": "n",
+    "diff": 2,
+    "fact": "Dunas perto de Natal, famosas pelo passeio de buggy 'com ou sem emoção'.",
+    "file": "Genipabu_RN.jpg",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/be/Genipabu_RN.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "width": 1600,
+      "height": 1200,
+      "page": "https://commons.wikimedia.org/wiki/File:Genipabu_RN.jpg",
+      "author": "Alexandre Machado",
+      "license": "CC BY-SA 2.0"
+    }
+  },
+  {
+    "id": "fee3fb2535c4",
+    "where": "Olinda",
+    "uf": "PE",
+    "name": "Olinda",
+    "state": "PE",
+    "type": "u",
+    "diff": 2,
+    "fact": "Seu centro histórico colonial é Patrimônio Mundial desde 1982.",
+    "file": "Vista_do_Sítio_Histórico_de_Olinda-PE-br.jpg",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/2a/Vista_do_S%C3%ADtio_Hist%C3%B3rico_de_Olinda-PE-br.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "width": 1600,
+      "height": 1067,
+      "page": "https://commons.wikimedia.org/wiki/File:Vista_do_S%C3%ADtio_Hist%C3%B3rico_de_Olinda-PE-br.jpg",
+      "author": "Prefeitura de Olinda from Brasil",
+      "license": "CC BY 2.0"
+    }
+  },
+  {
+    "id": "fffa94218928",
+    "where": "Alter do Chão",
+    "uf": "PA",
+    "name": "Alter do Chão",
+    "state": "PA",
+    "type": "n",
+    "diff": 2,
+    "fact": "Às margens do Rio Tapajós, suas praias de rio aparecem na época da seca.",
+    "file": "Ilha do Amor, Álter do Chão.JPG",
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/98/Ilha_do_Amor%2C_%C3%81lter_do_Ch%C3%A3o.JPG/1920px-Ilha_do_Amor%2C_%C3%81lter_do_Ch%C3%A3o.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1600,
+      "height": 1200,
+      "page": "https://commons.wikimedia.org/wiki/File:Ilha_do_Amor,_%C3%81lter_do_Ch%C3%A3o.JPG",
+      "author": "Lais Castro",
+      "license": "CC BY-SA 4.0"
+    }
+  },
+  {
+    "id": "f13ab13c0e8a",
+    "where": "Salvador",
+    "uf": "BA",
+    "name": "Farol da Barra",
+    "state": "BA",
+    "type": "u",
+    "diff": 2,
+    "fact": "Ponto clássico pra ver o pôr do sol em Salvador.",
+    "file": "Salvador-Brazil-Farol-da-Barra-sunset.jpg",
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d3/Salvador-Brazil-Farol-da-Barra-sunset.jpg/1920px-Salvador-Brazil-Farol-da-Barra-sunset.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1600,
+      "height": 1176,
+      "page": "https://commons.wikimedia.org/wiki/File:Salvador-Brazil-Farol-da-Barra-sunset.jpg",
+      "author": "acediscovery",
+      "license": "CC BY 4.0"
+    }
+  },
+  {
+    "id": "ecd3ac9a5260",
+    "where": "São Paulo",
+    "uf": "SP",
+    "name": "Museu do Ipiranga",
+    "state": "SP",
+    "type": "u",
+    "diff": 2,
+    "fact": "Fica perto do riacho onde Dom Pedro I teria proclamado a Independência, em 1822.",
+    "file": "Museu do Ipiranga - Fachada.jpg",
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e0/Museu_do_Ipiranga_-_Fachada.jpg/1920px-Museu_do_Ipiranga_-_Fachada.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1600,
+      "height": 1067,
+      "page": "https://commons.wikimedia.org/wiki/File:Museu_do_Ipiranga_-_Fachada.jpg",
+      "author": "José Marcos Oliva",
+      "license": "CC BY-SA 4.0"
+    }
+  },
+  {
+    "id": "3db6619a0bdd",
+    "where": "Foz do Iguaçu",
+    "uf": "PR",
+    "name": "Usina de Itaipu",
+    "state": "PR",
+    "type": "u",
+    "diff": 2,
+    "fact": "Binacional, entre Brasil e Paraguai, é uma das maiores hidrelétricas do mundo.",
+    "file": "Itaipu_geral.jpg",
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d2/Itaipu_geral.jpg/1920px-Itaipu_geral.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1600,
+      "height": 1017,
+      "page": "https://commons.wikimedia.org/wiki/File:Itaipu_geral.jpg",
+      "author": "Jonas de Carvalho",
+      "license": "CC BY-SA 2.0"
+    }
+  },
+  {
+    "id": "cdd97500b6f6",
+    "where": "São Paulo",
+    "uf": "SP",
+    "name": "Monumento às Bandeiras",
+    "state": "SP",
+    "type": "u",
+    "diff": 2,
+    "fact": "Obra de Victor Brecheret no Ibirapuera, apelidada de 'Deixa que eu empurro'.",
+    "file": "Monumento_às_Bandeiras_01.jpg",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Monumento_%C3%A0s_Bandeiras_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "width": 1600,
+      "height": 1200,
+      "page": "https://commons.wikimedia.org/wiki/File:Monumento_%C3%A0s_Bandeiras_01.jpg",
+      "author": "Dornicke (Lucas B. Salles)",
+      "license": "Public domain"
+    }
+  },
+  {
+    "id": "d713abde57ef",
+    "where": "São Paulo",
+    "uf": "SP",
+    "name": "Mercadão de São Paulo",
+    "state": "SP",
+    "type": "u",
+    "diff": 2,
+    "fact": "Famoso pelo sanduíche de mortadela e pelos vitrais.",
+    "file": "ROGERIOCASSIMIRO_MERCADOMUNICIPAL_SAOPAULO_SP_(40066551745).jpg",
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/ROGERIOCASSIMIRO_MERCADOMUNICIPAL_SAOPAULO_SP_%2840066551745%29.jpg/1920px-ROGERIOCASSIMIRO_MERCADOMUNICIPAL_SAOPAULO_SP_%2840066551745%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1600,
+      "height": 898,
+      "page": "https://commons.wikimedia.org/wiki/File:ROGERIOCASSIMIRO_MERCADOMUNICIPAL_SAOPAULO_SP_(40066551745).jpg",
+      "author": "MTur Destinos",
+      "license": "Public domain"
+    }
+  },
+  {
+    "id": "a90756f301b8",
+    "where": "Fernando de Noronha",
+    "uf": "PE",
+    "name": "Baía do Sancho",
+    "state": "PE",
+    "type": "n",
+    "diff": 2,
+    "fact": "Já foi eleita várias vezes a praia mais bonita do mundo por viajantes.",
+    "file": "Baía do Sancho vista do alto.JPG",
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/13/Ba%C3%ADa_do_Sancho_vista_do_alto.JPG/1920px-Ba%C3%ADa_do_Sancho_vista_do_alto.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1600,
+      "height": 1067,
+      "page": "https://commons.wikimedia.org/wiki/File:Ba%C3%ADa_do_Sancho_vista_do_alto.JPG",
+      "author": "Osaki",
+      "license": "CC BY-SA 3.0"
+    }
+  },
+  {
+    "id": "4a745db135b2",
+    "where": "Gramado",
+    "uf": "RS",
+    "name": "Lago Negro",
+    "state": "RS",
+    "type": "n",
+    "diff": 2,
+    "fact": "Lago artificial de Gramado, cercado de árvores trazidas da Floresta Negra.",
+    "file": "Lago_Negro,_Gramado,_RS,_Brasil.jpg",
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4b/Lago_Negro%2C_Gramado%2C_RS%2C_Brasil.jpg/1920px-Lago_Negro%2C_Gramado%2C_RS%2C_Brasil.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1600,
+      "height": 831,
+      "page": "https://commons.wikimedia.org/wiki/File:Lago_Negro,_Gramado,_RS,_Brasil.jpg",
+      "author": "TheWikiGuardian",
+      "license": "CC BY-SA 4.0"
+    }
+  },
+  {
+    "id": "fab43f8bf720",
+    "where": "Brasília",
+    "uf": "DF",
+    "name": "Palácio da Alvorada",
+    "state": "DF",
+    "type": "u",
+    "diff": 2,
+    "fact": "Residência oficial da Presidência; as colunas de Niemeyer viraram símbolo de Brasília.",
+    "file": "Brasília Palacio da Alvorada from Paranoá Lake.jpg",
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/86/Bras%C3%ADlia_Palacio_da_Alvorada_from_Parano%C3%A1_Lake.jpg/1920px-Bras%C3%ADlia_Palacio_da_Alvorada_from_Parano%C3%A1_Lake.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1600,
+      "height": 1043,
+      "page": "https://commons.wikimedia.org/wiki/File:Bras%C3%ADlia_Palacio_da_Alvorada_from_Parano%C3%A1_Lake.jpg",
+      "author": "Cayambe",
+      "license": "CC BY-SA 3.0"
+    }
+  },
+  {
+    "id": "ed1fbc4e1a25",
+    "where": "Natal",
+    "uf": "RN",
+    "name": "Morro do Careca",
+    "state": "RN",
+    "type": "n",
+    "diff": 2,
+    "fact": "Cartão-postal de Natal; subir na duna é proibido pra protegê-la.",
+    "file": "Morro_do_Careca2.jpg",
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a4/Morro_do_Careca2.jpg/1920px-Morro_do_Careca2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1600,
+      "height": 958,
+      "page": "https://commons.wikimedia.org/wiki/File:Morro_do_Careca2.jpg",
+      "author": "Luiz Antonio Mendes",
+      "license": "CC BY-SA 2.0"
+    }
+  },
+  {
+    "id": "f2541ea38278",
+    "where": "Ilha Grande",
+    "uf": "RJ",
+    "name": "Ilha Grande",
+    "state": "RJ",
+    "type": "n",
+    "diff": 2,
+    "fact": "Em Angra dos Reis, já abrigou um presídio e hoje é paraíso de trilhas e praias.",
+    "file": "Praia de Lopes Mendes em Ilha Grande RJ.jpg",
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/Praia_de_Lopes_Mendes_em_Ilha_Grande_RJ.jpg/1920px-Praia_de_Lopes_Mendes_em_Ilha_Grande_RJ.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1600,
+      "height": 1067,
+      "page": "https://commons.wikimedia.org/wiki/File:Praia_de_Lopes_Mendes_em_Ilha_Grande_RJ.jpg",
+      "author": "Cibele Brugnera",
+      "license": "CC BY-SA 4.0"
+    }
+  },
+  {
+    "id": "acbfe432c89c",
+    "where": "Manaus",
+    "uf": "AM",
+    "name": "Ponte Rio Negro",
+    "state": "AM",
+    "type": "u",
+    "diff": 2,
+    "fact": "Liga Manaus a Iranduba e tem cerca de 3,6 km sobre o Rio Negro.",
+    "file": "Rio_Negro_Bridge,_Brazil_(cropped).jpg",
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/Rio_Negro_Bridge%2C_Brazil_%28cropped%29.jpg/1920px-Rio_Negro_Bridge%2C_Brazil_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1600,
+      "height": 1187,
+      "page": "https://commons.wikimedia.org/wiki/File:Rio_Negro_Bridge,_Brazil_(cropped).jpg",
+      "author": "Naldo Arruda",
+      "license": "CC0"
+    }
+  },
+  {
+    "id": "df78ae8a09c8",
+    "where": "Cambará do Sul",
+    "uf": "RS",
+    "name": "Cânion Itaimbezinho",
+    "state": "RS",
+    "type": "n",
+    "diff": 3,
+    "fact": "Os paredões chegam a 720 metros de altura no Parque Nacional de Aparados da Serra.",
+    "file": "Canyon_Itaimbezinho_XI.jpg",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/9f/Canyon_Itaimbezinho_XI.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "width": 1600,
+      "height": 2396,
+      "page": "https://commons.wikimedia.org/wiki/File:Canyon_Itaimbezinho_XI.jpg",
+      "author": "Vinicios de Moura",
+      "license": "CC BY-SA 3.0"
+    }
+  },
+  {
+    "id": "3031b8655a37",
+    "where": "Monte Roraima",
+    "uf": "RR",
+    "name": "Monte Roraima",
+    "state": "RR",
+    "type": "n",
+    "diff": 3,
+    "fact": "É um tepui, montanha de topo plano na fronteira entre Brasil, Venezuela e Guiana.",
+    "file": "Roraima3_(79).JPG",
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/35/Roraima3_%2879%29.JPG/1920px-Roraima3_%2879%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1600,
+      "height": 845,
+      "page": "https://commons.wikimedia.org/wiki/File:Roraima3_(79).JPG",
+      "author": "Paolo Costa Baldi",
+      "license": "CC BY-SA 3.0"
+    }
+  },
+  {
+    "id": "1e9454cc3077",
+    "where": "Maragogi",
+    "uf": "AL",
+    "name": "Maragogi",
+    "state": "AL",
+    "type": "n",
+    "diff": 3,
+    "fact": "As galés, piscinas naturais entre os recifes, aparecem na maré baixa.",
+    "file": "Maragogi_Alagoas_Brasil.jpg",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Maragogi_Alagoas_Brasil.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "width": 1600,
+      "height": 1200,
+      "page": "https://commons.wikimedia.org/wiki/File:Maragogi_Alagoas_Brasil.jpg",
+      "author": "Tiago Leite",
+      "license": "CC BY 2.0"
+    }
+  },
+  {
+    "id": "933b7fe4bb2e",
+    "where": "Chapada dos Guimarães",
+    "uf": "MT",
+    "name": "Chapada dos Guimarães",
+    "state": "MT",
+    "type": "n",
+    "diff": 3,
+    "fact": "Fica pertinho de Cuiabá e perto do centro geodésico da América do Sul.",
+    "file": "Crista_de_Galo.jpg",
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/30/Crista_de_Galo.jpg/1920px-Crista_de_Galo.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1600,
+      "height": 1060,
+      "page": "https://commons.wikimedia.org/wiki/File:Crista_de_Galo.jpg",
+      "author": "Chostakovis",
+      "license": "CC BY-SA 3.0"
+    }
+  },
+  {
+    "id": "ad97b0124ee3",
+    "where": "Cânions do Xingó",
+    "uf": "SE",
+    "name": "Cânion do Xingó",
+    "state": "SE/AL",
+    "type": "n",
+    "diff": 3,
+    "fact": "Navegável graças ao lago da usina de Xingó, no Rio São Francisco.",
+    "file": "Cânions Xingó.jpg",
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/C%C3%A2nions_Xing%C3%B3.jpg/1920px-C%C3%A2nions_Xing%C3%B3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1600,
+      "height": 1185,
+      "page": "https://commons.wikimedia.org/wiki/File:C%C3%A2nions_Xing%C3%B3.jpg",
+      "author": "Ajuliafotos",
+      "license": "CC BY-SA 4.0"
+    }
+  },
+  {
+    "id": "7eef919fe62f",
+    "where": "São Miguel das Missões",
+    "uf": "RS",
+    "name": "Ruínas de São Miguel das Missões",
+    "state": "RS",
+    "type": "u",
+    "diff": 3,
+    "fact": "Ruínas de uma redução jesuítico-guarani do século XVIII, Patrimônio Mundial da UNESCO.",
+    "file": "Sítio_Arqueológico_de_São_Miguel_Arcanjo_01.jpg",
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/68/S%C3%ADtio_Arqueol%C3%B3gico_de_S%C3%A3o_Miguel_Arcanjo_01.jpg/1920px-S%C3%ADtio_Arqueol%C3%B3gico_de_S%C3%A3o_Miguel_Arcanjo_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1600,
+      "height": 900,
+      "page": "https://commons.wikimedia.org/wiki/File:S%C3%ADtio_Arqueol%C3%B3gico_de_S%C3%A3o_Miguel_Arcanjo_01.jpg",
+      "author": "Halley Pacheco de Oliveira",
+      "license": "CC BY-SA 3.0"
+    }
+  },
+  {
+    "id": "9d3827296e99",
+    "where": "Serra da Capivara",
+    "uf": "PI",
+    "name": "Serra da Capivara",
+    "state": "PI",
+    "type": "n",
+    "diff": 3,
+    "fact": "Tem a maior concentração de sítios com pinturas rupestres das Américas.",
+    "file": "Pedra_Furada_-_Serra_da_Capivara_I.jpg",
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a1/Pedra_Furada_-_Serra_da_Capivara_I.jpg/1920px-Pedra_Furada_-_Serra_da_Capivara_I.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1600,
+      "height": 1067,
+      "page": "https://commons.wikimedia.org/wiki/File:Pedra_Furada_-_Serra_da_Capivara_I.jpg",
+      "author": "Artur Warchavchik",
+      "license": "CC BY-SA 3.0"
+    }
+  },
+  {
+    "id": "79fc9b6791b1",
+    "where": "Sete Cidades",
+    "uf": "PI",
+    "name": "Sete Cidades",
+    "state": "PI",
+    "type": "n",
+    "diff": 3,
+    "fact": "Formações rochosas que parecem ruínas de cidades antigas, cheias de lendas.",
+    "file": "Parque_Nacional_de_Sete_Cidades_-_Piauí.jpg",
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/Parque_Nacional_de_Sete_Cidades_-_Piau%C3%AD.jpg/1920px-Parque_Nacional_de_Sete_Cidades_-_Piau%C3%AD.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1600,
+      "height": 1071,
+      "page": "https://commons.wikimedia.org/wiki/File:Parque_Nacional_de_Sete_Cidades_-_Piau%C3%AD.jpg",
+      "author": "deltafrut",
+      "license": "CC BY 2.0"
+    }
+  },
+  {
+    "id": "4fbcab8dbb59",
+    "where": "Parnaíba",
+    "uf": "PI",
+    "name": "Delta do Parnaíba",
+    "state": "PI/MA",
+    "type": "n",
+    "diff": 3,
+    "fact": "É o único delta em mar aberto das Américas.",
+    "file": "Delta do Parnaíba (5433374639).jpg",
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a9/Delta_do_Parna%C3%ADba_%285433374639%29.jpg/1920px-Delta_do_Parna%C3%ADba_%285433374639%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1600,
+      "height": 1067,
+      "page": "https://commons.wikimedia.org/wiki/File:Delta_do_Parna%C3%ADba_(5433374639).jpg",
+      "author": "Danielle Pereira from Brasil",
+      "license": "CC BY 2.0"
+    }
+  },
+  {
+    "id": "a19d1e8b7f1f",
+    "where": "Ponta Grossa",
+    "uf": "PR",
+    "name": "Vila Velha (PR)",
+    "state": "PR",
+    "type": "n",
+    "diff": 3,
+    "fact": "Os arenitos esculpidos pelo vento formam figuras como a famosa 'Taça'.",
+    "file": "Vila_Velha2.jpg",
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/20/Vila_Velha2.jpg/1920px-Vila_Velha2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1600,
+      "height": 2133,
+      "page": "https://commons.wikimedia.org/wiki/File:Vila_Velha2.jpg",
+      "author": "Ana Paula Hirama",
+      "license": "CC BY-SA 2.0"
+    }
+  },
+  {
+    "id": "37fc30e03b9a",
+    "where": "Conceição do Mato Dentro",
+    "uf": "MG",
+    "name": "Cachoeira do Tabuleiro",
+    "state": "MG",
+    "type": "n",
+    "diff": 3,
+    "fact": "Com 273 metros, é a maior cachoeira de Minas Gerais.",
+    "file": "Mirante_tabuleiro.jpg",
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4c/Mirante_tabuleiro.jpg/1920px-Mirante_tabuleiro.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1600,
+      "height": 1067,
+      "page": "https://commons.wikimedia.org/wiki/File:Mirante_tabuleiro.jpg",
+      "author": "Rafael dos Reis Pereira",
+      "license": "CC BY-SA 3.0"
+    }
+  },
+  {
+    "id": "2247e55c8801",
+    "where": "Chapada Diamantina",
+    "uf": "BA",
+    "name": "Poço Encantado",
+    "state": "BA",
+    "type": "n",
+    "diff": 3,
+    "fact": "Entre abril e setembro, um feixe de sol atravessa a água e ilumina o fundo azul.",
+    "file": "Raio_Poço_Encantado.jpg",
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/82/Raio_Po%C3%A7o_Encantado.jpg/1920px-Raio_Po%C3%A7o_Encantado.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1600,
+      "height": 1067,
+      "page": "https://commons.wikimedia.org/wiki/File:Raio_Po%C3%A7o_Encantado.jpg",
+      "author": "Cesar Monteiro",
+      "license": "CC BY-SA 4.0"
+    }
+  },
+  {
+    "id": "0127939cf39d",
+    "where": "Ilha do Mel",
+    "uf": "PR",
+    "name": "Ilha do Mel",
+    "state": "PR",
+    "type": "n",
+    "diff": 3,
+    "fact": "Não tem carros, e o Farol das Conchas foi construído em 1872.",
+    "file": "Ilha do Mel - Farol das Conchas.jpg",
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/53/Ilha_do_Mel_-_Farol_das_Conchas.jpg/1920px-Ilha_do_Mel_-_Farol_das_Conchas.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1600,
+      "height": 837,
+      "page": "https://commons.wikimedia.org/wiki/File:Ilha_do_Mel_-_Farol_das_Conchas.jpg",
+      "author": "Cyrus Augustus Moro Daldin",
+      "license": "CC BY-SA 4.0"
+    }
+  },
+  {
+    "id": "f3b9008b3565",
+    "where": "Canoa Quebrada",
+    "uf": "CE",
+    "name": "Canoa Quebrada",
+    "state": "CE",
+    "type": "n",
+    "diff": 3,
+    "fact": "Famosa pelas falésias avermelhadas e pelo símbolo da lua com estrela.",
+    "file": "CE_-_Canoa_Quebrada_-_Falésia.jpg",
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/CE_-_Canoa_Quebrada_-_Fal%C3%A9sia.jpg/1920px-CE_-_Canoa_Quebrada_-_Fal%C3%A9sia.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1600,
+      "height": 899,
+      "page": "https://commons.wikimedia.org/wiki/File:CE_-_Canoa_Quebrada_-_Fal%C3%A9sia.jpg",
+      "author": "Rafa Tecchio",
+      "license": "CC BY-SA 3.0"
+    }
+  },
+  {
+    "id": "afe94ecb75d3",
+    "where": "Chapada dos Veadeiros",
+    "uf": "GO",
+    "name": "Vale da Lua",
+    "state": "GO",
+    "type": "n",
+    "diff": 3,
+    "fact": "As rochas esculpidas pelo Rio São Miguel lembram uma paisagem lunar.",
+    "file": "Vale da Lua, Chapada dos Veadeiros, Brasil.jpg",
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/27/Vale_da_Lua%2C_Chapada_dos_Veadeiros%2C_Brasil.jpg/1920px-Vale_da_Lua%2C_Chapada_dos_Veadeiros%2C_Brasil.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1600,
+      "height": 1068,
+      "page": "https://commons.wikimedia.org/wiki/File:Vale_da_Lua,_Chapada_dos_Veadeiros,_Brasil.jpg",
+      "author": "Salma Bahia",
+      "license": "CC BY-SA 4.0"
+    }
+  },
+  {
+    "id": "f4dbc11456fe",
+    "where": "São Luís",
+    "uf": "MA",
+    "name": "Centro Histórico de São Luís",
+    "state": "MA",
+    "type": "u",
+    "diff": 3,
+    "fact": "Tem um dos maiores conjuntos de azulejos portugueses fora de Portugal.",
+    "file": "Centro_Histórico_de_São_Luís,_Maranhão,_Brasil_4.jpg",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/09/Centro_Hist%C3%B3rico_de_S%C3%A3o_Lu%C3%ADs%2C_Maranh%C3%A3o%2C_Brasil_4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "width": 1600,
+      "height": 1200,
+      "page": "https://commons.wikimedia.org/wiki/File:Centro_Hist%C3%B3rico_de_S%C3%A3o_Lu%C3%ADs,_Maranh%C3%A3o,_Brasil_4.jpg",
+      "author": "Andradewallace",
+      "license": "CC BY-SA 4.0"
+    }
+  },
+  {
+    "id": "bdc36aa63692",
+    "where": "Natal",
+    "uf": "RN",
+    "name": "Forte dos Reis Magos",
+    "state": "RN",
+    "type": "u",
+    "diff": 3,
+    "fact": "Construído a partir de 1598 em forma de estrela, deu origem à cidade de Natal.",
+    "file": "Forte-reis-magos.jpg",
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6d/Forte-reis-magos.jpg/1920px-Forte-reis-magos.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1600,
+      "height": 1071,
+      "page": "https://commons.wikimedia.org/wiki/File:Forte-reis-magos.jpg",
+      "author": "Onesimo.santos",
+      "license": "CC BY-SA 3.0"
+    }
+  },
+  {
+    "id": "edc54fbb79f5",
+    "where": "Chapada Diamantina",
+    "uf": "BA",
+    "name": "Cachoeira da Fumaça",
+    "state": "BA",
+    "type": "n",
+    "diff": 3,
+    "fact": "O vento é tão forte que a água vira 'fumaça' antes de chegar ao chão.",
+    "file": "Cachoeira da Fumaça, Chapada Diamantina.JPG",
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8e/Cachoeira_da_Fuma%C3%A7a%2C_Chapada_Diamantina.JPG/1920px-Cachoeira_da_Fuma%C3%A7a%2C_Chapada_Diamantina.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1600,
+      "height": 1067,
+      "page": "https://commons.wikimedia.org/wiki/File:Cachoeira_da_Fuma%C3%A7a,_Chapada_Diamantina.JPG",
+      "author": "Jack5599",
+      "license": "CC BY-SA 3.0"
+    }
+  },
+  {
+    "id": "722572ce6f52",
+    "where": "São Bento do Sapucaí",
+    "uf": "SP",
+    "name": "Pedra do Baú",
+    "state": "SP",
+    "type": "n",
+    "diff": 3,
+    "fact": "Em São Bento do Sapucaí, dá pra subir por uma via ferrata com degraus de ferro.",
+    "file": "Monumento_Natural_Estadual_da_Pedra_do_Baú_Rodrigo_Rosa_(01).jpg",
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e8/Monumento_Natural_Estadual_da_Pedra_do_Ba%C3%BA_Rodrigo_Rosa_%2801%29.jpg/1920px-Monumento_Natural_Estadual_da_Pedra_do_Ba%C3%BA_Rodrigo_Rosa_%2801%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1600,
+      "height": 1039,
+      "page": "https://commons.wikimedia.org/wiki/File:Monumento_Natural_Estadual_da_Pedra_do_Ba%C3%BA_Rodrigo_Rosa_(01).jpg",
+      "author": "Rodrigorosa85",
+      "license": "CC BY-SA 4.0"
+    }
+  },
+  {
+    "id": "acfecfb1e972",
+    "where": "Anavilhanas",
+    "uf": "AM",
+    "name": "Anavilhanas",
+    "state": "AM",
+    "type": "n",
+    "diff": 3,
+    "fact": "Um dos maiores arquipélagos fluviais do mundo, no Rio Negro.",
+    "file": "Anavilhanas2.jpg",
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cc/Anavilhanas2.jpg/1920px-Anavilhanas2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1600,
+      "height": 1074,
+      "page": "https://commons.wikimedia.org/wiki/File:Anavilhanas2.jpg",
+      "author": "Jason Auch from Calgary, Canada",
+      "license": "CC BY 2.0"
+    }
+  },
+  {
+    "id": "f59c6fca3172",
+    "where": "Ouro Preto",
+    "uf": "MG",
+    "name": "Igreja de São Francisco (Ouro Preto)",
+    "state": "MG",
+    "type": "u",
+    "diff": 3,
+    "fact": "Obra-prima de Aleijadinho, com o forro pintado por Mestre Ataíde.",
+    "file": "SFrancisOuroPreto-CCBY.jpg",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/85/SFrancisOuroPreto-CCBY.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "width": 1600,
+      "height": 2256,
+      "page": "https://commons.wikimedia.org/wiki/File:SFrancisOuroPreto-CCBY.jpg",
+      "author": "Sarah and Iain",
+      "license": "CC BY 2.0"
+    }
+  },
+  {
+    "id": "9e9ca704c006",
+    "where": "Pedra Azul",
+    "uf": "ES",
+    "name": "Pedra Azul",
+    "state": "ES",
+    "type": "n",
+    "diff": 3,
+    "fact": "A pedra muda de cor ao longo do dia e tem um 'lagarto' desenhado pela natureza.",
+    "file": "Pedra_Azul_Milky_Way.jpg",
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/80/Pedra_Azul_Milky_Way.jpg/1920px-Pedra_Azul_Milky_Way.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1600,
+      "height": 1066,
+      "page": "https://commons.wikimedia.org/wiki/File:Pedra_Azul_Milky_Way.jpg",
+      "author": "EduardoMSNeves",
+      "license": "CC BY-SA 4.0"
+    }
+  },
+  {
+    "id": "c162a696d6d4",
+    "where": "Vila Velha",
+    "uf": "ES",
+    "name": "Convento da Penha",
+    "state": "ES",
+    "type": "u",
+    "diff": 3,
+    "fact": "No alto de um morro em Vila Velha, é um dos santuários mais antigos do Brasil (século XVI).",
+    "file": "Convento_da_Penha_e_Terceira_Ponte_com_Mar_e_Vitória_ao_fundo.jpg",
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/03/Convento_da_Penha_e_Terceira_Ponte_com_Mar_e_Vit%C3%B3ria_ao_fundo.jpg/1920px-Convento_da_Penha_e_Terceira_Ponte_com_Mar_e_Vit%C3%B3ria_ao_fundo.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1600,
+      "height": 900,
+      "page": "https://commons.wikimedia.org/wiki/File:Convento_da_Penha_e_Terceira_Ponte_com_Mar_e_Vit%C3%B3ria_ao_fundo.jpg",
+      "author": "Tavelini",
+      "license": "CC BY-SA 4.0"
+    }
+  },
+  {
+    "id": "923280eb9f9a",
+    "where": "Canela",
+    "uf": "RS",
+    "name": "Cascata do Caracol",
+    "state": "RS",
+    "type": "n",
+    "diff": 3,
+    "fact": "Em Canela, a queda d'água tem 131 metros.",
+    "file": "Caracol_falls_(2_April_2008).jpg",
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9e/Caracol_falls_%282_April_2008%29.jpg/1920px-Caracol_falls_%282_April_2008%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1600,
+      "height": 1071,
+      "page": "https://commons.wikimedia.org/wiki/File:Caracol_falls_(2_April_2008).jpg",
+      "author": "Tiago Fioreze",
+      "license": "CC BY-SA 3.0"
+    }
+  },
+  {
+    "id": "a4f66089f29d",
+    "where": "Petrópolis",
+    "uf": "RJ",
+    "name": "Museu Imperial",
+    "state": "RJ",
+    "type": "u",
+    "diff": 3,
+    "fact": "Em Petrópolis, era o palácio de verão de Dom Pedro II.",
+    "file": "Museu_Imperial_03_(cropped).JPG",
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/24/Museu_Imperial_03_%28cropped%29.JPG/1920px-Museu_Imperial_03_%28cropped%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1600,
+      "height": 966,
+      "page": "https://commons.wikimedia.org/wiki/File:Museu_Imperial_03_(cropped).JPG",
+      "author": "Filipo Tardim",
+      "license": "CC BY-SA 4.0"
+    }
+  },
+  {
+    "id": "37e51c0fa72e",
+    "where": "Macapá",
+    "uf": "AP",
+    "name": "Fortaleza de São José de Macapá",
+    "state": "AP",
+    "type": "u",
+    "diff": 3,
+    "fact": "Maior fortificação construída pelos portugueses no Brasil, concluída em 1782.",
+    "file": "Fortaleza_de_São_José_de_Macapá.jpg",
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/Fortaleza_de_S%C3%A3o_Jos%C3%A9_de_Macap%C3%A1.jpg/1920px-Fortaleza_de_S%C3%A3o_Jos%C3%A9_de_Macap%C3%A1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1600,
+      "height": 900,
+      "page": "https://commons.wikimedia.org/wiki/File:Fortaleza_de_S%C3%A3o_Jos%C3%A9_de_Macap%C3%A1.jpg",
+      "author": "Athena Vieira",
+      "license": "CC BY-SA 4.0"
+    }
+  },
+  {
+    "id": "cb85fde2af74",
+    "where": "Florianópolis",
+    "uf": "SC",
+    "name": "Lagoa da Conceição",
+    "state": "SC",
+    "type": "n",
+    "diff": 3,
+    "fact": "Em Florianópolis, é cercada por dunas, morros e muito restaurante de frutos do mar.",
+    "file": "Vista_da_Lagoa_da_trilha_de_Ratones.jpg",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/37/Vista_da_Lagoa_da_trilha_de_Ratones.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "width": 1600,
+      "height": 1200,
+      "page": "https://commons.wikimedia.org/wiki/File:Vista_da_Lagoa_da_trilha_de_Ratones.jpg",
+      "author": "desconhecido",
+      "license": "CC BY-SA 3.0"
+    }
+  },
+  {
+    "id": "a2a7ab5f00e2",
+    "where": "Brasília",
+    "uf": "DF",
+    "name": "Ponte JK",
+    "state": "DF",
+    "type": "u",
+    "diff": 3,
+    "fact": "Seus três arcos atravessam o Lago Paranoá, em Brasília.",
+    "file": "BSB_Ponte_JK_Panorama_05_2007_266.jpg",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/01/BSB_Ponte_JK_Panorama_05_2007_266.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "width": 1600,
+      "height": 669,
+      "page": "https://commons.wikimedia.org/wiki/File:BSB_Ponte_JK_Panorama_05_2007_266.jpg",
+      "author": "Mario Roberto Duran Ortiz",
+      "license": "Public domain"
+    }
+  },
+  {
+    "id": "d5286e312192",
+    "where": "Ilha de Marajó",
+    "uf": "PA",
+    "name": "Ilha de Marajó",
+    "state": "PA",
+    "type": "n",
+    "diff": 3,
+    "fact": "Maior ilha fluviomarítima do mundo, famosa pelos búfalos.",
+    "file": "Área de Proteção Ambiental do Arquipélago do Marajó - Thiago Altran (01).jpg",
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b2/%C3%81rea_de_Prote%C3%A7%C3%A3o_Ambiental_do_Arquip%C3%A9lago_do_Maraj%C3%B3_-_Thiago_Altran_%2801%29.jpg/1920px-%C3%81rea_de_Prote%C3%A7%C3%A3o_Ambiental_do_Arquip%C3%A9lago_do_Maraj%C3%B3_-_Thiago_Altran_%2801%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1600,
+      "height": 1067,
+      "page": "https://commons.wikimedia.org/wiki/File:%C3%81rea_de_Prote%C3%A7%C3%A3o_Ambiental_do_Arquip%C3%A9lago_do_Maraj%C3%B3_-_Thiago_Altran_(01).jpg",
+      "author": "ThiagoALacerda",
+      "license": "CC BY-SA 4.0"
+    }
+  },
+  {
+    "id": "9faf27193e4a",
+    "where": "Serra do Cipó",
+    "uf": "MG",
+    "name": "Serra do Cipó",
+    "state": "MG",
+    "type": "n",
+    "diff": 3,
+    "fact": "Perto de BH, é um paraíso de cachoeiras e campos rupestres.",
+    "file": "Por_do_sol_no_Travessão.jpg",
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ad/Por_do_sol_no_Travess%C3%A3o.jpg/1920px-Por_do_sol_no_Travess%C3%A3o.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1600,
+      "height": 1063,
+      "page": "https://commons.wikimedia.org/wiki/File:Por_do_sol_no_Travess%C3%A3o.jpg",
+      "author": "Rafael Rodrigues Camargo",
+      "license": "CC BY-SA 4.0"
+    }
+  },
+  {
+    "id": "feca8931ab59",
+    "where": "Chapada das Mesas",
+    "uf": "MA",
+    "name": "Chapada das Mesas",
+    "state": "MA",
+    "type": "n",
+    "diff": 3,
+    "fact": "Famosa pela Cachoeira de Santa Bárbara e pelos morros de topo plano.",
+    "file": "Chapada das Mesas - Maranhão (3896926444).jpg",
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/Chapada_das_Mesas_-_Maranh%C3%A3o_%283896926444%29.jpg/1920px-Chapada_das_Mesas_-_Maranh%C3%A3o_%283896926444%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1600,
+      "height": 1071,
+      "page": "https://commons.wikimedia.org/wiki/File:Chapada_das_Mesas_-_Maranh%C3%A3o_(3896926444).jpg",
+      "author": "Otávio Nogueira from Fortaleza, BR",
+      "license": "CC BY 2.0"
+    }
+  },
+  {
+    "id": "474fd348f165",
+    "where": "Bonito",
+    "uf": "MS",
+    "name": "Buraco das Araras",
+    "state": "MS",
+    "type": "n",
+    "diff": 3,
+    "fact": "Uma dolina gigante onde vivem araras-vermelhas.",
+    "file": "Buraco_das_Araras_Jardim_MS_Brazil.jpg",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/88/Buraco_das_Araras_Jardim_MS_Brazil.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "width": 1600,
+      "height": 1012,
+      "page": "https://commons.wikimedia.org/wiki/File:Buraco_das_Araras_Jardim_MS_Brazil.jpg",
+      "author": "Livlandfahrer",
+      "license": "CC BY-SA 4.0"
+    }
+  },
+  {
+    "id": "867a52b2bc52",
+    "where": "Rio de Janeiro",
+    "uf": "RJ",
+    "name": "Pedra da Gávea",
+    "state": "RJ",
+    "type": "n",
+    "diff": 3,
+    "fact": "Um dos maiores blocos de pedra à beira-mar do mundo, com 844 metros.",
+    "file": "Nebulosa_Pedra_da_Gávea.jpg",
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a8/Nebulosa_Pedra_da_G%C3%A1vea.jpg/1920px-Nebulosa_Pedra_da_G%C3%A1vea.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1600,
+      "height": 1200,
+      "page": "https://commons.wikimedia.org/wiki/File:Nebulosa_Pedra_da_G%C3%A1vea.jpg",
+      "author": "KarlaFPaiva",
+      "license": "CC BY-SA 3.0"
+    }
+  },
+  {
+    "id": "eeebc54a1962",
+    "where": "Natal",
+    "uf": "RN",
+    "name": "Ponte Newton Navarro",
+    "state": "RN",
+    "type": "u",
+    "diff": 3,
+    "fact": "Liga as zonas Norte e Leste de Natal sobre o Rio Potengi.",
+    "file": "Ponte Newton Navarro - Natal-RN.jpg",
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/Ponte_Newton_Navarro_-_Natal-RN.jpg/1920px-Ponte_Newton_Navarro_-_Natal-RN.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1600,
+      "height": 1067,
+      "page": "https://commons.wikimedia.org/wiki/File:Ponte_Newton_Navarro_-_Natal-RN.jpg",
+      "author": "Túllio F",
+      "license": "CC BY-SA 4.0"
+    }
+  },
+  {
+    "id": "013fae62a0ed",
+    "where": "Balneário Camboriú",
+    "uf": "SC",
+    "name": "Orla de Balneário Camboriú",
+    "state": "SC",
+    "type": "u",
+    "diff": 1,
+    "fact": "Tem alguns dos prédios mais altos do Brasil, tão altos que fazem sombra na praia à tarde.",
+    "file": "Balneário_Camboriú_from_Unipraias_Park_2023-04-02.jpg",
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/Balne%C3%A1rio_Cambori%C3%BA_from_Unipraias_Park_2023-04-02.jpg/1920px-Balne%C3%A1rio_Cambori%C3%BA_from_Unipraias_Park_2023-04-02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1600,
+      "height": 1200,
+      "page": "https://commons.wikimedia.org/wiki/File:Balne%C3%A1rio_Cambori%C3%BA_from_Unipraias_Park_2023-04-02.jpg",
+      "author": "Trustable",
+      "license": "CC BY-SA 4.0"
+    }
+  },
+  {
+    "id": "3fc65441b13c",
+    "where": "Recife",
+    "uf": "PE",
+    "name": "Marco Zero do Recife",
+    "state": "PE",
+    "type": "u",
+    "diff": 2,
+    "fact": "No Recife Antigo, de frente pro Parque das Esculturas de Francisco Brennand.",
+    "file": "Ground_Zero_-_Recife_-_Pernambuco_-_Brazil(3).jpg",
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/13/Ground_Zero_-_Recife_-_Pernambuco_-_Brazil%283%29.jpg/1920px-Ground_Zero_-_Recife_-_Pernambuco_-_Brazil%283%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1600,
+      "height": 1067,
+      "page": "https://commons.wikimedia.org/wiki/File:Ground_Zero_-_Recife_-_Pernambuco_-_Brazil(3).jpg",
+      "author": "Portal da Copa/ME",
+      "license": "CC BY 3.0 br"
+    }
+  },
+  {
+    "id": "42ff0943d1bd",
+    "where": "Fortaleza",
+    "uf": "CE",
+    "name": "Ponte dos Ingleses",
+    "state": "CE",
+    "type": "u",
+    "diff": 3,
+    "fact": "Na Praia de Iracema, é ponto clássico pra ver o pôr do sol e, com sorte, golfinhos.",
+    "file": "Ponte_dos_Ingleses_(2).jpg",
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/Ponte_dos_Ingleses_%282%29.jpg/1920px-Ponte_dos_Ingleses_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1600,
+      "height": 1067,
+      "page": "https://commons.wikimedia.org/wiki/File:Ponte_dos_Ingleses_(2).jpg",
+      "author": "Governo Federal Brasileiro",
+      "license": "CC BY-SA 3.0"
+    }
+  },
+  {
+    "id": "85ed345ed3f5",
+    "where": "Porto Alegre",
+    "uf": "RS",
+    "name": "Usina do Gasômetro",
+    "state": "RS",
+    "type": "u",
+    "diff": 2,
+    "fact": "Antiga usina termelétrica às margens do Guaíba, virou centro cultural com o pôr do sol mais famoso da cidade.",
+    "file": "Usina_do_Gasômetro_in_2025_(zoom).jpg",
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/Usina_do_Gas%C3%B4metro_in_2025_%28zoom%29.jpg/1920px-Usina_do_Gas%C3%B4metro_in_2025_%28zoom%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1600,
+      "height": 1200,
+      "page": "https://commons.wikimedia.org/wiki/File:Usina_do_Gas%C3%B4metro_in_2025_(zoom).jpg",
+      "author": "Lenny Maidana",
+      "license": "CC BY-SA 4.0"
+    }
+  },
+  {
+    "id": "cf86264812db",
+    "where": "Belo Horizonte",
+    "uf": "MG",
+    "name": "Praça da Liberdade",
+    "state": "MG",
+    "type": "u",
+    "diff": 3,
+    "fact": "Era a sede do governo de Minas e hoje é um circuito de museus.",
+    "file": "Belo_Horizonte,_Brasil.jpg",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/1b/Belo_Horizonte%2C_Brasil.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "width": 1600,
+      "height": 1067,
+      "page": "https://commons.wikimedia.org/wiki/File:Belo_Horizonte,_Brasil.jpg",
+      "author": "Portal da Copa/ME",
+      "license": "CC BY 3.0 br"
+    }
+  },
+  {
+    "id": "f89c551e1505",
+    "where": "João Pessoa",
+    "uf": "PB",
+    "name": "Farol do Cabo Branco",
+    "state": "PB",
+    "type": "u",
+    "diff": 3,
+    "fact": "Fica perto da Ponta do Seixas, o ponto mais oriental das Américas.",
+    "file": "Joao_Pessoa_Paraiba_Farol_do_Cabo_Branco2.jpg",
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/eb/Joao_Pessoa_Paraiba_Farol_do_Cabo_Branco2.jpg/1920px-Joao_Pessoa_Paraiba_Farol_do_Cabo_Branco2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1600,
+      "height": 1200,
+      "page": "https://commons.wikimedia.org/wiki/File:Joao_Pessoa_Paraiba_Farol_do_Cabo_Branco2.jpg",
+      "author": "No machine-readable author provided. Pbendito assumed (based on copyright claims",
+      "license": "CC BY-SA 2.5"
+    }
+  },
+  {
+    "id": "f2d730eab1f2",
+    "where": "Maceió",
+    "uf": "AL",
+    "name": "Praia de Pajuçara",
+    "state": "AL",
+    "type": "n",
+    "diff": 2,
+    "fact": "As jangadas levam turistas até as piscinas naturais a 2 km da areia.",
+    "file": "Ponta_Verde_Lighthouse_landscape_-_Maceió,_Brazil_(edited).jpg",
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f0/Ponta_Verde_Lighthouse_landscape_-_Macei%C3%B3%2C_Brazil_%28edited%29.jpg/1920px-Ponta_Verde_Lighthouse_landscape_-_Macei%C3%B3%2C_Brazil_%28edited%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1600,
+      "height": 1063,
+      "page": "https://commons.wikimedia.org/wiki/File:Ponta_Verde_Lighthouse_landscape_-_Macei%C3%B3,_Brazil_(edited).jpg",
+      "author": "Original: André Lage Freitas Derivative work: Wilfredor Derivative work: Aristea",
+      "license": "CC BY-SA 4.0"
+    }
+  },
+  {
+    "id": "d1583b523e4e",
+    "where": "Vitória",
+    "uf": "ES",
+    "name": "Terceira Ponte",
+    "state": "ES",
+    "type": "u",
+    "diff": 3,
+    "fact": "Liga Vitória a Vila Velha com um vão central de 70 metros de altura.",
+    "file": "Terceira_Ponte2.jpg",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/50/Terceira_Ponte2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "width": 1600,
+      "height": 1380,
+      "page": "https://commons.wikimedia.org/wiki/File:Terceira_Ponte2.jpg",
+      "author": "Blude (Saulo Pratti)",
+      "license": "CC BY 2.0"
+    }
+  },
+  {
+    "id": "fe6c8258b6d2",
+    "where": "Santos",
+    "uf": "SP",
+    "name": "Museu do Café",
+    "state": "SP",
+    "type": "u",
+    "diff": 3,
+    "fact": "Funciona no prédio da antiga Bolsa Oficial de Café, de 1922.",
+    "file": "Bolsa do Café, Santos 2017 008.jpg",
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/83/Bolsa_do_Caf%C3%A9%2C_Santos_2017_008.jpg/1920px-Bolsa_do_Caf%C3%A9%2C_Santos_2017_008.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1600,
+      "height": 1232,
+      "page": "https://commons.wikimedia.org/wiki/File:Bolsa_do_Caf%C3%A9,_Santos_2017_008.jpg",
+      "author": "Photograph by Mike Peel (www.mikepeel.net).",
+      "license": "CC BY-SA 4.0"
+    }
+  },
+  {
+    "id": "3950ef994dff",
+    "where": "Holambra",
+    "uf": "SP",
+    "name": "Moinho Povos Unidos",
+    "state": "SP",
+    "type": "u",
+    "diff": 3,
+    "fact": "A cidade das flores foi fundada por imigrantes holandeses e tem o maior moinho da América Latina.",
+    "file": "Moinho_holambra.jpg",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/b1/Moinho_holambra.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "width": 1600,
+      "height": 2133,
+      "page": "https://commons.wikimedia.org/wiki/File:Moinho_holambra.jpg",
+      "author": "Pedro Henrique D. Souza",
+      "license": "Public domain"
+    }
+  },
+  {
+    "id": "bc991470da08",
+    "where": "Aparecida",
+    "uf": "SP",
+    "name": "Basílica de Aparecida",
+    "state": "SP",
+    "type": "u",
+    "diff": 2,
+    "fact": "É o maior santuário mariano do mundo.",
+    "file": "Santuário_Nacional_de_Aparecida_(SP).jpg",
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/55/Santu%C3%A1rio_Nacional_de_Aparecida_%28SP%29.jpg/1920px-Santu%C3%A1rio_Nacional_de_Aparecida_%28SP%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1600,
+      "height": 1142,
+      "page": "https://commons.wikimedia.org/wiki/File:Santu%C3%A1rio_Nacional_de_Aparecida_(SP).jpg",
+      "author": "Marcos Elias de Oliveira Júnior",
+      "license": "CC0"
+    }
+  },
+  {
+    "id": "994dd5e5d9af",
+    "where": "Juazeiro do Norte",
+    "uf": "CE",
+    "name": "Estátua do Padre Cícero",
+    "state": "CE",
+    "type": "u",
+    "diff": 3,
+    "fact": "Com 27 metros, recebe milhões de romeiros todo ano no Horto.",
+    "file": "Estátua_do_Padre_Cícero_no_Horto,_em_Juazeiro_do_Norte.jpg",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/b0/Est%C3%A1tua_do_Padre_C%C3%ADcero_no_Horto%2C_em_Juazeiro_do_Norte.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "width": 1600,
+      "height": 1907,
+      "page": "https://commons.wikimedia.org/wiki/File:Est%C3%A1tua_do_Padre_C%C3%ADcero_no_Horto,_em_Juazeiro_do_Norte.jpg",
+      "author": "Allan Patrick",
+      "license": "CC BY-SA 2.0"
+    }
+  },
+  {
+    "id": "110b72a50fa9",
+    "where": "Congonhas",
+    "uf": "MG",
+    "name": "Profetas de Aleijadinho",
+    "state": "MG",
+    "type": "u",
+    "diff": 3,
+    "fact": "Os 12 profetas em pedra-sabão são Patrimônio Mundial da UNESCO.",
+    "file": "Congonhas_santuario_matosinhos.jpg",
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/Congonhas_santuario_matosinhos.jpg/1920px-Congonhas_santuario_matosinhos.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1600,
+      "height": 1067,
+      "page": "https://commons.wikimedia.org/wiki/File:Congonhas_santuario_matosinhos.jpg",
+      "author": "Halleypo",
+      "license": "CC BY-SA 3.0"
+    }
+  },
+  {
+    "id": "fa475cecd87e",
+    "where": "Tiradentes",
+    "uf": "MG",
+    "name": "Centro de Tiradentes",
+    "state": "MG",
+    "type": "u",
+    "diff": 3,
+    "fact": "Cidade colonial famosa pelo festival de cinema e pela Maria Fumaça até São João del-Rei.",
+    "file": "Tiradentes_-_Minas_Gerais_-_Brasil._(15463465202).jpg",
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f4/Tiradentes_-_Minas_Gerais_-_Brasil._%2815463465202%29.jpg/1920px-Tiradentes_-_Minas_Gerais_-_Brasil._%2815463465202%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1600,
+      "height": 1067,
+      "page": "https://commons.wikimedia.org/wiki/File:Tiradentes_-_Minas_Gerais_-_Brasil._(15463465202).jpg",
+      "author": "Marinelson Almeida - Traveling through Brazil from Niteroi, Brasil",
+      "license": "CC BY 2.0"
+    }
+  },
+  {
+    "id": "ffc3832b6ab3",
+    "where": "Pirenópolis",
+    "uf": "GO",
+    "name": "Festa do Divino em Pirenópolis",
+    "state": "GO",
+    "type": "u",
+    "diff": 3,
+    "fact": "A Festa do Divino, com as Cavalhadas, enche as ruas coloniais todo ano.",
+    "file": "Cortejo_do_imperador_da_Festa_do_Divino_em_Pirenópolis.jpg",
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/19/Cortejo_do_imperador_da_Festa_do_Divino_em_Piren%C3%B3polis.jpg/1920px-Cortejo_do_imperador_da_Festa_do_Divino_em_Piren%C3%B3polis.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1600,
+      "height": 1067,
+      "page": "https://commons.wikimedia.org/wiki/File:Cortejo_do_imperador_da_Festa_do_Divino_em_Piren%C3%B3polis.jpg",
+      "author": "Rossyni Gomes Pompêo de Pina",
+      "license": "CC BY-SA 4.0"
+    }
+  },
+  {
+    "id": "2125bb50d059",
+    "where": "Porto de Galinhas",
+    "uf": "PE",
+    "name": "Piscinas de Porto de Galinhas",
+    "state": "PE",
+    "type": "n",
+    "diff": 2,
+    "fact": "Na maré baixa, as piscinas naturais ficam cheias de peixinhos.",
+    "file": "Porto_de_Galinhas-003.jpg",
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/Porto_de_Galinhas-003.jpg/1920px-Porto_de_Galinhas-003.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1600,
+      "height": 1200,
+      "page": "https://commons.wikimedia.org/wiki/File:Porto_de_Galinhas-003.jpg",
+      "author": "Cleferson Comarela",
+      "license": "CC BY-SA 3.0"
+    }
+  },
+  {
+    "id": "54d9f266cb67",
+    "where": "Pipa",
+    "uf": "RN",
+    "name": "Praia da Pipa",
+    "state": "RN",
+    "type": "n",
+    "diff": 2,
+    "fact": "Na Baía dos Golfinhos dá pra nadar perto dos golfinhos na maré baixa.",
+    "file": "PipaBeachView.JPG",
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/39/PipaBeachView.JPG/1920px-PipaBeachView.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1600,
+      "height": 1180,
+      "page": "https://commons.wikimedia.org/wiki/File:PipaBeachView.JPG",
+      "author": "Bjørn Christian Tørrissen",
+      "license": "CC BY-SA 4.0"
+    }
+  },
+  {
+    "id": "5560d99b6479",
+    "where": "Búzios",
+    "uf": "RJ",
+    "name": "Orla de Búzios",
+    "state": "RJ",
+    "type": "n",
+    "diff": 2,
+    "fact": "Ficou famosa nos anos 60 depois das férias de Brigitte Bardot.",
+    "file": "Buzios_11_2006_03.JPG",
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/Buzios_11_2006_03.JPG/1920px-Buzios_11_2006_03.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1600,
+      "height": 1066,
+      "page": "https://commons.wikimedia.org/wiki/File:Buzios_11_2006_03.JPG",
+      "author": "Mariordo Mario Roberto Duran Ortiz",
+      "license": "CC BY-SA 3.0"
+    }
+  },
+  {
+    "id": "cbc42b63913d",
+    "where": "Porto Velho",
+    "uf": "RO",
+    "name": "Estrada de Ferro Madeira-Mamoré",
+    "state": "RO",
+    "type": "u",
+    "diff": 3,
+    "fact": "Apelidada de Ferrovia do Diabo, pelas milhares de mortes na construção.",
+    "file": "Estação_Locomotiva_18.jpg",
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b8/Esta%C3%A7%C3%A3o_Locomotiva_18.jpg/1920px-Esta%C3%A7%C3%A3o_Locomotiva_18.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1600,
+      "height": 1151,
+      "page": "https://commons.wikimedia.org/wiki/File:Esta%C3%A7%C3%A3o_Locomotiva_18.jpg",
+      "author": "Seravattavares",
+      "license": "CC BY-SA 4.0"
+    }
+  },
+  {
+    "id": "5c74795be6d0",
+    "where": "Teresina",
+    "uf": "PI",
+    "name": "Ponte Estaiada de Teresina",
+    "state": "PI",
+    "type": "u",
+    "diff": 3,
+    "fact": "Tem um mirante no alto do mastro, sobre o Rio Poti.",
+    "file": "MauricioPokemon Ponte Estaiada Teresina PI (40914003022).jpg",
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/db/MauricioPokemon_Ponte_Estaiada_Teresina_PI_%2840914003022%29.jpg/1920px-MauricioPokemon_Ponte_Estaiada_Teresina_PI_%2840914003022%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1600,
+      "height": 1067,
+      "page": "https://commons.wikimedia.org/wiki/File:MauricioPokemon_Ponte_Estaiada_Teresina_PI_(40914003022).jpg",
+      "author": "MTur Destinos",
+      "license": "Public domain"
+    }
+  },
+  {
+    "id": "ef937a2bf402",
+    "where": "Palmas",
+    "uf": "TO",
+    "name": "Palácio Araguaia",
+    "state": "TO",
+    "type": "u",
+    "diff": 3,
+    "fact": "Palmas, criada em 1989, é a capital mais nova do Brasil.",
+    "file": "Palacio_do_Araguaia.jpg",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/03/Palacio_do_Araguaia.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "width": 1600,
+      "height": 1200,
+      "page": "https://commons.wikimedia.org/wiki/File:Palacio_do_Araguaia.jpg",
+      "author": "Renato A. Costa ( Renato Alves da Costa )",
+      "license": "CC BY 2.0"
+    }
+  },
+  {
+    "id": "c2c9b0d6c5cc",
+    "where": "Blumenau",
+    "uf": "SC",
+    "name": "Vila Germânica",
+    "state": "SC",
+    "type": "u",
+    "diff": 2,
+    "fact": "Casa da Oktoberfest, uma das maiores festas alemãs fora da Alemanha.",
+    "file": "Parque Vila Germânica Blumenau SC (27012653938).jpg",
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d7/Parque_Vila_Germ%C3%A2nica_Blumenau_SC_%2827012653938%29.jpg/1920px-Parque_Vila_Germ%C3%A2nica_Blumenau_SC_%2827012653938%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1600,
+      "height": 1068,
+      "page": "https://commons.wikimedia.org/wiki/File:Parque_Vila_Germ%C3%A2nica_Blumenau_SC_(27012653938).jpg",
+      "author": "MTur Destinos",
+      "license": "Attribution"
+    }
+  },
+  {
+    "id": "df9ef5f31821",
+    "where": "Bento Gonçalves",
+    "uf": "RS",
+    "name": "Vale dos Vinhedos",
+    "state": "RS",
+    "type": "n",
+    "diff": 3,
+    "fact": "Primeira região do Brasil com Denominação de Origem para vinhos.",
+    "file": "Vignobles_Miolo_02.JPG",
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/Vignobles_Miolo_02.JPG/1920px-Vignobles_Miolo_02.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1600,
+      "height": 1200,
+      "page": "https://commons.wikimedia.org/wiki/File:Vignobles_Miolo_02.JPG",
+      "author": "FrancoBras",
+      "license": "CC BY-SA 3.0"
+    }
+  },
+  {
+    "id": "ef687f2d1383",
+    "where": "Campos do Jordão",
+    "uf": "SP",
+    "name": "Capivari",
+    "state": "SP",
+    "type": "u",
+    "diff": 2,
+    "fact": "A 'Suíça brasileira', com casas em estilo enxaimel e festival de inverno.",
+    "file": "Vista_área_da_Vila_Capivari,_Campos_do_Jordão_(cropped).jpg",
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/Vista_%C3%A1rea_da_Vila_Capivari%2C_Campos_do_Jord%C3%A3o_%28cropped%29.jpg/1920px-Vista_%C3%A1rea_da_Vila_Capivari%2C_Campos_do_Jord%C3%A3o_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1600,
+      "height": 894,
+      "page": "https://commons.wikimedia.org/wiki/File:Vista_%C3%A1rea_da_Vila_Capivari,_Campos_do_Jord%C3%A3o_(cropped).jpg",
+      "author": "Governo do Estado de São Paulo",
+      "license": "CC BY 2.0"
+    }
+  },
+  {
+    "id": "01bb171fe791",
+    "where": "Belém",
+    "uf": "PA",
+    "name": "Estação das Docas",
+    "state": "PA",
+    "type": "u",
+    "diff": 3,
+    "fact": "Antigos galpões do porto viraram restaurantes de frente pra Baía do Guajará.",
+    "file": "Brazil_Belém_Las_Docas_02.jpg",
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/70/Brazil_Bel%C3%A9m_Las_Docas_02.jpg/1920px-Brazil_Bel%C3%A9m_Las_Docas_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1600,
+      "height": 1073,
+      "page": "https://commons.wikimedia.org/wiki/File:Brazil_Bel%C3%A9m_Las_Docas_02.jpg",
+      "author": "Cayambe",
+      "license": "CC BY-SA 3.0"
+    }
+  },
+  {
+    "id": "00c1c3a40079",
+    "where": "Curitiba",
+    "uf": "PR",
+    "name": "Ópera de Arame",
+    "state": "PR",
+    "type": "u",
+    "diff": 2,
+    "fact": "Teatro de tubos de aço e policarbonato, construído em 75 dias numa antiga pedreira.",
+    "file": "OperaDeArame.WireOperaHouse.CuritibaBrasil.jpg",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/57/OperaDeArame.WireOperaHouse.CuritibaBrasil.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "width": 1600,
+      "height": 1200,
+      "page": "https://commons.wikimedia.org/wiki/File:OperaDeArame.WireOperaHouse.CuritibaBrasil.jpg",
+      "author": "KikoCorreia",
+      "license": "CC BY-SA 2.5 br"
+    }
+  },
+  {
+    "id": "d4d619152e65",
+    "where": "São Paulo",
+    "uf": "SP",
+    "name": "Edifício Copan",
+    "state": "SP",
+    "type": "u",
+    "diff": 2,
+    "fact": "Projeto de Niemeyer com mais de mil apartamentos; tem até CEP próprio.",
+    "file": "Copan_ST.jpg",
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/Copan_ST.jpg/1920px-Copan_ST.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1600,
+      "height": 2403,
+      "page": "https://commons.wikimedia.org/wiki/File:Copan_ST.jpg",
+      "author": "Silvio Tanaka",
+      "license": "CC BY 2.0"
+    }
+  },
+  {
+    "id": "1a9dddb56689",
+    "where": "Salvador",
+    "uf": "BA",
+    "name": "Igreja do Bonfim",
+    "state": "BA",
+    "type": "u",
+    "diff": 2,
+    "fact": "As fitinhas do Bonfim são amarradas no gradil com três pedidos.",
+    "file": "Igreja_do_Bonfim,_salvador,2019.jpg",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/73/Igreja_do_Bonfim%2C_salvador%2C2019.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "width": 1600,
+      "height": 2132,
+      "page": "https://commons.wikimedia.org/wiki/File:Igreja_do_Bonfim,_salvador,2019.jpg",
+      "author": "Matheus2000fg",
+      "license": "CC BY-SA 4.0"
+    }
+  },
+  {
+    "id": "04c87e483c63",
+    "where": "Petrópolis",
+    "uf": "RJ",
+    "name": "Catedral de Petrópolis",
+    "state": "RJ",
+    "type": "u",
+    "diff": 3,
+    "fact": "Guarda os restos mortais de Dom Pedro II e da Imperatriz Teresa Cristina.",
+    "file": "Petrópolis_Cathedral,_Saint_Peter_of_Alcantara_Church,_place_of_Emperor_Pedro_II,_Brazil.jpg",
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7e/Petr%C3%B3polis_Cathedral%2C_Saint_Peter_of_Alcantara_Church%2C_place_of_Emperor_Pedro_II%2C_Brazil.jpg/1920px-Petr%C3%B3polis_Cathedral%2C_Saint_Peter_of_Alcantara_Church%2C_place_of_Emperor_Pedro_II%2C_Brazil.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1600,
+      "height": 1796,
+      "page": "https://commons.wikimedia.org/wiki/File:Petr%C3%B3polis_Cathedral,_Saint_Peter_of_Alcantara_Church,_place_of_Emperor_Pedro_II,_Brazil.jpg",
+      "author": "Wilfredor",
+      "license": "CC BY-SA 4.0"
+    }
+  },
+  {
+    "id": "a96a472222e0",
+    "where": "Diamantina",
+    "uf": "MG",
+    "name": "Centro de Diamantina",
+    "state": "MG",
+    "type": "u",
+    "diff": 3,
+    "fact": "Terra de JK e de Chica da Silva, é Patrimônio Mundial da UNESCO.",
+    "file": "Centro_Histórico_de_Diamantina_(Amanhecer).jpg",
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/47/Centro_Hist%C3%B3rico_de_Diamantina_%28Amanhecer%29.jpg/1920px-Centro_Hist%C3%B3rico_de_Diamantina_%28Amanhecer%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1600,
+      "height": 1069,
+      "page": "https://commons.wikimedia.org/wiki/File:Centro_Hist%C3%B3rico_de_Diamantina_(Amanhecer).jpg",
+      "author": "Demetrio Jereissati",
+      "license": "CC BY-SA 4.0"
+    }
+  },
+  {
+    "id": "e5f2224073b9",
+    "where": "Trancoso",
+    "uf": "BA",
+    "name": "Praia de Trancoso",
+    "state": "BA",
+    "type": "u",
+    "diff": 3,
+    "fact": "Vila de Porto Seguro famosa pelas praias e pelo Quadrado, com casinhas coloridas e uma igrejinha.",
+    "file": "Trancoso,_Porto_Seguro,_Bahia_Brazil.jpg",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/0b/Trancoso%2C_Porto_Seguro%2C_Bahia_Brazil.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "width": 1600,
+      "height": 1183,
+      "page": "https://commons.wikimedia.org/wiki/File:Trancoso,_Porto_Seguro,_Bahia_Brazil.jpg",
+      "author": "Michel Y.G. Meunier",
+      "license": "Public domain"
+    }
+  },
+  {
+    "id": "effbba382b86",
+    "where": "Parintins",
+    "uf": "AM",
+    "name": "Festival de Parintins",
+    "state": "AM",
+    "type": "u",
+    "diff": 3,
+    "fact": "Todo junho, Garantido (vermelho) e Caprichoso (azul) disputam o festival.",
+    "file": "Boi Caprichoso 2015.jpg",
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8f/Boi_Caprichoso_2015.jpg/1920px-Boi_Caprichoso_2015.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1600,
+      "height": 1067,
+      "page": "https://commons.wikimedia.org/wiki/File:Boi_Caprichoso_2015.jpg",
+      "author": "CulturaGovBr",
+      "license": "CC BY 2.0"
+    }
+  },
+  {
+    "id": "fc21449ab3cb",
+    "where": "Rio de Janeiro",
+    "uf": "RJ",
+    "name": "Lagoa Rodrigo de Freitas",
+    "state": "RJ",
+    "type": "n",
+    "diff": 2,
+    "fact": "No fim do ano recebe uma árvore de Natal flutuante.",
+    "file": "A_bela_vista_do_Cristo.jpg",
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/be/A_bela_vista_do_Cristo.jpg/1920px-A_bela_vista_do_Cristo.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1600,
+      "height": 1060,
+      "page": "https://commons.wikimedia.org/wiki/File:A_bela_vista_do_Cristo.jpg",
+      "author": "Ana Carolina do Nascimento Guimarães",
+      "license": "CC BY-SA 3.0"
+    }
+  },
+  {
+    "id": "6812fda616a1",
+    "where": "Ilhabela",
+    "uf": "SP",
+    "name": "Ilhabela",
+    "state": "SP",
+    "type": "n",
+    "diff": 3,
+    "fact": "Arquipélago com mais de 300 cachoeiras e famoso pelos borrachudos.",
+    "file": "Sunset_View_-_Ilhabela.jpg",
+    "image": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d1/Sunset_View_-_Ilhabela.jpg/1920px-Sunset_View_-_Ilhabela.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1600,
+      "height": 769,
+      "page": "https://commons.wikimedia.org/wiki/File:Sunset_View_-_Ilhabela.jpg",
+      "author": "Lucas Lima 91",
+      "license": "CC BY-SA 2.0"
+    }
+  }
+]

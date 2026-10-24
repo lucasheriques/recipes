@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/api/onde-e-isso",
+      "destination": "https://lucas-low-carb-recipes.netlify.app/api/onde-e-isso"
+    }
+  ]
+}
