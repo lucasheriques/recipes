@@ -1,0 +1,961 @@
+<title>Onde É Isso?</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Rubik+Mono+One&display=swap">
+<style>
+/* Layout: um app de tela cheia pro celular — foto em cima, alternativas no polegar.
+   Visual de cartão-postal noturno: papel creme sobre mata escura, carimbos de correio. */
+:root {
+  --mata: #0e2a2b;        /* fundo: verde-mata à noite */
+  --mata-2: #163b3c;
+  --papel: #fff3dd;       /* cartão-postal */
+  --tinta: #1e1a16;
+  --manga: #ffb627;
+  --hibisco: #ff5d73;
+  --jade: #2ec4b6;
+  --mar: #4d8dff;
+  --certo: #36d27a;
+  --errado: #ff4d4d;
+  --muted: #9fbab6;
+  --font-display: "Bricolage Grotesque", ui-rounded, system-ui, sans-serif;
+  --font-stamp: "Rubik Mono One", "Arial Black", Impact, sans-serif;
+  --r: 14px;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+html, body { height: 100%; }
+body {
+  background: var(--mata);
+  background-image:
+    radial-gradient(circle at 15% 0%, #1f4d47 0, transparent 45%),
+    radial-gradient(circle at 100% 100%, #2a2440 0, transparent 50%);
+  color: var(--papel);
+  font-family: var(--font-display);
+  font-size: 16px;
+  -webkit-tap-highlight-color: transparent;
+  overflow: hidden;
+}
+button { font: inherit; color: inherit; border: 0; background: none; cursor: pointer; touch-action: manipulation; }
+button:focus-visible, input:focus-visible { outline: 3px solid var(--manga); outline-offset: 2px; }
+input { font: inherit; }
+
+#app {
+  height: 100%;
+  display: flex; flex-direction: column;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+  padding-block: 12px;
+  max-width: 980px; margin: 0 auto;
+}
+.scroll { overflow-y: auto; flex: 1; min-height: 0; padding-bottom: 16px; }
+
+/* ---------- topo ---------- */
+.brand { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.logo { font-weight: 800; font-size: 1.15rem; letter-spacing: -0.02em; display: flex; align-items: center; gap: 8px; }
+.logo .pin { width: 22px; height: 22px; border-radius: 50% 50% 50% 0; transform: rotate(-45deg); background: var(--hibisco); box-shadow: inset 0 0 0 6px var(--hibisco), inset 0 0 0 11px var(--papel); }
+.icon-btn { width: 40px; height: 40px; border-radius: 50%; background: var(--mata-2); display: grid; place-items: center; font-size: 1.1rem; }
+
+/* ---------- capa / entrada ---------- */
+.hero { padding-block: 28px 8px; }
+.hero h1 { font-size: clamp(2.6rem, 13vw, 4.6rem); line-height: 0.92; margin: 0; letter-spacing: -0.04em; font-weight: 800; text-wrap: balance; }
+.hero h1 em { font-style: normal; color: var(--manga); }
+.hero p { color: var(--muted); max-width: 34ch; margin: 14px 0 0; line-height: 1.45; }
+.postcards { display: flex; gap: 10px; margin: 22px 0 6px; height: 120px; }
+.postcards div { flex: 1; border-radius: 6px; background-size: cover; background-position: center; border: 5px solid var(--papel); box-shadow: 0 8px 20px #0007; }
+.postcards div:nth-child(1) { transform: rotate(-4deg); }
+.postcards div:nth-child(2) { transform: rotate(2deg) translateY(6px); }
+.postcards div:nth-child(3) { transform: rotate(-1deg); }
+
+.field { display: grid; gap: 8px; margin-top: 18px; }
+.field label { font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.12em; color: var(--muted); font-weight: 600; }
+.field input { width: 100%; padding: 16px; border-radius: var(--r); border: 2px solid #ffffff22; background: #00000033; color: var(--papel); font-size: 1.25rem; font-weight: 600; }
+.swatches { display: flex; gap: 10px; flex-wrap: wrap; }
+.swatch { width: 36px; height: 36px; border-radius: 50%; border: 3px solid transparent; }
+.swatch[aria-pressed="true"] { border-color: var(--papel); transform: scale(1.1); }
+
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 16px 22px; border-radius: 999px; font-weight: 800; font-size: 1.1rem; background: var(--manga); color: var(--tinta); box-shadow: 0 5px 0 #b67a00; transition: transform .08s, box-shadow .08s; }
+.btn:active { transform: translateY(4px); box-shadow: 0 1px 0 #b67a00; }
+.btn.block { width: 100%; }
+.btn.ghost { background: var(--mata-2); color: var(--papel); box-shadow: 0 5px 0 #071a1b; }
+.btn.ghost:active { box-shadow: 0 1px 0 #071a1b; }
+.btn[disabled] { opacity: .45; pointer-events: none; }
+.row { display: flex; gap: 10px; flex-wrap: wrap; }
+.stack { display: grid; gap: 12px; }
+.note { color: var(--muted); font-size: .9rem; line-height: 1.45; }
+
+/* ---------- lobby ---------- */
+.section-title { font-size: .78rem; text-transform: uppercase; letter-spacing: .12em; color: var(--muted); font-weight: 600; margin: 22px 0 10px; }
+.players { display: flex; flex-wrap: wrap; gap: 10px; }
+.chip { display: inline-flex; align-items: center; gap: 8px; padding: 6px 14px 6px 6px; border-radius: 999px; background: var(--mata-2); font-weight: 600; animation: pop .35s cubic-bezier(.3,1.6,.5,1); }
+.chip .you { font-size: .72rem; color: var(--muted); font-weight: 400; }
+.av { width: 30px; height: 30px; border-radius: 50%; display: grid; place-items: center; font-weight: 800; color: var(--tinta); flex: none; font-size: .9rem; }
+.seg { display: flex; background: #00000040; border-radius: 999px; padding: 4px; gap: 2px; }
+.seg button { flex: 1; padding: 10px 8px; border-radius: 999px; font-weight: 600; color: var(--muted); font-size: .95rem; }
+.seg button[aria-pressed="true"] { background: var(--papel); color: var(--tinta); }
+.setting { display: grid; gap: 8px; margin-top: 14px; }
+.setting > span { font-weight: 600; }
+.setting small { color: var(--muted); }
+.banner { margin-top: 14px; padding: 12px 14px; border-radius: var(--r); background: #ffb62718; border: 1px dashed #ffb62766; color: var(--papel); font-size: .92rem; line-height: 1.4; }
+
+/* ---------- jogo ---------- */
+.game { flex: 1; min-height: 0; display: grid; grid-template-rows: auto minmax(0, 1fr) auto; gap: 10px; }
+.hud { display: flex; align-items: center; gap: 10px; }
+.round-tag { font-family: var(--font-stamp); font-size: .8rem; letter-spacing: .04em; background: var(--papel); color: var(--tinta); padding: 6px 10px; border-radius: 6px; }
+.diff { color: var(--manga); font-size: .9rem; letter-spacing: 2px; }
+.x2 { font-family: var(--font-stamp); font-size: .75rem; background: var(--hibisco); color: var(--tinta); padding: 5px 8px; border-radius: 6px; animation: wiggle 1s infinite; }
+.hud .grow { flex: 1; }
+.timer { font-family: var(--font-stamp); font-size: 1.1rem; min-width: 2.4ch; text-align: right; font-variant-numeric: tabular-nums; }
+.timer.low { color: var(--hibisco); animation: pulse .5s infinite alternate; }
+.bar { height: 6px; border-radius: 3px; background: #ffffff1a; overflow: hidden; }
+.bar > i { display: block; height: 100%; background: var(--manga); transform-origin: left; }
+
+.photo-wrap { position: relative; min-height: 0; border-radius: 10px; background: var(--papel); padding: 7px 7px 26px; box-shadow: 0 14px 30px #0009; transform: rotate(-0.6deg); }
+.photo { position: relative; width: 100%; height: 100%; overflow: hidden; border-radius: 4px; background: #233; }
+.photo img { width: 100%; height: 100%; object-fit: cover; display: block; animation: kenburns 24s ease-out forwards; }
+.photo-wrap .caption { position: absolute; left: 12px; right: 12px; bottom: 4px; color: #6d6253; font-size: .78rem; display: flex; justify-content: space-between; gap: 8px; white-space: nowrap; overflow: hidden; }
+.photo-wrap .caption span:last-child { overflow: hidden; text-overflow: ellipsis; }
+.postmark { position: absolute; top: 10px; right: 12px; width: 64px; height: 64px; border-radius: 50%; border: 2px solid #1e1a1688; color: #1e1a16aa; display: grid; place-items: center; text-align: center; font-family: var(--font-stamp); font-size: .55rem; line-height: 1.2; background: #fff3dd66; backdrop-filter: blur(2px); transform: rotate(12deg); }
+
+.countdown { position: absolute; inset: 0; display: grid; place-items: center; background: var(--mata-2); border-radius: 4px; text-align: center; }
+.countdown b { font-family: var(--font-stamp); font-size: clamp(4rem, 26vw, 9rem); color: var(--manga); animation: pop .5s; display: block; }
+.countdown span { color: var(--muted); font-weight: 600; }
+
+.stamp { position: absolute; left: 50%; top: 46%; transform: translate(-50%, -50%) rotate(-12deg); font-family: var(--font-stamp); font-size: clamp(1.6rem, 9vw, 3.2rem); padding: 8px 18px; border: 5px solid currentColor; border-radius: 10px; text-align: center; line-height: 1.05; mix-blend-mode: normal; background: #fff3ddd9; animation: stamp .45s cubic-bezier(.2,1.8,.4,1) both; white-space: nowrap; }
+.stamp small { display: block; font-size: .45em; letter-spacing: .05em; }
+.stamp.ok { color: #12893f; }
+.stamp.bad { color: #d62f2f; }
+.stamp.none { color: #6d6253; }
+
+.options { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.opt { position: relative; min-height: 76px; padding: 12px 12px 12px 14px; border-radius: var(--r); text-align: left; color: var(--tinta); font-weight: 800; font-size: clamp(1rem, 4.4vw, 1.25rem); line-height: 1.1; display: flex; flex-direction: column; justify-content: center; gap: 3px; box-shadow: 0 5px 0 #0006; transition: transform .25s, opacity .35s, filter .35s, box-shadow .1s; overflow: hidden; }
+.opt:active { transform: translateY(3px); box-shadow: 0 2px 0 #0006; }
+.opt .uf { font-family: var(--font-stamp); font-size: .7rem; font-weight: 400; opacity: .7; }
+.opt:nth-child(1) { background: var(--manga); }
+.opt:nth-child(2) { background: var(--jade); }
+.opt:nth-child(3) { background: var(--hibisco); }
+.opt:nth-child(4) { background: var(--mar); }
+.options.locked .opt:not(.mine) { opacity: .35; filter: saturate(.4); }
+.opt.mine { outline: 4px solid var(--papel); outline-offset: 2px; }
+.opt.right { animation: right .7s cubic-bezier(.3,1.6,.5,1) both; outline: 4px solid var(--certo); outline-offset: 2px; opacity: 1 !important; filter: none !important; }
+.opt.wrong { opacity: .28 !important; filter: grayscale(1) !important; transform: scale(.95); }
+.opt .who { display: flex; gap: 4px; margin-top: 4px; flex-wrap: wrap; }
+.opt .who .av { width: 24px; height: 24px; font-size: .72rem; box-shadow: 0 0 0 2px #0005; animation: drop .4s cubic-bezier(.3,1.6,.5,1) both; }
+
+.answered { display: flex; gap: 6px; align-items: center; min-height: 30px; flex-wrap: wrap; }
+.answered .av { opacity: .35; transition: opacity .3s, transform .3s; }
+.answered .av.done { opacity: 1; transform: scale(1.08); box-shadow: 0 0 0 2px var(--certo); }
+.answered small { color: var(--muted); margin-left: 4px; }
+
+/* ---------- revelação ---------- */
+.flash { position: fixed; inset: 0; display: grid; place-items: center; z-index: 30; pointer-events: none; }
+.flash b { font-family: var(--font-stamp); font-size: clamp(1.6rem, 8vw, 3rem); color: var(--tinta); background: var(--manga); padding: 14px 22px; border-radius: 12px; transform: rotate(-3deg); animation: flash 1.2s ease-in-out both; text-align: center; box-shadow: 0 10px 40px #000a; }
+
+.reveal-card { background: var(--papel); color: var(--tinta); border-radius: var(--r); padding: 14px 16px; animation: slideup .5s cubic-bezier(.2,1.2,.4,1) both; }
+.reveal-card .where { font-weight: 800; font-size: 1.5rem; letter-spacing: -.02em; line-height: 1.05; }
+.reveal-card .where small { font-family: var(--font-stamp); font-size: .8rem; background: var(--tinta); color: var(--papel); padding: 2px 6px; border-radius: 4px; vertical-align: middle; margin-left: 4px; }
+.reveal-card .what { font-weight: 600; margin-top: 4px; color: #5b4f40; }
+.reveal-card p { margin: 8px 0 0; line-height: 1.4; font-size: .95rem; }
+.reveal-card .credit { margin-top: 8px; font-size: .7rem; color: #8a7c69; }
+.reveal-card .credit a { color: inherit; }
+
+.board { display: grid; gap: 6px; margin-top: 10px; }
+.board .line { display: grid; grid-template-columns: 26px 30px 1fr auto auto; align-items: center; gap: 10px; padding: 8px 12px 8px 8px; border-radius: 12px; background: var(--mata-2); transition: transform .5s cubic-bezier(.3,1.3,.5,1); }
+.board .line.me { box-shadow: inset 0 0 0 2px var(--manga); }
+.board .pos { font-family: var(--font-stamp); color: var(--muted); font-size: .85rem; text-align: center; }
+.board .name { font-weight: 700; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.board .name small { display: block; font-weight: 400; color: var(--muted); font-size: .75rem; white-space: normal; }
+.board .delta { font-family: var(--font-stamp); font-size: .8rem; color: var(--certo); animation: drop .5s both; }
+.board .delta.zero { color: var(--muted); }
+.board .score { font-family: var(--font-stamp); font-variant-numeric: tabular-nums; min-width: 5ch; text-align: right; }
+
+.footer-actions { display: flex; gap: 10px; align-items: center; }
+.footer-actions .btn { flex: 1; }
+.auto { color: var(--muted); font-size: .85rem; text-align: center; }
+
+.reacts { display: flex; gap: 6px; justify-content: center; }
+.reacts button { font-size: 1.35rem; width: 44px; height: 40px; border-radius: 12px; background: var(--mata-2); }
+.reacts button:active { transform: scale(.9); }
+.float-emoji { position: fixed; z-index: 40; font-size: 2.4rem; pointer-events: none; animation: floatup 2.2s ease-out forwards; text-align: center; }
+.float-emoji small { display: block; font-size: .8rem; font-weight: 700; color: var(--papel); text-shadow: 0 1px 3px #000; }
+
+/* ---------- final ---------- */
+.podium { display: grid; grid-template-columns: 1fr 1fr 1fr; align-items: end; gap: 8px; margin-top: 24px; }
+.podium .step { text-align: center; animation: rise .8s cubic-bezier(.2,1.3,.4,1) both; }
+.podium .block { border-radius: 10px 10px 0 0; background: var(--papel); color: var(--tinta); font-family: var(--font-stamp); display: grid; place-items: center; font-size: 1.6rem; }
+.podium .av { width: 54px; height: 54px; margin: 0 auto 6px; font-size: 1.3rem; }
+.podium .nm { font-weight: 800; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.podium .pts { font-family: var(--font-stamp); font-size: .8rem; color: var(--manga); margin-bottom: 6px; }
+.awards { display: grid; gap: 8px; margin-top: 18px; }
+.award { display: flex; gap: 12px; align-items: center; background: var(--mata-2); border-radius: 12px; padding: 10px 12px; }
+.award b { font-size: 1.6rem; }
+.award div { line-height: 1.25; }
+.award small { color: var(--muted); display: block; }
+canvas#confetti { position: fixed; inset: 0; width: 100%; height: 100%; pointer-events: none; z-index: 50; }
+
+/* mesa (um celular só) */
+.toggle-list { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.toggle { display: flex; align-items: center; gap: 8px; padding: 10px; border-radius: 12px; background: var(--mata-2); font-weight: 700; text-align: left; }
+.toggle[aria-pressed="true"] { background: var(--certo); color: var(--tinta); }
+
+@media (min-width: 760px) {
+  .game.wide { grid-template-columns: minmax(0, 1.6fr) minmax(280px, 1fr); grid-template-rows: auto minmax(0, 1fr); }
+  .game.wide .hud { grid-column: 1 / -1; }
+  .game.wide .side { display: flex; flex-direction: column; gap: 10px; min-height: 0; overflow-y: auto; }
+  .game.wide .options { grid-template-columns: 1fr; }
+}
+.side { display: flex; flex-direction: column; gap: 10px; min-height: 0; }
+.side.scroll { padding: 6px 6px 0; margin: -6px -6px 0; }
+@media (max-width: 759px) {
+  .game { grid-template-rows: auto minmax(150px, 1fr) auto; }
+  .side.scroll { max-height: 58dvh; }
+}
+
+@keyframes kenburns { from { transform: scale(1.0) translate(0, 0); } to { transform: scale(1.18) translate(-2%, -2%); } }
+@keyframes pop { from { transform: scale(.6); opacity: 0; } }
+@keyframes drop { from { transform: translateY(-14px) scale(.6); opacity: 0; } }
+@keyframes stamp { from { transform: translate(-50%, -50%) rotate(-12deg) scale(2.6); opacity: 0; } 60% { opacity: 1; } }
+@keyframes right { 0% { transform: scale(1); } 40% { transform: scale(1.05); } 100% { transform: scale(1); } }
+@keyframes slideup { from { transform: translateY(30px); opacity: 0; } }
+@keyframes flash { 0% { transform: rotate(-3deg) scale(.4); opacity: 0; } 20% { transform: rotate(-3deg) scale(1.08); opacity: 1; } 80% { transform: rotate(-3deg) scale(1); opacity: 1; } 100% { transform: rotate(-3deg) scale(1.2); opacity: 0; } }
+@keyframes floatup { 0% { transform: translateY(0) scale(.6); opacity: 0; } 15% { opacity: 1; transform: translateY(-20px) scale(1.1); } 100% { transform: translateY(-46vh) scale(1); opacity: 0; } }
+@keyframes wiggle { 0%, 100% { transform: rotate(-4deg); } 50% { transform: rotate(4deg); } }
+@keyframes pulse { to { transform: scale(1.15); } }
+@keyframes rise { from { transform: translateY(60px); opacity: 0; } }
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
+}
+</style>
+
+<div id="app"></div>
+<canvas id="confetti" hidden></canvas>
+
+<script>
+"use strict";
+// ======================================================================
+// Dados
+// ======================================================================
+const PLACES = /*__PLACES__*/[];
+const REGION = { AC:"N",AP:"N",AM:"N",PA:"N",RO:"N",RR:"N",TO:"N", AL:"NE",BA:"NE",CE:"NE",MA:"NE",PB:"NE",PE:"NE",PI:"NE",RN:"NE",SE:"NE", DF:"CO",GO:"CO",MT:"CO",MS:"CO", ES:"SE",MG:"SE",RJ:"SE",SP:"SE", PR:"S",RS:"S",SC:"S" };
+
+// Cada "lugar de resposta" (cidade ou região) vira uma alternativa possível.
+const LOCS = [];
+const locIndex = new Map();
+for (const p of PLACES) {
+  const key = p.w + "|" + p.uf;
+  if (!locIndex.has(key)) { locIndex.set(key, LOCS.length); LOCS.push({ w: p.w, uf: p.uf, reg: REGION[p.uf] || "?", n: 0, u: 0 }); }
+  p.loc = locIndex.get(key);
+  LOCS[p.loc][p.t === "n" ? "n" : "u"]++;
+}
+for (const l of LOCS) l.kind = l.n > l.u ? "n" : "u";
+
+const COLORS = ["#ffb627", "#2ec4b6", "#ff5d73", "#4d8dff", "#b388ff", "#a3e635", "#ff8a3d", "#f472b6"];
+const MODES = {
+  tranquilo: { label: "Tranquilo", hint: "mais lugares conhecidos", mix: [0.55, 0.35, 0.10], near: 0.3, noise: 3 },
+  misto:     { label: "Misto", hint: "começa fácil e esquenta", mix: [0.30, 0.40, 0.30], near: 1.4, noise: 2 },
+  raiz:      { label: "Raiz", hint: "pra quem já rodou o Brasil", mix: [0.10, 0.35, 0.55], near: 2.2, noise: 1.5 },
+};
+const ROUNDS = [8, 12, 16];
+const SECONDS = [15, 20, 30];
+const REVEAL_MS = 15000;
+const LEAD_FIRST = 3200, LEAD = 1800;
+const DIFF_MULT = { 1: 1, 2: 1.2, 3: 1.5 };
+
+// ======================================================================
+// Utilidades
+// ======================================================================
+const $ = (s, el = document) => el.querySelector(s);
+const rid = (n = 8) => Array.from(crypto.getRandomValues(new Uint8Array(n)), b => "abcdefghijkmnpqrstuvwxyz23456789"[b % 32]).join("");
+const shuffle = a => { a = [...a]; for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; };
+const clamp = (v, a, b) => Math.max(a, Math.min(b, v));
+const initial = name => (name || "?").trim().charAt(0).toUpperCase();
+const imgUrl = p => "img/" + p.id + ".jpg";
+function h(tag, props, ...kids) {
+  const el = document.createElement(tag);
+  for (const [k, v] of Object.entries(props || {})) {
+    if (v == null || v === false) continue;
+    if (k === "class") el.className = v;
+    else if (k === "style") el.style.cssText = v;
+    else if (k.startsWith("on")) el.addEventListener(k.slice(2), v);
+    else el.setAttribute(k, v === true ? "" : v);
+  }
+  for (const k of kids.flat()) if (k != null && k !== false) el.append(k instanceof Node ? k : document.createTextNode(String(k)));
+  return el;
+}
+const av = (name, color, cls = "") => h("span", { class: "av " + cls, style: `background:${color}` }, initial(name));
+const store = {
+  get(k) { try { return JSON.parse(localStorage.getItem(k)); } catch { return null; } },
+  set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch {} },
+};
+
+// ---------- som (sintetizado, liga no primeiro toque) ----------
+const sound = {
+  on: store.get("oei:sound") !== false, ctx: null,
+  ensure() { if (!this.ctx) try { this.ctx = new (window.AudioContext || window.webkitAudioContext)(); } catch {} if (this.ctx?.state === "suspended") this.ctx.resume(); },
+  tone(freq, dur = 0.12, type = "sine", gain = 0.12, when = 0) {
+    if (!this.on || !this.ctx) return;
+    const t = this.ctx.currentTime + when, o = this.ctx.createOscillator(), g = this.ctx.createGain();
+    o.type = type; o.frequency.setValueAtTime(freq, t);
+    g.gain.setValueAtTime(gain, t); g.gain.exponentialRampToValueAtTime(0.0001, t + dur);
+    o.connect(g).connect(this.ctx.destination); o.start(t); o.stop(t + dur + 0.02);
+  },
+  tick() { this.tone(880, 0.05, "square", 0.04); },
+  tap() { this.tone(520, 0.08, "triangle", 0.1); },
+  drum() { for (let i = 0; i < 9; i++) this.tone(140 + i * 8, 0.06, "triangle", 0.12, i * (0.11 - i * 0.008)); },
+  good() { [523, 659, 784, 1047].forEach((f, i) => this.tone(f, 0.18, "triangle", 0.12, 0.08 * i)); },
+  bad() { this.tone(220, 0.25, "sawtooth", 0.07); this.tone(170, 0.35, "sawtooth", 0.07, 0.15); },
+  fanfare() { [392, 523, 659, 784, 659, 784, 1047].forEach((f, i) => this.tone(f, 0.22, "triangle", 0.12, 0.12 * i)); },
+};
+document.addEventListener("pointerdown", () => sound.ensure(), { once: false, passive: true });
+const buzz = ms => { try { navigator.vibrate?.(ms); } catch {} };
+
+// tela ligada durante o jogo
+let wakeLock = null;
+async function keepAwake() { try { if (!wakeLock && navigator.wakeLock) { wakeLock = await navigator.wakeLock.request("screen"); wakeLock.addEventListener("release", () => (wakeLock = null)); } } catch {} }
+document.addEventListener("visibilitychange", () => { if (document.visibilityState === "visible" && (S.screen === "game")) keepAwake(); });
+
+// ======================================================================
+// Regras: sorteio, alternativas e pontuação
+// ======================================================================
+function pickPlaces(modeKey, rounds, avoid) {
+  const mode = MODES[modeKey];
+  const want = [Math.round(rounds * mode.mix[0]), Math.round(rounds * mode.mix[1])];
+  want.push(rounds - want[0] - want[1]);
+  const chosen = [], usedLocs = new Set();
+  const take = (pool, n) => {
+    const fresh = shuffle(pool.filter(i => !avoid.has(i))), stale = shuffle(pool.filter(i => avoid.has(i)));
+    for (const i of [...fresh, ...stale]) {
+      if (n <= 0) break;
+      if (chosen.includes(i) || usedLocs.has(PLACES[i].loc)) continue;
+      chosen.push(i); usedLocs.add(PLACES[i].loc); n--;
+    }
+  };
+  const all = PLACES.map((_, i) => i);
+  [1, 2, 3].forEach((d, k) => take(all.filter(i => PLACES[i].d === d), want[k]));
+  if (chosen.length < rounds) take(all, rounds - chosen.length);
+  return shuffle(chosen).sort((a, b) => PLACES[a].d - PLACES[b].d);
+}
+
+// Alternativas erradas: no modo misto/raiz, puxa lugares da mesma região
+// e do mesmo "tipo" (praia/natureza x cidade) pra confundir de verdade.
+function buildOptions(pi, modeKey) {
+  const mode = MODES[modeKey], p = PLACES[pi], L = LOCS[p.loc];
+  const others = LOCS.map((_, i) => i).filter(i => i !== p.loc).map(i => ({
+    i, s: (LOCS[i].reg === L.reg ? mode.near : 0) + (LOCS[i].kind === L.kind ? 0.8 : 0) + Math.random() * mode.noise,
+  }));
+  others.sort((a, b) => b.s - a.s);
+  const opts = shuffle([p.loc, ...others.slice(0, 3).map(o => o.i)]);
+  return { o: opts, c: opts.indexOf(p.loc) };
+}
+
+// Acerto: 500–1000 pela rapidez × dificuldade. +50/acerto seguido (máx +200),
+// +250 se só uma pessoa acertou, e a última rodada vale dobrado.
+function scoreRound({ c, d, x2 }, durMs, answers, participants, streaks) {
+  const res = {};
+  const rightIds = participants.filter(id => answers[id]?.c === c);
+  const lone = participants.length >= 2 && rightIds.length === 1;
+  let fastest = null;
+  for (const id of rightIds) if (!fastest || answers[id].ms < answers[fastest].ms) fastest = id;
+  for (const id of participants) {
+    const a = answers[id];
+    if (!a || a.c !== c) { streaks[id] = 0; res[id] = [a ? a.c : -1, 0, []]; continue; }
+    const bonus = [];
+    let pts = (500 + 500 * clamp(1 - a.ms / durMs, 0, 1)) * DIFF_MULT[d];
+    if (d === 3) bonus.push("💎 difícil");
+    if (id === fastest && rightIds.length > 1) bonus.push("⚡ mais rápido");
+    const st = (streaks[id] || 0) + 1; streaks[id] = st;
+    if (st >= 2) { pts += Math.min(st - 1, 4) * 50; bonus.push(`🔥 ${st} seguidas`); }
+    if (lone) { pts += 250; bonus.push("🎯 só você!"); }
+    if (x2) { pts *= 2; bonus.push("×2"); }
+    res[id] = [a.c, Math.round(pts / 10) * 10, bonus];
+  }
+  return res;
+}
+
+// ======================================================================
+// Estado
+// ======================================================================
+const saved = store.get("oei:me") || {};
+const S = {
+  me: { pid: saved.pid || rid(), name: saved.name || "", color: saved.color || COLORS[Math.floor(Math.random() * COLORS.length)] },
+  joined: false,
+  screen: "home",           // home | lobby | game | mesa
+  room: null, roomState: "connecting", // connecting | on | off
+  peers: [],
+  settings: store.get("oei:settings") || { rounds: 12, seconds: 20, mode: "misto" },
+  host: null,               // motor do jogo quando EU comando
+  g: null,                  // jogo atual (vindo de quem comanda)
+  gFrom: null,              // peer de quem comanda
+  local: {},                // marcações locais por rodada (tempo de chegada, minha resposta)
+  seenRx: new Map(),
+  myRx: 0,
+  usedPlaces: new Set(store.get("oei:used") || []),
+};
+const saveMe = () => store.set("oei:me", S.me);
+
+// Jogadores = quem está com a página aberta e já escolheu nome.
+function onlinePlayers() {
+  const byPid = new Map();
+  for (const peer of S.peers) {
+    const pr = peer.presence || {};
+    if (typeof pr.pid !== "string" || typeof pr.name !== "string" || !pr.name) continue;
+    const prev = byPid.get(pr.pid);
+    if (!prev || peer.updatedAt > prev.updatedAt) byPid.set(pr.pid, { pid: pr.pid, name: String(pr.name).slice(0, 18), color: /^#[0-9a-f]{6}$/i.test(pr.color) ? pr.color : "#999999", peer, updatedAt: peer.updatedAt });
+  }
+  if (S.joined && !byPid.has(S.me.pid)) byPid.set(S.me.pid, { pid: S.me.pid, name: S.me.name, color: S.me.color, peer: null });
+  return [...byPid.values()];
+}
+
+// ======================================================================
+// Rede (room do Artifact). Quem comanda publica o jogo na própria presença.
+// ======================================================================
+async function connect() {
+  let room = null;
+  try { room = await window.claude?.use?.("room"); } catch {}
+  if (!room) { S.roomState = "off"; render(); return; }
+  S.room = room;
+  room.onConnection(ok => { S.roomState = ok ? "on" : (S.roomState === "on" ? "connecting" : S.roomState); render(); },
+    () => { S.roomState = "off"; render(); });
+  room.onPeers(ch => { S.peers = ch.peers; onPeersChanged(); }, () => { S.roomState = "off"; render(); });
+  setTimeout(() => { if (S.roomState === "connecting" && !room.connected()) { S.roomState = "off"; render(); } }, 9000);
+}
+function setPresence(patch) { S.room?.presence(patch).catch(() => {}); }
+function announce() { if (S.joined) setPresence({ pid: S.me.pid, name: S.me.name, color: S.me.color }); }
+
+function onPeersChanged() {
+  // reações
+  for (const peer of S.peers) {
+    const rx = peer.presence?.rx;
+    if (!rx || typeof rx.k !== "number" || peer.sameTab) continue;
+    const last = S.seenRx.get(peer.peer);
+    S.seenRx.set(peer.peer, rx.k);
+    if (last !== undefined && last !== rx.k) floatEmoji(rx.e, peer.presence.name);
+  }
+  // jogo canônico: o mais recente entre quem está comandando
+  let best = null, bestPeer = null;
+  for (const peer of S.peers) {
+    const g = peer.presence?.g;
+    if (!g || typeof g.id !== "string" || peer.sameTab) continue;
+    if (!best || g.t > best.t || (g.t === best.t && peer.peer > bestPeer.peer)) { best = g; bestPeer = peer; }
+  }
+  if (S.host) {
+    if (best && best.t > S.host.t) { stopHosting(); }   // outra pessoa começou depois: segue a dela
+    else { hostCollect(); render(); return; }
+  }
+  receiveGame(best, bestPeer);
+}
+
+function receiveGame(g, peer) {
+  const prev = S.g;
+  S.g = g; S.gFrom = peer;
+  if (g) {
+    const key = g.id + ":" + g.i + ":" + g.ph;
+    if (!S.local[key]) {
+      const now = performance.now();
+      S.local[key] = { at: now, showAt: now + (g.st || 0), deadline: now + (g.rem || 0), advAt: now + (g.adv || 0) };
+    }
+    if (S.joined && S.screen !== "mesa") S.screen = "game";
+  } else if (prev && S.screen === "game") {
+    S.screen = "lobby";
+    toast(prev.ph === "f" ? "" : "Quem comandava a partida saiu. Comecem outra!");
+  }
+  render();
+}
+
+// ======================================================================
+// Motor de quem comanda
+// ======================================================================
+function startHosting() {
+  const set = { ...S.settings };
+  if (PLACES.length - S.usedPlaces.size < set.rounds) S.usedPlaces.clear();
+  const list = pickPlaces(set.mode, set.rounds, S.usedPlaces);
+  list.forEach(i => S.usedPlaces.add(i));
+  store.set("oei:used", [...S.usedPlaces]);
+  S.host = { id: rid(6), t: Date.now(), set, list, i: -1, ph: "q", sc: {}, streaks: {}, answers: {}, part: [], q: null, startAt: 0, deadline: 0, advAt: 0, res: null, reason: "", timer: null, v: 0 };
+  hostNext();
+}
+function stopHosting() {
+  if (!S.host) return;
+  clearTimeout(S.host.timer);
+  S.host = null;
+  setPresence({ g: null });
+}
+function ensureScores() {
+  for (const p of onlinePlayers()) {
+    const s = S.host.sc[p.pid];
+    if (!s) S.host.sc[p.pid] = [p.name, p.color, 0, 0, 0];
+    else { s[0] = p.name; s[1] = p.color; }
+  }
+}
+function hostNext() {
+  const H = S.host;
+  clearTimeout(H.timer);
+  if (H.i + 1 >= H.list.length) { H.ph = "f"; hostPublish(); return; }
+  H.i++;
+  const pi = H.list[H.i];
+  const { o, c } = buildOptions(pi, H.set.mode);
+  H.q = { pi, o, c, d: PLACES[pi].d, x2: H.i === H.list.length - 1 && H.list.length >= 5 };
+  const lead = H.i === 0 ? LEAD_FIRST : LEAD;
+  H.startAt = Date.now() + lead;
+  H.deadline = H.startAt + H.set.seconds * 1000;
+  H.answers = {}; H.res = null; H.ph = "q";
+  ensureScores();
+  H.part = onlinePlayers().map(p => p.pid);
+  H.timer = setTimeout(() => hostReveal("time"), H.deadline - Date.now() + 400);
+  hostPublish();
+}
+function hostAnswer(pid, c) {
+  const H = S.host;
+  if (!H || H.ph !== "q" || H.answers[pid] || !(c >= 0 && c <= 3)) return false;
+  const now = Date.now();
+  if (now < H.startAt || now > H.deadline + 600) return false;
+  H.answers[pid] = { c, ms: now - H.startAt };
+  if (!H.part.includes(pid)) H.part.push(pid);
+  ensureScores();
+  return true;
+}
+function hostCollect() {
+  const H = S.host;
+  if (!H) return;
+  let changed = false;
+  if (H.ph === "q") {
+    for (const p of onlinePlayers()) {
+      const a = p.peer?.presence?.ans;
+      if (a && a.g === H.id && a.i === H.i && hostAnswer(p.pid, a.c)) changed = true;
+    }
+    const online = onlinePlayers().map(p => p.pid);
+    if (online.length && online.every(id => H.answers[id])) return hostReveal("all");
+  }
+  // nomes novos entram no placar
+  const before = Object.keys(H.sc).length; ensureScores();
+  if (changed || Object.keys(H.sc).length !== before) hostPublish();
+}
+function hostReveal(reason) {
+  const H = S.host;
+  if (!H || H.ph !== "q") return;
+  clearTimeout(H.timer);
+  const part = H.part.filter(id => H.sc[id]);
+  H.res = scoreRound(H.q, H.set.seconds * 1000, H.answers, part, H.streaks);
+  for (const [id, r] of Object.entries(H.res)) {
+    const s = H.sc[id];
+    s[2] += r[1]; s[3] = H.streaks[id] || 0; if (r[1] > 0) s[4]++;
+  }
+  H.reason = reason; H.ph = "r";
+  H.advAt = Date.now() + REVEAL_MS;
+  H.timer = setTimeout(hostNext, REVEAL_MS);
+  hostPublish();
+}
+function hostPublish() {
+  const H = S.host, now = Date.now();
+  const g = { id: H.id, t: H.t, v: ++H.v, ph: H.ph, n: H.list.length, i: H.i, dur: H.set.seconds, mode: H.set.mode, sc: H.sc };
+  if (H.ph !== "f") Object.assign(g, { p: H.q.pi, o: H.q.o, x2: H.q.x2 });
+  if (H.ph === "q") Object.assign(g, { st: Math.max(0, H.startAt - now), rem: H.deadline - now, ans: Object.keys(H.answers) });
+  if (H.ph === "r") Object.assign(g, { c: H.q.c, res: H.res, why: H.reason, adv: H.advAt - now, nx: H.list[H.i + 1] ?? null });
+  setPresence({ g });
+  receiveGame(g, null);
+}
+
+// ======================================================================
+// Ações do jogador
+// ======================================================================
+function answer(c) {
+  const g = S.g;
+  if (!g || g.ph !== "q") return;
+  const key = g.id + ":" + g.i;
+  if (S.local["mine:" + key] !== undefined) return;
+  S.local["mine:" + key] = c;
+  sound.tap(); buzz(20);
+  setPresence({ ans: { g: g.id, i: g.i, c } });
+  if (S.host) { hostAnswer(S.me.pid, c); hostCollect(); if (S.host?.ph === "q") hostPublish(); }
+  else render();
+}
+function react(e) {
+  S.myRx++;
+  setPresence({ rx: { e, k: S.myRx } });
+  floatEmoji(e, "você");
+}
+function floatEmoji(e, name) {
+  if (!["😂", "😱", "🔥", "👏", "🤔", "😭"].includes(e)) return;
+  const el = h("div", { class: "float-emoji", style: `left:${10 + Math.random() * 75}%; bottom:12%` }, e, h("small", {}, name || ""));
+  document.body.append(el);
+  setTimeout(() => el.remove(), 2300);
+}
+let toastTimer;
+function toast(msg) {
+  if (!msg) return;
+  let el = $("#toast");
+  if (!el) { el = h("div", { id: "toast", style: "position:fixed;left:50%;bottom:calc(20px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:var(--papel);color:var(--tinta);padding:12px 16px;border-radius:12px;font-weight:700;z-index:60;max-width:90vw;text-align:center;box-shadow:0 8px 30px #000a" }); document.body.append(el); }
+  el.textContent = msg; el.hidden = false;
+  clearTimeout(toastTimer); toastTimer = setTimeout(() => (el.hidden = true), 3500);
+}
+
+// ======================================================================
+// Telas
+// ======================================================================
+const app = $("#app");
+let scene = "";        // chave da cena montada (só remonta quando muda)
+let tickHandle = null;
+
+function render() {
+  const key = sceneKey();
+  if (key !== scene) { scene = key; mount(); }
+  else update();
+}
+function sceneKey() {
+  if (S.screen === "mesa") return "mesa:" + MESA.step + ":" + MESA.i;
+  if (!S.joined) return "home:" + S.roomState;
+  if (S.screen === "game" && S.g) return `game:${S.g.id}:${S.g.i}:${S.g.ph}`;
+  return "lobby:" + S.roomState;
+}
+function mount() {
+  clearInterval(tickHandle);
+  app.replaceChildren();
+  if (S.screen === "mesa") return mountMesa();
+  if (!S.joined) return mountHome();
+  if (S.screen === "game" && S.g) {
+    keepAwake();
+    if (S.g.ph === "q") return mountQuestion();
+    if (S.g.ph === "r") return mountReveal();
+    return mountFinal();
+  }
+  mountLobby();
+}
+function update() {
+  if (S.screen === "game" && S.g?.ph === "q") updateQuestion();
+  else if (S.screen === "game" && S.g?.ph === "r") updateReveal();
+  else if (!S.joined || S.screen === "lobby") mountKeep();
+}
+// telas simples: remonta preservando o campo em foco
+function mountKeep() {
+  const active = document.activeElement?.id, val = active && $("#" + active)?.value;
+  app.replaceChildren();
+  if (!S.joined) mountHome(); else mountLobby();
+  if (active && $("#" + active)) { const el = $("#" + active); if (val != null) el.value = val; el.focus(); }
+}
+
+function topBar(extra) {
+  return h("div", { class: "brand" },
+    h("div", { class: "logo" }, h("span", { class: "pin" }), "Onde é isso?"),
+    h("div", { class: "row" }, extra || null,
+      h("button", { class: "icon-btn", "aria-label": sound.on ? "Desligar som" : "Ligar som", onclick: () => { sound.on = !sound.on; store.set("oei:sound", sound.on); sound.ensure(); mount(); } }, sound.on ? "🔊" : "🔇")));
+}
+
+// ---------- capa ----------
+function mountHome() {
+  const sample = shuffle(PLACES.filter(p => p.d === 1)).slice(0, 3);
+  const canPlay = S.roomState === "on" || S.roomState === "connecting";
+  const nameIn = h("input", { id: "name", maxlength: "18", autocomplete: "nickname", placeholder: "Seu nome ou apelido", value: S.me.name, oninput: e => { S.me.name = e.target.value; saveMe(); const go = $("#go"); if (go) go.disabled = !S.me.name.trim(); } });
+  const join = () => {
+    S.me.name = S.me.name.trim().slice(0, 18);
+    if (!S.me.name) return nameIn.focus();
+    saveMe(); sound.ensure(); sound.tap();
+    S.joined = true; S.screen = S.g ? "game" : "lobby";
+    announce(); render();
+  };
+  app.append(
+    topBar(),
+    h("div", { class: "scroll" },
+      h("div", { class: "hero" },
+        h("h1", {}, "Onde é ", h("em", {}, "isso"), "?"),
+        h("p", {}, `Aparece uma foto do Brasil, cada um chuta a cidade no próprio celular. Quem acerta mais rápido leva mais ponto. ${PLACES.length} fotos de praia, igreja, mata, skyline e cidade histórica.`)),
+      h("div", { class: "postcards", "aria-hidden": "true" }, sample.map(p => h("div", { style: `background-image:url(${imgUrl(p)})` }))),
+      h("form", { onsubmit: e => { e.preventDefault(); join(); } },
+        h("div", { class: "field" }, h("label", { for: "name" }, "Como a galera te chama?"), nameIn),
+        h("div", { class: "field" }, h("label", {}, "Sua cor"),
+          h("div", { class: "swatches" }, COLORS.map(c => h("button", { type: "button", class: "swatch", style: `background:${c}`, "aria-label": "cor " + c, "aria-pressed": String(S.me.color === c), onclick: () => { S.me.color = c; saveMe(); mountKeep(); } })))),
+        h("div", { class: "stack", style: "margin-top:22px" },
+          canPlay ? h("button", { id: "go", class: "btn block", type: "submit", disabled: !S.me.name.trim() }, S.roomState === "connecting" ? "Entrar na roda" : "Entrar na roda →") : null,
+          S.roomState === "off" ? h("div", { class: "banner" }, "Não deu pra conectar o modo online nesta tela (precisa estar logado no Claude e com acesso a este artifact). Dá pra jogar no modo mesa, com um celular só.") : null,
+          h("button", { class: "btn ghost block", type: "button", onclick: () => startMesaSetup() }, "Modo mesa: um celular só")))));
+}
+
+// ---------- lobby ----------
+function mountLobby() {
+  const players = onlinePlayers();
+  const g = S.g;
+  const set = S.settings;
+  const saveSet = patch => { Object.assign(S.settings, patch); store.set("oei:settings", S.settings); mountKeep(); };
+  const seg = (opts, cur, fmt, onPick) => h("div", { class: "seg", role: "group" }, opts.map(o => h("button", { type: "button", "aria-pressed": String(o === cur), onclick: () => onPick(o) }, fmt(o))));
+  app.append(
+    topBar(h("button", { class: "icon-btn", "aria-label": "Trocar nome", onclick: () => { S.joined = false; setPresence({ name: null }); render(); } }, "✏️")),
+    h("div", { class: "scroll" },
+      h("div", { class: "section-title" }, S.roomState === "on" ? `Na roda agora (${players.length})` : "Conectando…"),
+      h("div", { class: "players" }, players.map(p => h("span", { class: "chip" }, av(p.name, p.color), p.name, p.pid === S.me.pid ? h("span", { class: "you" }, "você") : null))),
+      players.length < 2 ? h("p", { class: "note" }, "Mande o link deste artifact pros amigos. Assim que eles abrirem e escolherem um nome, aparecem aqui.") : null,
+      g && g.ph === "f" ? h("div", { class: "banner" }, "A última partida acabou. Qualquer um pode começar outra.") : null,
+
+      h("div", { class: "section-title" }, "Partida"),
+      h("div", { class: "setting" }, h("span", {}, "Dificuldade ", h("small", {}, "· " + MODES[set.mode].hint)),
+        seg(Object.keys(MODES), set.mode, m => MODES[m].label, m => saveSet({ mode: m }))),
+      h("div", { class: "setting" }, h("span", {}, "Rodadas"), seg(ROUNDS, set.rounds, r => r, r => saveSet({ rounds: r }))),
+      h("div", { class: "setting" }, h("span", {}, "Tempo pra responder"), seg(SECONDS, set.seconds, s => s + "s", s => saveSet({ seconds: s }))),
+      h("p", { class: "note", style: "margin-top:14px" }, "Quem aperta começar comanda a partida: deixa a tela desse celular ligada até o fim.")),
+    h("div", { class: "stack" },
+      h("button", { class: "btn block", disabled: S.roomState !== "on", onclick: () => { sound.ensure(); startHosting(); } }, "Começar partida ▶")));
+}
+
+// ---------- pergunta ----------
+function gameHud(g) {
+  const p = PLACES[g.p];
+  return h("div", { class: "hud" },
+    h("span", { class: "round-tag" }, `${g.i + 1}/${g.n}`),
+    h("span", { class: "diff", title: "dificuldade" }, "★".repeat(p.d) + "☆".repeat(3 - p.d)),
+    g.x2 ? h("span", { class: "x2" }, "×2 FINAL") : null,
+    h("span", { class: "grow" }),
+    h("span", { class: "timer", id: "timer" }, ""));
+}
+function photo(g, extra) {
+  const p = PLACES[g.p];
+  return h("div", { class: "photo-wrap" },
+    h("div", { class: "photo" }, h("img", { src: imgUrl(p), alt: "Foto de um lugar do Brasil", decoding: "async" }), extra || null),
+    h("div", { class: "postmark", "aria-hidden": "true" }, "CORREIOS", h("br"), "BRASIL", h("br"), "★"),
+    h("div", { class: "caption" }, h("span", {}, "Saudações de…"), h("span", { id: "cap-right" }, "")));
+}
+function optionButtons(g, onPick) {
+  return h("div", { class: "options", id: "options" }, g.o.map((li, k) =>
+    h("button", { class: "opt", "data-k": k, onclick: onPick ? () => onPick(k) : null },
+      h("span", {}, LOCS[li].w), h("span", { class: "uf" }, LOCS[li].uf), h("span", { class: "who" }))));
+}
+function mountQuestion() {
+  const g = S.g, loc = S.local[`${g.id}:${g.i}:q`];
+  const cd = h("div", { class: "countdown", id: "countdown" }, h("b", {}, ""), h("span", {}, g.i === 0 ? "Preparem os chutes!" : `Rodada ${g.i + 1}`));
+  app.append(
+    h("div", { class: "game wide" },
+      gameHud(g),
+      photo(g, cd),
+      h("div", { class: "side" },
+        h("div", { class: "bar" }, h("i", { id: "bar" })),
+        optionButtons(g, answer),
+        h("div", { class: "answered", id: "answered" }),
+        h("div", { class: "reacts" }, ["😂", "😱", "🔥", "🤔"].map(e => h("button", { "aria-label": "Reagir " + e, onclick: () => react(e) }, e))))));
+  let lastSec = null, shown = false;
+  const tick = () => {
+    const now = performance.now();
+    const cdEl = $("#countdown");
+    if (now < loc.showAt) {
+      const n = Math.ceil((loc.showAt - now) / 1000);
+      const b = cdEl && $("b", cdEl);
+      if (b && b.textContent !== String(n)) { b.textContent = n; b.style.animation = "none"; void b.offsetWidth; b.style.animation = ""; sound.tick(); }
+      return;
+    }
+    if (!shown) { shown = true; cdEl?.remove(); }
+    const left = Math.max(0, loc.deadline - now), total = g.dur * 1000;
+    const secs = Math.ceil(left / 1000);
+    const t = $("#timer");
+    if (t) { t.textContent = secs; t.classList.toggle("low", secs <= 5); }
+    const bar = $("#bar"); if (bar) bar.style.transform = `scaleX(${left / total})`;
+    if (secs !== lastSec) { if (secs <= 5 && secs > 0 && S.local["mine:" + g.id + ":" + g.i] === undefined) sound.tick(); lastSec = secs; }
+  };
+  // pré-carrega a foto durante a contagem
+  tick(); tickHandle = setInterval(tick, 100);
+  updateQuestion();
+}
+function updateQuestion() {
+  const g = S.g;
+  const mine = S.local["mine:" + g.id + ":" + g.i];
+  const opts = $("#options");
+  if (opts) {
+    opts.classList.toggle("locked", mine !== undefined);
+    opts.querySelectorAll(".opt").forEach(b => b.classList.toggle("mine", Number(b.dataset.k) === mine));
+  }
+  const box = $("#answered");
+  if (!box) return;
+  const players = onlinePlayers();
+  const done = new Set(g.ans || []);
+  box.replaceChildren(...players.map(p => av(p.name, p.color, done.has(p.pid) ? "done" : "")),
+    h("small", {}, mine !== undefined ? `Chute travado! ${done.size}/${players.length} responderam` : `${done.size}/${players.length} responderam`));
+}
+
+// ---------- revelação ----------
+function mountReveal() {
+  const g = S.g, p = PLACES[g.p], L = LOCS[p.loc];
+  const loc = S.local[`${g.id}:${g.i}:r`];
+  const mineRes = g.res?.[S.me.pid];
+  const sc = g.sc || {};
+  const firstMount = !loc.played;
+  loc.played = true;
+
+  let stampEl = null;
+  if (mineRes) {
+    stampEl = mineRes[1] > 0
+      ? h("div", { class: "stamp ok" }, "ACERTOU", h("small", {}, `+${mineRes[1]} pts`))
+      : h("div", { class: "stamp " + (mineRes[0] < 0 ? "none" : "bad") }, mineRes[0] < 0 ? "SEM CHUTE" : "ERROU");
+  }
+  const ranking = Object.entries(sc).map(([pid, s]) => ({ pid, name: s[0], color: s[1], score: s[2], streak: s[3], correct: s[4], delta: g.res?.[pid]?.[1] ?? null, bonus: g.res?.[pid]?.[2] || [] }))
+    .sort((a, b) => b.score - a.score);
+  const isHost = Boolean(S.host);
+
+  app.append(
+    h("div", { class: "game wide" },
+      gameHud(g),
+      photo(g),
+      h("div", { class: "side scroll", style: "padding-bottom:0" },
+        optionButtons(g, null),
+        h("div", { class: "reveal-card", id: "rcard", hidden: firstMount },
+          h("div", { class: "where" }, L.w, h("small", {}, L.uf)),
+          h("div", { class: "what" }, "📍 " + p.n),
+          h("p", {}, p.f),
+          h("div", { class: "credit" }, "Foto: ", p.cr, " · ", h("a", { href: p.src, target: "_blank", rel: "noopener" }, "Wikimedia Commons"))),
+        h("div", { class: "board", id: "board", hidden: firstMount }, ranking.map((r, i) =>
+          h("div", { class: "line" + (r.pid === S.me.pid ? " me" : ""), "data-pid": r.pid },
+            h("span", { class: "pos" }, i + 1 + "º"), av(r.name, r.color),
+            h("span", { class: "name" }, r.name, r.bonus.length ? h("small", {}, r.bonus.join("  ")) : null),
+            h("span", { class: "delta" + (r.delta ? "" : " zero") }, r.delta == null ? "" : r.delta ? "+" + r.delta : "+0"),
+            h("span", { class: "score", "data-from": r.score - (r.delta || 0), "data-to": r.score }, r.score - (r.delta || 0))))),
+        h("div", { class: "footer-actions", id: "ractions", hidden: firstMount },
+          isHost ? h("button", { class: "btn", onclick: () => hostNext() }, g.nx == null ? "Ver resultado 🏆" : "Próxima ▶") : null,
+          h("div", { class: "auto", id: "auto" }, "")),
+        h("div", { class: "reacts" }, ["😂", "😱", "🔥", "👏", "😭"].map(e => h("button", { "aria-label": "Reagir " + e, onclick: () => react(e) }, e))))));
+
+  if (g.nx != null) { const pre = new Image(); pre.src = imgUrl(PLACES[g.nx]); }
+
+  const opts = [...app.querySelectorAll(".opt")];
+  const showAnswers = () => {
+    opts.forEach((b, k) => {
+      const who = $(".who", b);
+      for (const [pid, r] of Object.entries(g.res || {})) if (r[0] === k && sc[pid]) who.append(av(sc[pid][0], sc[pid][1]));
+    });
+  };
+  const showRight = () => opts.forEach((b, k) => b.classList.add(k === g.c ? "right" : "wrong"));
+  const showStamp = () => { if (stampEl) $(".photo").append(stampEl); $("#cap-right").textContent = `${L.w} – ${L.uf}`; };
+  const showRest = () => {
+    ["#rcard", "#board", "#ractions"].forEach(s => { const el = $(s); if (el) el.hidden = false; });
+    countUpScores();
+  };
+
+  if (firstMount) {
+    const banner = h("div", { class: "flash" }, h("b", {}, g.why === "all" ? "Todo mundo chutou!" : "Acabou o tempo!"));
+    document.body.append(banner);
+    sound.drum();
+    setTimeout(() => banner.remove(), 1250);
+    setTimeout(showAnswers, 1150);
+    setTimeout(() => {
+      showRight(); showStamp();
+      if (mineRes) { if (mineRes[1] > 0) { sound.good(); buzz([30, 40, 30]); } else { sound.bad(); buzz(200); } }
+    }, 1900);
+    setTimeout(showRest, 2600);
+  } else { showAnswers(); showRight(); showStamp(); showRest(); }
+
+  const tick = () => {
+    const left = Math.max(0, Math.ceil((loc.advAt - performance.now()) / 1000));
+    const el = $("#auto"); if (el) el.textContent = left > 0 ? `${g.nx == null ? "Resultado" : "Próxima foto"} em ${left}s` : "";
+  };
+  tick(); tickHandle = setInterval(tick, 250);
+}
+function updateReveal() { /* nada muda até a próxima rodada */ }
+function countUpScores() {
+  document.querySelectorAll("#board .score").forEach(el => {
+    const from = Number(el.dataset.from), to = Number(el.dataset.to);
+    if (from === to) return;
+    const t0 = performance.now(), dur = 900;
+    const step = now => { const k = Math.min(1, (now - t0) / dur), e = 1 - Math.pow(1 - k, 3); el.textContent = Math.round(from + (to - from) * e); if (k < 1) requestAnimationFrame(step); };
+    requestAnimationFrame(step);
+  });
+  // FLIP: começa na ordem antiga e desliza pra nova
+  const lines = [...document.querySelectorAll("#board .line")];
+  const old = [...lines].sort((a, b) => Number($(".score", b).dataset.from) - Number($(".score", a).dataset.from));
+  const hgt = lines[0]?.getBoundingClientRect().height + 6 || 0;
+  lines.forEach((el, newIdx) => {
+    const oldIdx = old.indexOf(el);
+    if (oldIdx === newIdx) return;
+    el.style.transition = "none"; el.style.transform = `translateY(${(oldIdx - newIdx) * hgt}px)`;
+    requestAnimationFrame(() => requestAnimationFrame(() => { el.style.transition = ""; el.style.transform = ""; }));
+  });
+}
+
+// ---------- final ----------
+function mountFinal() {
+  const g = S.g, sc = g.sc || {};
+  const rank = Object.entries(sc).map(([pid, s]) => ({ pid, name: s[0], color: s[1], score: s[2], correct: s[4] })).sort((a, b) => b.score - a.score);
+  const order = [rank[1], rank[0], rank[2]];
+  const heights = [90, 130, 64];
+  const awards = [];
+  if (rank[0]) awards.push(["🏆", "Guia turístico oficial", `${rank[0].name} · ${rank[0].score} pts`]);
+  const bestC = [...rank].sort((a, b) => b.correct - a.correct)[0];
+  if (bestC) awards.push(["🧭", "Bússola humana", `${bestC.name} · ${bestC.correct}/${g.n} acertos`]);
+  if (rank.length >= 3) awards.push(["🛋️", "Nunca saiu de casa", `${rank[rank.length - 1].name} · fica pra próxima`]);
+  app.append(
+    topBar(),
+    h("div", { class: "scroll" },
+      h("div", { class: "hero", style: "padding-top:14px" }, h("h1", { style: "font-size:clamp(2.2rem,11vw,3.6rem)" }, "Fim da ", h("em", {}, "viagem"), "!")),
+      h("div", { class: "podium" }, order.map((r, i) => r ? h("div", { class: "step", style: `animation-delay:${[0.5, 1.1, 0][i]}s` },
+        av(r.name, r.color), h("div", { class: "nm" }, r.name), h("div", { class: "pts" }, r.score + " pts"),
+        h("div", { class: "block", style: `height:${heights[i]}px` }, [2, 1, 3][i] + "º")) : h("div"))),
+      h("div", { class: "awards" }, awards.map(([e, t, s]) => h("div", { class: "award" }, h("b", {}, e), h("div", {}, h("strong", {}, t), h("small", {}, s))))),
+      rank.length > 3 ? h("div", { class: "board" }, rank.slice(3).map((r, i) => h("div", { class: "line" }, h("span", { class: "pos" }, i + 4 + "º"), av(r.name, r.color), h("span", { class: "name" }, r.name), h("span"), h("span", { class: "score" }, r.score)))) : null),
+    h("div", { class: "stack" },
+      S.host ? h("button", { class: "btn block", onclick: () => { startHosting(); } }, "Jogar de novo ↻") : h("p", { class: "note", style: "text-align:center" }, "Esperando quem comandou começar outra…"),
+      S.host ? h("button", { class: "btn ghost block", onclick: () => { stopHosting(); S.screen = "lobby"; render(); } }, "Mudar configurações") : null));
+  const k = `${g.id}:final`;
+  if (!S.local[k]) { S.local[k] = 1; sound.fanfare(); confetti(); }
+}
+
+function confetti() {
+  const cv = $("#confetti"); cv.hidden = false;
+  const ctx = cv.getContext("2d"), dpr = devicePixelRatio || 1;
+  cv.width = innerWidth * dpr; cv.height = innerHeight * dpr; ctx.scale(dpr, dpr);
+  const cols = ["#ffb627", "#2ec4b6", "#ff5d73", "#4d8dff", "#36d27a", "#fff3dd"];
+  const bits = Array.from({ length: 140 }, () => ({ x: Math.random() * innerWidth, y: -20 - Math.random() * innerHeight * 0.6, vx: (Math.random() - 0.5) * 2, vy: 2 + Math.random() * 3, r: Math.random() * 6, w: 6 + Math.random() * 6, c: cols[Math.floor(Math.random() * cols.length)] }));
+  const t0 = performance.now();
+  const frame = now => {
+    ctx.clearRect(0, 0, innerWidth, innerHeight);
+    for (const b of bits) { b.x += b.vx; b.y += b.vy; b.r += 0.1; ctx.save(); ctx.translate(b.x, b.y); ctx.rotate(b.r); ctx.fillStyle = b.c; ctx.fillRect(-b.w / 2, -3, b.w, 6); ctx.restore(); }
+    if (now - t0 < 4500) requestAnimationFrame(frame); else cv.hidden = true;
+  };
+  if (!matchMedia("(prefers-reduced-motion: reduce)").matches) requestAnimationFrame(frame); else cv.hidden = true;
+}
+
+// ======================================================================
+// Modo mesa: um celular só, todo mundo grita a resposta
+// ======================================================================
+const MESA = { step: "setup", players: store.get("oei:mesa") || [], list: [], i: 0, got: new Set(), mode: "misto", rounds: 12 };
+function startMesaSetup() { S.screen = "mesa"; MESA.step = "setup"; render(); }
+function mountMesa() {
+  if (MESA.step === "setup") {
+    const input = h("input", { id: "mesa-name", maxlength: "18", placeholder: "Nome de quem joga" });
+    const add = () => { const n = input.value.trim(); if (!n) return; MESA.players.push({ name: n, color: COLORS[MESA.players.length % COLORS.length], score: 0 }); store.set("oei:mesa", MESA.players.map(p => ({ ...p, score: 0 }))); mount(); $("#mesa-name")?.focus(); };
+    app.append(topBar(h("button", { class: "icon-btn", "aria-label": "Voltar", onclick: () => { S.screen = S.joined ? "lobby" : "home"; render(); } }, "←")),
+      h("div", { class: "scroll" },
+        h("div", { class: "hero", style: "padding-top:14px" }, h("h1", { style: "font-size:clamp(2.2rem,11vw,3.4rem)" }, "Modo ", h("em", {}, "mesa")),
+          h("p", {}, "Um celular no meio da mesa. Todo mundo grita a cidade, alguém toca pra revelar e marca quem acertou.")),
+        h("form", { onsubmit: e => { e.preventDefault(); add(); } }, h("div", { class: "field" }, h("label", { for: "mesa-name" }, "Quem vai jogar?"), h("div", { class: "row", style: "flex-wrap:nowrap" }, input, h("button", { class: "btn", type: "submit" }, "+")))),
+        h("div", { class: "players", style: "margin-top:14px" }, MESA.players.map((p, i) => h("button", { class: "chip", onclick: () => { MESA.players.splice(i, 1); store.set("oei:mesa", MESA.players); mount(); } }, av(p.name, p.color), p.name, h("span", { class: "you" }, "✕")))),
+        h("div", { class: "setting" }, h("span", {}, "Dificuldade"), h("div", { class: "seg" }, Object.keys(MODES).map(m => h("button", { type: "button", "aria-pressed": String(MESA.mode === m), onclick: () => { MESA.mode = m; mount(); } }, MODES[m].label))))),
+      h("button", { class: "btn block", disabled: MESA.players.length < 1, onclick: () => {
+        MESA.players.forEach(p => (p.score = 0));
+        MESA.list = pickPlaces(MESA.mode, MESA.rounds, S.usedPlaces); MESA.list.forEach(i => S.usedPlaces.add(i)); store.set("oei:used", [...S.usedPlaces]);
+        MESA.i = 0; mesaRound(); } }, "Começar ▶"));
+    return;
+  }
+  if (MESA.step === "end") {
+    const rank = [...MESA.players].sort((a, b) => b.score - a.score);
+    app.append(topBar(), h("div", { class: "scroll" },
+      h("div", { class: "hero", style: "padding-top:14px" }, h("h1", { style: "font-size:clamp(2.2rem,11vw,3.6rem)" }, "Fim da ", h("em", {}, "viagem"), "!")),
+      h("div", { class: "board" }, rank.map((r, i) => h("div", { class: "line" }, h("span", { class: "pos" }, i + 1 + "º"), av(r.name, r.color), h("span", { class: "name" }, r.name), h("span"), h("span", { class: "score" }, r.score))))),
+      h("div", { class: "stack" }, h("button", { class: "btn block", onclick: () => { MESA.step = "setup"; mount(); } }, "Jogar de novo ↻")));
+    sound.fanfare(); confetti();
+    return;
+  }
+  const pi = MESA.list[MESA.i], q = MESA.q, p = PLACES[pi], L = LOCS[p.loc];
+  const g = { p: pi, i: MESA.i, n: MESA.list.length, o: q.o, x2: false };
+  const revealed = MESA.step === "reveal";
+  app.append(h("div", { class: "game wide" }, gameHud(g), photo(g),
+    h("div", { class: "side scroll", style: "padding-bottom:0" },
+      optionButtons(g, revealed ? null : () => { MESA.step = "reveal"; sound.drum(); setTimeout(() => sound.good(), 900); mount(); }),
+      revealed ? h("div", { class: "reveal-card" }, h("div", { class: "where" }, L.w, h("small", {}, L.uf)), h("div", { class: "what" }, "📍 " + p.n), h("p", {}, p.f), h("div", { class: "credit" }, "Foto: ", p.cr)) : h("p", { class: "note" }, "Discutam, chutem em voz alta e toquem em qualquer alternativa pra revelar."),
+      revealed ? h("div", { class: "section-title", style: "margin:4px 0 0" }, "Quem acertou?") : null,
+      revealed ? h("div", { class: "toggle-list" }, MESA.players.map((pl, k) => h("button", { class: "toggle", "aria-pressed": String(MESA.got.has(k)), onclick: e => { MESA.got.has(k) ? MESA.got.delete(k) : MESA.got.add(k); e.currentTarget.setAttribute("aria-pressed", String(MESA.got.has(k))); sound.tap(); } }, av(pl.name, pl.color), pl.name))) : null,
+      revealed ? h("button", { class: "btn block", onclick: () => {
+        MESA.got.forEach(k => (MESA.players[k].score += Math.round(500 * DIFF_MULT[p.d])));
+        MESA.i++; if (MESA.i >= MESA.list.length) { MESA.step = "end"; mount(); } else mesaRound(); } }, MESA.i + 1 >= MESA.list.length ? "Ver resultado 🏆" : "Próxima ▶") : null)));
+  if (revealed) {
+    app.querySelectorAll(".opt").forEach((b, k) => b.classList.add(k === q.c ? "right" : "wrong"));
+    $("#cap-right").textContent = `${L.w} – ${L.uf}`;
+  } else if (MESA.list[MESA.i + 1] != null) { const pre = new Image(); pre.src = imgUrl(PLACES[MESA.list[MESA.i + 1]]); }
+}
+function mesaRound() { MESA.q = buildOptions(MESA.list[MESA.i], MESA.mode); MESA.got = new Set(); MESA.step = "q"; scene = ""; render(); }
+
+// ======================================================================
+render();
+connect();
+</script>
