@@ -432,9 +432,54 @@ function onlinePlayers() {
 // ======================================================================
 // Rede (room do Artifact). Quem comanda publica o jogo na própria presença.
 // ======================================================================
+// Fora do Claude (ex.: Netlify), a sala é uma função HTTP e a gente faz polling.
+// Mesmo formato do `room` do Claude: presence(), onPeers(), onConnection(), connected().
+function pollingRoom(url) {
+  const me = rid(10);
+  let mine = {}, dirty = true, lastSent = 0, ok = false, lastSig = "", timer = null, inFlight = false;
+  const peerCbs = [], connCbs = [];
+  const setOk = v => { if (v !== ok) { ok = v; connCbs.forEach(cb => cb(ok)); } };
+  async function poll() {
+    if (inFlight) return;
+    inFlight = true; clearTimeout(timer);
+    const body = { peer: me };
+    if (dirty || Date.now() - lastSent > 3000) { body.presence = mine; dirty = false; lastSent = Date.now(); }
+    try {
+      const r = await fetch(url, { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify(body) });
+      if (!r.ok) throw new Error(r.status);
+      const data = await r.json();
+      const list = (data.peers || []).filter(p => p.peer !== me);
+      list.push({ peer: me, presence: mine, updatedAt: Date.now() });
+      // só avisa o jogo quando algo mudou (evita redesenhar a tela à toa)
+      const sig = JSON.stringify(list.map(p => [p.peer, p.presence]));
+      setOk(true);
+      if (sig !== lastSig) {
+        lastSig = sig;
+        const peers = list.map(p => Object.freeze({ peer: p.peer, by: null, isMe: p.peer === me, sameTab: p.peer === me, kind: "viewer", guest: false, presence: p.presence || {}, updatedAt: p.updatedAt }));
+        peerCbs.forEach(cb => cb({ peers }));
+      }
+    } catch { setOk(false); dirty = true; }
+    inFlight = false;
+    timer = setTimeout(poll, document.hidden ? 2500 : 450);
+  }
+  document.addEventListener("visibilitychange", () => { if (!document.hidden) poll(); });
+  setTimeout(poll, 0);
+  return {
+    async presence(patch) {
+      for (const [k, v] of Object.entries(patch)) { if (v === null) delete mine[k]; else mine[k] = v; }
+      mine = { ...mine }; dirty = true;
+      clearTimeout(timer); timer = setTimeout(poll, 30);   // manda já
+    },
+    onPeers(cb) { peerCbs.push(cb); return () => {}; },
+    onConnection(cb) { connCbs.push(cb); setTimeout(() => cb(ok), 0); return () => {}; },
+    connected: () => ok,
+  };
+}
+
 async function connect() {
   let room = null;
-  try { room = await window.claude?.use?.("room"); } catch {}
+  if (window.claude?.use) { try { room = await window.claude.use("room"); } catch {} }
+  else if (location.protocol.startsWith("http")) room = pollingRoom("/api/onde-e-isso");
   if (!room) { S.roomState = "off"; render(); return; }
   S.room = room;
   room.onConnection(ok => { S.roomState = ok ? "on" : (S.roomState === "on" ? "connecting" : S.roomState); render(); },
@@ -719,7 +764,7 @@ function mountHome() {
           h("div", { class: "swatches" }, COLORS.map(c => h("button", { type: "button", class: "swatch", style: `background:${c}`, "aria-label": "cor " + c, "aria-pressed": String(S.me.color === c), onclick: () => { S.me.color = c; saveMe(); mountKeep(); } })))),
         h("div", { class: "stack", style: "margin-top:22px" },
           canPlay ? h("button", { id: "go", class: "btn block", type: "submit", disabled: !S.me.name.trim() }, S.roomState === "connecting" ? "Entrar na roda" : "Entrar na roda →") : null,
-          S.roomState === "off" ? h("div", { class: "banner" }, "Não deu pra conectar o modo online nesta tela (precisa estar logado no Claude e com acesso a este artifact). Dá pra jogar no modo mesa, com um celular só.") : null,
+          S.roomState === "off" ? h("div", { class: "banner" }, window.claude?.use ? "Não deu pra conectar o modo online nesta tela (precisa estar logado no Claude e com acesso a este artifact). Dá pra jogar no modo mesa, com um celular só." : "Sem conexão com o servidor agora. Confere a internet e recarrega, ou joga no modo mesa, com um celular só.") : null,
           h("button", { class: "btn ghost block", type: "button", onclick: () => startMesaSetup() }, "Modo mesa: um celular só")))));
 }
 

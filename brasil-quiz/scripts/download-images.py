@@ -1,10 +1,10 @@
-# Baixa e reduz as fotos listadas em data/places.json para public/img/<id>.jpg
+# Baixa e reduz as fotos listadas em data/places.json para ../public/onde-e-isso/img/<id>.jpg
 # Uso: python3 scripts/download-images.py
 import io, re, json, os, sys, time, urllib.request
 from PIL import Image
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-OUT = os.path.join(ROOT, "public", "img")
+OUT = os.path.join(os.path.dirname(ROOT), "public", "onde-e-isso", "img")
 UA = "BrasilQuiz/1.0 (jogo de adivinhar lugares do Brasil)"
 os.makedirs(OUT, exist_ok=True)
 
